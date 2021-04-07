@@ -164,7 +164,7 @@ main .profileData .totalProfileData .contactMe:hover {
 /* $$$$$$$ Start profileBranches $$$$$$$ */
 main .profileData .profileBranches {
     padding-bottom: 10px;
-    border-bottom: 1px solid #707070;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 }
 
 main .profileData .profileBranches .profileBranchesHeader {
@@ -233,7 +233,7 @@ main .profileData .profileBranches .showMore a:hover i {
 /* $$$$$$$ Start doctorDetails $$$$$$$ */
 main .profileData .doctorDetails {
     padding: 20px 0;
-    border-bottom: 1px solid #707070;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 }
 
 main .profileData .doctorDetails .doctorDetailsHeader {
@@ -251,7 +251,7 @@ main .profileData .doctorDetails p {
 /* $$$$$$$ Start doctorCommunications $$$$$$$ */
 main .profileData .doctorCommunications {
     padding: 20px 0;
-    border-bottom: 1px solid #707070;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 }
 
 main .profileData .doctorCommunications .doctorCommunicationsHeader {
@@ -278,7 +278,7 @@ main .profileData .doctorCommunications ul li {
 /* $$$$$$$ Start doctorServices $$$$$$$ */
 main .profileData .doctorServices {
     padding: 20px 0;
-    border-bottom: 1px solid #707070;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 }
 
 main .profileData .doctorServices .doctorServicesHeader {
@@ -333,7 +333,7 @@ main .profileData .doctorServices .totalServices .serviceDetails .serviceDescrib
 /* $$$$$$$ Start doctorPrevWork $$$$$$$ */
 main .profileData .doctorPrevWork {
     padding: 20px 0;
-    border-bottom: 1px solid #707070;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 }
 
 main .profileData .doctorPrevWork .doctorPrevWorkHeader {
@@ -405,7 +405,7 @@ main .profileData .clientEvaluation .clientEvaluationSection .clientComment h2 {
     font-size: 18px;
     color: #707070;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
-    border: 1px solid #707070;
+    border: 1px solid rgba(0, 0, 0, 0.16);
     padding: 10px;
     width: 70%;
     line-height: 25px;
