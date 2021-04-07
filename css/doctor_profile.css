@@ -1,0 +1,962 @@
+/* ################### Start Global ################### */
+/* body {
+    overflow-X: hidden;
+}  */
+
+@font-face {
+    font-family: 'coconFont';
+    src: url('../fonts/cocon-next-arabic.ttf');
+}
+
+* {
+    font-family: 'coconFont';
+}
+/* ################### End Global ################### */
+/* ============== Start go_up icon =============== */
+.go_up {
+    position: fixed;
+    right: 40px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #fff;
+    border: 2px solid #07b2e6;
+    box-shadow: 0 0 10px #07b2e6;
+    color: #07b2e6;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 55 !important;
+}
+/* ============== End go_up icon =============== */ 
+
+/* ============== Start main =============== */
+main {
+    background: #f1eeee;
+    padding: 20px 0;
+}
+
+/* ######### Start profileData ######### */
+/* $$$$$$$ Start totalProfileData $$$$$$$ */
+main .profileData {
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+main .profileData .totalProfileData {
+    margin: 0;
+}
+
+main .profileData .totalProfileData .profileImg {
+    padding: 0;
+}
+
+main .profileData .totalProfileData .profileImg img {
+    width: 100%;
+    height: 100%;
+}
+
+main .profileData .totalProfileData .profileInfo .profileName {
+    font-size: 23px;
+    color: #07b2e6;
+    font-weight: 600;
+}
+
+main .profileData .totalProfileData .profileInfo .profileSpecialty,
+main .profileData .totalProfileData .profileInfo .profileExperience {
+    font-size: 22px;
+    color: #707070;
+}
+
+main .profileData .totalProfileData .profileInfo .profileSocialMedia {
+    padding: 0 0 10px;
+    margin-bottom: 0;
+    width: 65%;
+}
+
+main .profileData .totalProfileData .profileInfo .profileSocialMedia i {
+    color: #07b2e6;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+main .profileData .totalProfileData .profileInfo .profileSocialMedia .fa-whatsapp:hover {
+    color: #25D366;
+}
+main .profileData .totalProfileData .profileInfo .profileSocialMedia .fa-facebook:hover {
+    color: #3b5998;
+}
+main .profileData .totalProfileData .profileInfo .profileSocialMedia .fa-telegram:hover {
+    color: #0088cc;
+}
+main .profileData .totalProfileData .profileInfo .profileSocialMedia .fa-instagram:hover {
+    color: #e4405f;
+}
+main .profileData .totalProfileData .profileInfo .profileSocialMedia .fa-twitter:hover {
+    color: #55acee;
+}
+main .profileData .totalProfileData .profileInfo .profileSocialMedia .fa-youtube:hover {
+    color: #bb0000;
+}
+
+main .profileData .totalProfileData .profileInfo .profileReveal,
+main .profileData .totalProfileData .profileInfo .profileConsultation,
+main .profileData .totalProfileData .profileInfo .profileShare {
+    color: #07b2e6;
+    font-size: 22px;
+}
+
+main .profileData .totalProfileData .profileInfo .profileReveal span,
+main .profileData .totalProfileData .profileInfo .profileConsultation span,
+main .profileData .totalProfileData .profileInfo .profileShare i {
+    color: #707070;
+}
+
+main .profileData .totalProfileData .profileInfo .profileShare i:hover {
+    color: #07b2e6;
+}
+
+main .profileData .totalProfileData .profileOptions {
+    padding: 0;
+}
+
+main .profileData .totalProfileData .profileOptions ul {
+    width: 60%;
+    padding: 0;
+}
+
+main .profileData .totalProfileData .profileOptions ul i {
+    color: #eed600;
+    font-size: 17px;
+}
+
+main .profileData .totalProfileData .profileOptions .evaluation {
+    padding: 10px 0;
+}
+
+main .profileData .totalProfileData .profileOptions .evaluation p {
+    margin: 0;
+    font-size: 18px;
+    color: #707070;
+}
+
+main .profileData .totalProfileData .profileOptions .evaluation p:first-child {
+    margin-bottom: -5px;
+}
+
+main .profileData .totalProfileData .contactMe {
+    background: #07b2e6;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+main .profileData .totalProfileData .contactMe:hover {
+    padding: 10px 30px;
+    box-shadow: 0 0 10px #07b2e6;
+}
+/* $$$$$$$ End totalProfileData $$$$$$$ */
+
+/* $$$$$$$ Start profileBranches $$$$$$$ */
+main .profileData .profileBranches {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #707070;
+}
+
+main .profileData .profileBranches .profileBranchesHeader {
+    margin-top: 10px;
+    color: #07b2e6;
+    font-size: 23px;
+    margin-bottom: 0;
+}
+
+main .profileData .profileBranches .totalProfileBranches .locationIcon img {
+    width: 20px;
+    height: 20px;
+}
+
+main .profileData .profileBranches .totalProfileBranches .branchLocation .branchLocationDetails {
+    margin: 0;
+    width: 100%;
+}
+
+main .profileData .profileBranches .totalProfileBranches .branchLocation .branchGovernment,
+main .profileData .profileBranches .totalProfileBranches .branchLocation .branchWorkArea,
+main .profileData .profileBranches .totalProfileBranches .branchLocation .branchWorkTime {
+    padding: 0 5px;
+}
+
+main .profileData .profileBranches .totalProfileBranches .branchLocation h2 {
+    font-size: 20px;
+    margin: 0;
+    line-height: 27px;
+    color: #5d5a5a;
+}
+
+main .profileData .profileBranches .totalProfileBranches .branchLocation h2 span {
+    color: #707070;
+}
+
+main .profileData .profileBranches .totalProfileBranches .branchLocation .locationMap {
+    margin-top: 5px;
+}   
+
+main .profileData .profileBranches .totalProfileBranches .branchLocation .locationMap a {
+    font-size: 20px;
+    color: #07b2e6;
+    text-decoration: underline;
+}
+
+main .profileData .profileBranches .showMore a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+main .profileData .profileBranches .showMore a span {
+    color: #707070;
+}
+
+main .profileData .profileBranches .showMore a i {
+    color: #07b2e6;
+    transition: 0.3s ease-in-out;
+}
+
+main .profileData .profileBranches .showMore a:hover i {
+    transform: translateY(5px);
+}
+/* $$$$$$$ End profileBranches $$$$$$$ */
+
+/* $$$$$$$ Start doctorDetails $$$$$$$ */
+main .profileData .doctorDetails {
+    padding: 20px 0;
+    border-bottom: 1px solid #707070;
+}
+
+main .profileData .doctorDetails .doctorDetailsHeader {
+    color: #07b2e6;
+    font-size: 23px;
+}
+
+main .profileData .doctorDetails p {
+    font-size: 20px;
+    margin: 0;
+    color: #707070;
+}
+/* $$$$$$$ End doctorDetails $$$$$$$ */
+
+/* $$$$$$$ Start doctorCommunications $$$$$$$ */
+main .profileData .doctorCommunications {
+    padding: 20px 0;
+    border-bottom: 1px solid #707070;
+}
+
+main .profileData .doctorCommunications .doctorCommunicationsHeader {
+    color: #07b2e6;
+    font-size: 23px;
+}
+
+main .profileData .doctorCommunications ul {
+    margin: -5px;
+    padding: 10px 0;
+}
+
+main .profileData .doctorCommunications ul li {
+    list-style: none;
+    padding: 10px 20px;
+    background: #07b2e6;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+/* $$$$$$$ End doctorCommunications $$$$$$$ */
+
+/* $$$$$$$ Start doctorServices $$$$$$$ */
+main .profileData .doctorServices {
+    padding: 20px 0;
+    border-bottom: 1px solid #707070;
+}
+
+main .profileData .doctorServices .doctorServicesHeader {
+    color: #07b2e6;
+    font-size: 23px;
+}
+
+main .profileData .doctorServices .totalServices .serviceDetails {
+    margin: 0;
+    padding: 5px 0;
+}
+
+main .profileData .doctorServices .totalServices .serviceDetails .exampleImg img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+main .profileData .doctorServices .totalServices .serviceDetails .serviceName h2,
+main .profileData .doctorServices .totalServices .serviceDetails .servicePrice h2, 
+main .profileData .doctorServices .totalServices .serviceDetails .serviceDescribtion h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+main .profileData .doctorServices .totalServices .serviceDetails .serviceName {
+    padding-right: 0;
+}
+
+main .profileData .doctorServices .totalServices .serviceDetails .serviceName h2 {
+    background: #07b2e6;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+main .profileData .doctorServices .totalServices .serviceDetails .serviceName h2 {
+    width: 75%;
+    height: 100%;
+    color: #fff;
+}
+
+main .profileData .doctorServices .totalServices .serviceDetails .servicePrice h2 {
+    color: #07b2e6;
+}
+
+main .profileData .doctorServices .totalServices .serviceDetails .servicePrice h2 span ,
+main .profileData .doctorServices .totalServices .serviceDetails .serviceDescribtion h2 {
+    color: #707070;
+}
+/* $$$$$$$ End doctorCommunications $$$$$$$ */
+
+/* $$$$$$$ Start doctorPrevWork $$$$$$$ */
+main .profileData .doctorPrevWork {
+    padding: 20px 0;
+    border-bottom: 1px solid #707070;
+}
+
+main .profileData .doctorPrevWork .doctorPrevWorkHeader {
+    color: #07b2e6;
+    font-size: 23px;
+}
+
+main .profileData .doctorPrevWork .prevWorkImgs {
+    margin: 0 -7px;
+}
+
+main .profileData .doctorPrevWork .prevWorkImgs img {
+    padding: 0 7px;
+    margin: 7px 0;
+}   
+/* ######### End profileData ######### */
+
+/* $$$$$$$ Start clientEvaluation $$$$$$$ */
+main .profileData .clientEvaluation {
+    padding: 20px 0;
+}
+
+main .profileData .clientEvaluation .clientEvaluationHeader {
+    color: #07b2e6;
+    font-size: 23px;
+}
+
+main .profileData .clientEvaluation .clientEvaluationSection {
+    padding: 10px 0;
+}
+
+main .profileData .clientEvaluation .clientEvaluationSection .clientData {
+    margin: 0;
+}
+
+main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientImg {
+    padding: 0;
+}
+
+main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientImg img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate {
+    padding: 0;
+    padding: 0 10px;
+}
+
+main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate p {
+    margin: 0;
+    font-size: 20px;
+}
+
+main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate ul {
+    padding: 5px 0;
+    margin: 0;
+    width: 40%;
+    margin-top: -5px;
+}
+
+main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate ul i {
+    color: #eed600;
+    font-size: 15px;
+}
+
+main .profileData .clientEvaluation .clientEvaluationSection .clientComment h2 {
+    font-size: 18px;
+    color: #707070;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    border: 1px solid #707070;
+    padding: 10px;
+    width: 70%;
+    line-height: 25px;
+}
+/* $$$$$$$ End clientEvaluation $$$$$$$ */
+
+
+/* ######### Start booking ######### */
+main .booking form {
+    background: #fff;
+    padding: 10px 10px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+main .booking form .formHeader {
+    padding: 20px 0;
+}
+
+main .booking form .formHeader p {
+    color: #fff;
+    background: #5d5a5a;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+main .booking form .form-group textarea {
+    height: 120px;
+    padding: 12px;
+    font-size: 18px;
+    resize: none;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    color: #707070;
+}
+
+main .booking form .form-group textarea::placeholder {
+    color: #707070;
+}
+
+main .booking form .form-group input {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #707070;
+}
+
+main .booking form .form-group input::placeholder {
+    color: #707070;
+}
+
+main .booking form .form-group select {
+    font-size: 18px;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #707070;
+}
+
+main .booking form .labelDiv {
+    margin-bottom: 5px;
+}
+
+main .booking form .labelDiv label {
+    font-size: 18px;
+    color: #707070;
+    padding: 0;
+    margin: 0;
+}
+
+main .booking form .submitBtn {
+    background: #07b2e6;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    padding: 10px 40px;
+    transition: 0.3s ease-in-out;
+}
+
+main .booking form .submitBtn:hover {
+    padding: 10px 60px;
+    box-shadow: 0 0 10px #07b2e6;
+}
+/* ######### End booking ######### */
+/* ============== End main =============== */
+
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    /* ============== Start go_up icon =============== */
+    .go_up {
+        top: 90%; 
+    }
+    /* ============== End go_up icon =============== */ 
+    /* ============== Start main =============== */
+    /* ######### Start profileData ######### */
+    /* $$$$$$$ Start totalProfileData $$$$$$$ */
+    main .profileData .totalProfileData .profileInfo .profileName {
+        font-size: 25px;
+    }
+
+    main .profileData .totalProfileData .profileInfo .profileSpecialty,
+    main .profileData .totalProfileData .profileInfo .profileExperience {
+        font-size: 22px;
+    }
+
+    main .profileData .totalProfileData .profileInfo .profileSocialMedia i {
+        font-size: 22px;
+    }
+
+    main .profileData .totalProfileData .profileInfo .profileReveal,
+    main .profileData .totalProfileData .profileInfo .profileConsultation,
+    main .profileData .totalProfileData .profileInfo .profileShare {
+        font-size: 22px;
+    }
+
+    main .profileData .totalProfileData .profileOptions ul {
+        width: 50%;
+    }
+
+    main .profileData .totalProfileData .profileOptions ul i {
+        font-size: 17px;
+    }
+
+    main .profileData .totalProfileData .profileOptions .evaluation p {
+        font-size: 18px;
+    }
+    /* $$$$$$$ End totalProfileData $$$$$$$ */
+
+    /* $$$$$$$ Start profileBranches $$$$$$$ */
+    main .profileData .profileBranches .profileBranchesHeader {
+        font-size: 25px;
+    }
+
+    main .profileData .profileBranches .totalProfileBranches .locationIcon img {
+        width: 23px;
+        height: 23px;
+    }
+
+    main .profileData .profileBranches .totalProfileBranches .branchLocation h2 {
+        font-size: 20px;
+    }
+    
+    main .profileData .profileBranches .totalProfileBranches .branchLocation .locationMap a {
+        font-size: 18px;
+    }
+    /* $$$$$$$ End profileBranches $$$$$$$ */
+
+    /* $$$$$$$ Start doctorDetails $$$$$$$ */
+    main .profileData .doctorDetails .doctorDetailsHeader {
+        font-size: 25px;
+    }
+
+    main .profileData .doctorDetails p {
+        font-size: 22px;
+    }
+    /* $$$$$$$ End doctorDetails $$$$$$$ */
+
+    /* $$$$$$$ Start doctorCommunications $$$$$$$ */
+    main .profileData .doctorCommunications .doctorCommunicationsHeader {
+        font-size: 25px;
+    }
+
+    main .profileData .doctorCommunications ul li {
+        font-size: 22px;
+    }
+    /* $$$$$$$ End doctorCommunications $$$$$$$ */
+
+    /* $$$$$$$ Start doctorServices $$$$$$$ */
+    main .profileData .doctorServices .doctorServicesHeader {
+        font-size: 25px;
+    }
+
+    main .profileData .doctorServices .totalServices .serviceDetails .serviceName h2,
+    main .profileData .doctorServices .totalServices .serviceDetails .servicePrice h2, 
+    main .profileData .doctorServices .totalServices .serviceDetails .serviceDescribtion h2 {
+        font-size: 22px;
+    }
+
+    main .profileData .doctorServices .totalServices .serviceDetails .serviceName h2 {
+        font-size: 20px;
+    }
+    /* $$$$$$$ End doctorCommunications $$$$$$$ */
+
+    /* $$$$$$$ Start doctorPrevWork $$$$$$$ */
+    main .profileData .doctorPrevWork .doctorPrevWorkHeader {
+        font-size: 25px;
+    }
+    /* ######### End profileData ######### */
+
+    /* $$$$$$$ Start clientEvaluation $$$$$$$ */
+    main .profileData .clientEvaluation .clientEvaluationHeader {
+        font-size: 25px;
+    }
+
+    main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate p {
+        font-size: 22px;
+    }
+
+    main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate ul {
+        width: 45%;
+    }
+
+    main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate ul i {
+        font-size: 17px;
+    }
+
+    main .profileData .clientEvaluation .clientEvaluationSection .clientComment h2 {
+        font-size: 20px;
+    }
+    /* $$$$$$$ End clientEvaluation $$$$$$$ */
+
+    /* ######### Start booking ######### */
+    main .booking {
+        padding: 0;
+    }
+    main .booking form {
+        margin-top: 20px;
+    }
+
+    main .booking form .formHeader p {
+        font-size: 22px;
+    }
+    /* ######### End booking ######### */
+    /* ============== End main =============== */
+}
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) {
+    /* ============== Start main =============== */
+    /* ######### Start profileData ######### */
+    /* $$$$$$$ Start totalProfileData $$$$$$$ */
+    main .profileData .totalProfileData .profileInfo .profileName {
+        font-size: 23px;
+    }
+
+    main .profileData .totalProfileData .profileInfo .profileSpecialty,
+    main .profileData .totalProfileData .profileInfo .profileExperience {
+        font-size: 20px;
+    }
+
+    main .profileData .totalProfileData .profileInfo .profileSocialMedia i {
+        font-size: 20px;
+    }
+
+    main .profileData .totalProfileData .profileInfo .profileReveal,
+    main .profileData .totalProfileData .profileInfo .profileConsultation,
+    main .profileData .totalProfileData .profileInfo .profileShare {
+        font-size: 20px;
+    }
+
+    main .profileData .totalProfileData .profileOptions .evaluation p {
+        font-size: 16px;
+    }
+
+    main .profileData .totalProfileData .contactMe {
+        margin-top: 10px;
+    }
+    /* $$$$$$$ End totalProfileData $$$$$$$ */
+
+    /* $$$$$$$ Start profileBranches $$$$$$$ */
+    main .profileData .profileBranches .profileBranchesHeader {
+        font-size: 23px;
+    }
+
+    main .profileData .profileBranches .totalProfileBranches .locationIcon img {
+        width: 23px;
+        height: 23px;
+    }
+
+    main .profileData .profileBranches .totalProfileBranches .branchLocation h2 {
+        font-size: 20px;
+    }
+    
+    main .profileData .profileBranches .totalProfileBranches .branchLocation .locationMap a {
+        font-size: 16px;
+    }
+
+    main .profileData .profileBranches .showMore a i {
+        font-size: 15px;
+    }
+    /* $$$$$$$ End profileBranches $$$$$$$ */
+
+    /* $$$$$$$ Start doctorDetails $$$$$$$ */
+    main .profileData .doctorDetails .doctorDetailsHeader {
+        font-size: 23px;
+    }
+
+    main .profileData .doctorDetails p {
+        font-size: 20px;
+    }
+    /* $$$$$$$ End doctorDetails $$$$$$$ */
+
+    /* $$$$$$$ Start doctorCommunications $$$$$$$ */
+    main .profileData .doctorCommunications .doctorCommunicationsHeader {
+        font-size: 23px;
+    }
+
+    main .profileData .doctorCommunications ul li {
+        font-size: 20px;
+    }
+    /* $$$$$$$ End doctorCommunications $$$$$$$ */
+
+
+    /* $$$$$$$ Start doctorServices $$$$$$$ */
+    main .profileData .doctorServices .doctorServicesHeader {
+        font-size: 23px;
+    }
+
+    main .profileData .doctorServices .totalServices .serviceDetails .serviceName h2,
+    main .profileData .doctorServices .totalServices .serviceDetails .servicePrice h2, 
+    main .profileData .doctorServices .totalServices .serviceDetails .serviceDescribtion h2 {
+        font-size: 20px;
+    }
+
+    main .profileData .doctorServices .totalServices .serviceDetails .serviceName h2 {
+        font-size: 18px;
+    }
+    /* $$$$$$$ End doctorCommunications $$$$$$$ */
+
+    /* $$$$$$$ Start doctorPrevWork $$$$$$$ */
+    main .profileData .doctorPrevWork .doctorPrevWorkHeader {
+        font-size: 23px;
+    }
+    /* ######### End profileData ######### */
+
+    /* $$$$$$$ Start clientEvaluation $$$$$$$ */
+    main .profileData .clientEvaluation .clientEvaluationHeader {
+        font-size: 23px;
+    }
+
+    main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate p {
+        font-size: 20px;
+    }
+
+    main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate ul {
+        width: 50%;
+    }
+
+    main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate ul i {
+        font-size: 16px;
+    }
+    
+    main .profileData .clientEvaluation .clientEvaluationSection .clientComment h2 {
+        font-size: 18px;
+    }
+    /* $$$$$$$ End clientEvaluation $$$$$$$ */
+
+    /* ######### Start booking ######### */
+    main .booking form .formHeader p {
+        font-size: 20px;
+    }
+    /* ######### End booking ######### */
+    /* ============== End main =============== */
+}
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) {
+    /* ============== Start main =============== */
+    /* ######### Start profileData ######### */
+    /* $$$$$$$ Start totalProfileData $$$$$$$ */
+    main .profileData .totalProfileData .profileInfo .profileSocialMedia {
+        width: 56%;
+    }
+
+    main .profileData .totalProfileData .profileOptions {
+        padding: 20px 0 0px;
+    }
+
+    main .profileData .totalProfileData .profileOptions ul {
+        width: 25%;
+        margin: 0;
+    }
+
+    main .profileData .totalProfileData .profileOptions .evaluation p {
+        font-size: 16px;
+    }
+
+    main .profileData .totalProfileData .contactMe {
+        margin-top: 10px;
+    }
+    /* $$$$$$$ End totalProfileData $$$$$$$ */
+
+    /* $$$$$$$ Start profileBranches $$$$$$$ */
+    main .profileData .profileBranches .totalProfileBranches .locationIcon img {
+        width: 23px;
+        height: 23px;
+    }
+
+    main .profileData .profileBranches .totalProfileBranches .branchLocation h2 {
+        font-size: 18px;
+    }
+    
+    main .profileData .profileBranches .totalProfileBranches .branchLocation .locationMap a {
+        font-size: 18px;
+    }
+
+    main .profileData .profileBranches .showMore a i {
+        font-size: 15px;
+    }
+    /* $$$$$$$ End profileBranches $$$$$$$ */
+
+    /* $$$$$$$ Start doctorDetails $$$$$$$ */
+    main .profileData .doctorDetails .doctorDetailsHeader {
+        font-size: 23px;
+    }
+
+    main .profileData .doctorDetails p {
+        font-size: 20px;
+    }
+    /* $$$$$$$ End doctorDetails $$$$$$$ */
+
+    /* $$$$$$$ Start doctorCommunications $$$$$$$ */
+    main .profileData .doctorCommunications ul li {
+        font-size: 18px;
+    }
+    /* $$$$$$$ End doctorCommunications $$$$$$$ */
+
+    /* $$$$$$$ Start doctorServices $$$$$$$ */
+    main .profileData .doctorServices {
+        padding: 20px 0 10px;
+    }
+
+    main .profileData .doctorServices .totalServices .serviceDetails {
+        margin-bottom: 10px;
+    }
+
+    main .profileData .doctorServices .totalServices .serviceDetails .serviceName,
+    main .profileData .doctorServices .totalServices .serviceDetails .servicePrice,
+    main .profileData .doctorServices .totalServices .serviceDetails .serviceDescribtion {
+        padding: 0;
+    }
+
+    main .profileData .doctorServices .totalServices .serviceDetails .serviceName h2,
+    main .profileData .doctorServices .totalServices .serviceDetails .servicePrice h2, 
+    main .profileData .doctorServices .totalServices .serviceDetails .serviceDescribtion h2 {
+        padding: 2px 0;
+    }
+
+    main .profileData .doctorServices .totalServices .serviceDetails .servicePrice h2 {
+        padding-top: 10px;
+    }
+    /* $$$$$$$ End doctorCommunications $$$$$$$ */
+
+    /* $$$$$$$ Start clientEvaluation $$$$$$$ */
+    main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate {
+        padding: 0 25px;
+    }
+
+    main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate ul {
+        width: 85%;
+    }
+    /* $$$$$$$ End clientEvaluation $$$$$$$ */
+    /* ============== End main =============== */
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) {
+    /* ============== Start main =============== */
+    /* ######### Start profileData ######### */
+    /* $$$$$$$ Start totalProfileData $$$$$$$ */
+    main .profileData .totalProfileData .profileInfo .profileName {
+        font-size: 21px;
+    }
+
+    main .profileData .totalProfileData .profileInfo {
+        text-align: center;
+        padding: 20px 0 10px;
+    }
+
+    main .profileData .totalProfileData .profileInfo .profileSocialMediaContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    main .profileData .totalProfileData .profileInfo .profileSocialMedia {
+        width: 65%;
+        padding: 7px 0 15px;
+    }
+
+    main .profileData .totalProfileData .profileInfo .profileSocialMedia i {
+        font-size: 22px
+    }
+
+    main .profileData .totalProfileData .profileOptions {
+        padding: 0;
+    }
+
+    main .profileData .totalProfileData .profileOptions ul {
+        width: 25%;
+        margin: 0;
+    }
+
+    main .profileData .totalProfileData .profileOptions .evaluation p {
+        font-size: 18px;
+    }
+    /* $$$$$$$ End totalProfileData $$$$$$$ */
+
+    /* $$$$$$$ Start profileBranches $$$$$$$ */
+    main .profileData .profileBranches .totalProfileBranches .locationIcon img {
+        width: 23px;
+        height: 23px;
+    }
+
+    main .profileData .profileBranches .totalProfileBranches .branchLocation h2 {
+        font-size: 20px;
+    }
+    /* $$$$$$$ End profileBranches $$$$$$$ */
+
+    /* $$$$$$$ Start doctorServices $$$$$$$ */
+    main .profileData .doctorServices .totalServices .serviceDetails .serviceName h2 {
+        width: 100%;
+    }
+    /* $$$$$$$ End doctorCommunications $$$$$$$ */
+
+    /* $$$$$$$ Start clientEvaluation $$$$$$$ */
+    main .profileData .clientEvaluation .clientEvaluationSection .clientData {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientImg {
+        justify-content: center !important;
+    }
+
+    main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate {
+        padding: 0;
+        align-items: center;
+    }
+
+    main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate ul {
+        width: 35%;
+        padding: 10px 0;
+    }
+
+    main .profileData .clientEvaluation .clientEvaluationSection .clientData .clientNameAndRate ul i {
+        font-size: 15px;
+    }
+
+    main .profileData .clientEvaluation .clientEvaluationSection .clientComment {
+        text-align: center;
+    }
+    
+    main .profileData .clientEvaluation .clientEvaluationSection .clientComment h2 {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    /* $$$$$$$ End clientEvaluation $$$$$$$ */
+    /* ============== End main =============== */
+}
