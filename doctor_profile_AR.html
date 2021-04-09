@@ -27,7 +27,6 @@
                         <div class="profileInfo d-flex flex-column justify-content-center col-12 col-sm-7 col-md-5">
                             <h2 class="profileName">عيادة الدكتور أحمد محمد</h2>
                             <h2 class="profileSpecialty">جراحة وتقويم الأسنان</h2>
-                            <h2 class="profileExperience">خبره أكثر من 7 سنوات</h2>
                             <div class="profileSocialMediaContainer">
                                 <ul class="profileSocialMedia d-flex justify-content-between">
                                     <i class="fab fa-whatsapp"></i>
@@ -74,8 +73,24 @@
                                     <h2 class="branchWorkTime">أوقات العمل المتاحة: <span>كل الأيام من 03:05 م الي 12:00 م ماعدا الجمعه</span></h2>
                                 </div>
                                 <div class="locationMap">
-                                    <a href="#">الموقع على الخريطة</a>
+                                    <a href="#" data-toggle="modal" data-target="#locationMap_1">الموقع على الخريطة</a>
                                 </div>
+                                <!-- $$$$$$$ Start modal of map (1) $$$$$$$ -->
+                                <div class="modal fade" id="locationMap_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog mapModal" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header d-flex">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">  
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d712.5238608715254!2d31.20018303671682!3d30.47427270771645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf23e10419a7decdf!2z2YPZhNmK2Kkg2KfZhNit2KfYs9io2KfYqiDZiNin2YTYsNmD2KfYoSDYp9mE2KfYtdi32YbYp9i52YktINis2KfZhdi52Kkg2KjZhtmH2Kc!5e0!3m2!1sar!2seg!4v1617993806509!5m2!1sar!2seg" loading="lazy"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- $$$$$$$ End modal of map (1) $$$$$$$ -->
                             </div>
                             <!-- start branchLocation -->
                             <div class="branchLocation">
@@ -88,8 +103,24 @@
                                     <h2 class="branchWorkTime">أوقات العمل المتاحة: <span>كل الأيام من 03:05 م الي 12:00 م ماعدا الجمعه</span></h2>
                                 </div>
                                 <div class="locationMap">
-                                    <a href="#">الموقع على الخريطة</a>
+                                    <a href="#" data-toggle="modal" data-target="#locationMap_2">الموقع على الخريطة</a>
                                 </div>
+                                <!-- $$$$$$$ Start modal of map (2) $$$$$$$ -->
+                                <div class="modal fade" id="locationMap_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog mapModal" role="document">
+                                        <div class="modal-content"> 
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">  
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d712.5238608715254!2d31.20018303671682!3d30.47427270771645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf23e10419a7decdf!2z2YPZhNmK2Kkg2KfZhNit2KfYs9io2KfYqiDZiNin2YTYsNmD2KfYoSDYp9mE2KfYtdi32YbYp9i52YktINis2KfZhdi52Kkg2KjZhtmH2Kc!5e0!3m2!1sar!2seg!4v1617993806509!5m2!1sar!2seg" loading="lazy"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- $$$$$$$ End modal of map (2) $$$$$$$ -->
                             </div>
                         </div>
                         <!-- start showMore -->
@@ -106,6 +137,10 @@
                         <p>استشاري تجميل الاسنان وعضو الاكاديمية الامريكية لطب تجميل الاسنان AACD عضو الجمعية الدولية 
                             لزراعة الاسنان جامعة نيويورك، كما أنه حاصل على دبلومة في منع نقل العدوي والتعقيم بالإضافة إلى
                             دبلومة في العلاج بالليزر</p>
+                        <h3 class="doctorDetailsExperience">خبره أكثر من 7 سنوات</h3>
+                        <h3 class="doctorDetailsExperience">خبره أكثر من 7 سنوات</h3>
+                        <h3 class="doctorDetailsExperience">خبره أكثر من 7 سنوات</h3>
+                        <h3 class="doctorDetailsExperience">خبره أكثر من 7 سنوات</h3>
                     </div>
                     <!-- start doctorCommunications -->
                     <div class="doctorCommunications">
@@ -284,7 +319,7 @@
                         <div class="labelDiv form-group d-flex justify-content-center">
                             <label class="col-11 col-sm-10 col-xl-12">اختر الميعاد</label>
                         </div>
-                        <div class="form-group d-flex flex-column align-items-center">
+                        <!-- <div class="form-group d-flex flex-column align-items-center">
                             <select id="inputState" class="col-11 col-sm-10 col-xl-12 form-control">
                                 <option selected>اليوم</option>
                                 <option>السبت</option>
@@ -295,6 +330,9 @@
                                 <option>الخميس</option>
                                 <option>الجمعة</option>
                             </select>                        
+                        </div> -->
+                        <div class="form-group d-flex justify-content-center">
+                            <input type="date" class="col-11 col-sm-10 col-xl-12 form-control" id="inputAddress">
                         </div>
                         <div class="form-row d-flex justify-content-center">
                             <div class="form-group col-11 col-sm-5 col-lg-5 col-xl-6">
