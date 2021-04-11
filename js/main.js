@@ -20,6 +20,13 @@ $(document).ready(function(){
       },1000);
     });    
 
+    $('.profileBranches .showMore').click(function (event) {  
+      event.preventDefault(); 
+      $('main .profileData .profileBranches .totalProfileBranches .branchLocation3').show();
+      $('.profileBranches .showMore').removeClass('d-flex');
+      $('.profileBranches .showMore').addClass('d-none');
+    });
+
     // slider prevWorkSlider
     var bodyDirection = $('body').css('direction');
     if( bodyDirection == 'rtl'){

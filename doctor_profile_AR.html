@@ -64,7 +64,7 @@
                         <h2 class="profileBranchesHeader">الفروع</h2>
                         <!-- start totalProfileBranches -->
                         <div class="row totalProfileBranches">
-                            <!-- start branchLocation -->
+                            <!-- start branchLocation 1 -->
                             <div class="branchLocation">
                                 <div class="branchLocationDetails row align-items-center">   
                                     <div class="locationIcon">
@@ -94,7 +94,7 @@
                                 </div>
                                 <!-- $$$$$$$ End modal of map (1) $$$$$$$ -->
                             </div>
-                            <!-- start branchLocation -->
+                            <!-- start branchLocation 2 -->
                             <div class="branchLocation">
                                 <div class="branchLocationDetails row align-items-center">   
                                     <div class="locationIcon">
@@ -123,6 +123,36 @@
                                     </div>
                                 </div>
                                 <!-- $$$$$$$ End modal of map (2) $$$$$$$ -->
+                            </div>
+                            <!-- start branchLocation 3 -->
+                            <div class="branchLocation branchLocation3">
+                                <div class="branchLocationDetails row align-items-center">   
+                                    <div class="locationIcon">
+                                        <img src="images/location.png" alt="">
+                                    </div>
+                                    <h2 class="branchGovernment">القاهرة الكبرى</h2>
+                                    <h2 class="branchWorkArea">نطاق العمل: <span>القاهرة و الجيزة</span></h2>
+                                    <h2 class="branchWorkTime">أوقات العمل المتاحة: <span>كل الأيام من 03:05 م الي 12:00 م ماعدا الجمعه</span></h2>
+                                </div>
+                                <div class="locationMap">
+                                    <a href="#" data-toggle="modal" data-target="#locationMap_3">الموقع على الخريطة</a>
+                                </div>
+                                <!-- $$$$$$$ Start modal of map (3) $$$$$$$ -->
+                                <div class="modal fade" id="locationMap_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog mapModal" role="document">
+                                        <div class="modal-content"> 
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">  
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d712.5238608715254!2d31.20018303671682!3d30.47427270771645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf23e10419a7decdf!2z2YPZhNmK2Kkg2KfZhNit2KfYs9io2KfYqiDZiNin2YTYsNmD2KfYoSDYp9mE2KfYtdi32YbYp9i52YktINis2KfZhdi52Kkg2KjZhtmH2Kc!5e0!3m2!1sar!2seg!4v1617993806509!5m2!1sar!2seg" loading="lazy"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- $$$$$$$ End modal of map (3) $$$$$$$ -->
                             </div>
                         </div>
                         <!-- start showMore -->
@@ -398,6 +428,10 @@
                     <form>
                         <div class="formHeader d-flex justify-content-center">
                             <p class="text-center col-5 col-sm-3 col-xl-6">احجز الآن</p>
+                        </div>
+                        <div class=" registerResult d-flex flex-column align-items-center">
+                            <p class="alert alert-success col-11 col-sm-10 col-xl-12">تم التسجيل بنجاح</p>
+                            <p class="alert alert-danger col-11 col-sm-10 col-xl-12">حدث خطأ فى التسجيل</p>
                         </div>
                         <div class="form-group d-flex justify-content-center">
                             <textarea name="" class="col-11 col-sm-10 col-xl-12 form-control" placeholder="نبذة عن المشكلة"></textarea>

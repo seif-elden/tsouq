@@ -179,6 +179,11 @@ main .profileData .profileBranches .totalProfileBranches .locationIcon img {
     height: 20px;
 }
 
+main .profileData .profileBranches .totalProfileBranches .branchLocation3 {
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
 main .profileData .profileBranches .totalProfileBranches .branchLocation .branchLocationDetails {
     margin: 0;
     width: 100%;
