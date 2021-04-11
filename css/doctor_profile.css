@@ -365,7 +365,46 @@ main .profileData .doctorPrevWork .prevWorkImgs {
 main .profileData .doctorPrevWork .prevWorkImgs img {
     padding: 0 7px;
     margin: 7px 0;
+    cursor: pointer;
 }   
+
+.slick-prev:before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f053";
+    color: #07b2e6 !important;
+}   
+  
+.slick-next:before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f054";
+    color: #07b2e6 !important;
+}
+
+main .profileData .doctorPrevWork .modal .prevWorkImgsModal .modal-body .prevWorkSliderBtns i {
+    color: #07b2e691;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+main .profileData .doctorPrevWork .modal .prevWorkImgsModal .modal-body .prevWorkSliderBtns i:hover {
+    color: #07b2e6;
+}
+
+main .profileData .doctorPrevWork .modal .prevWorkImgsModal .modal-body .prevWorkSlider {
+    margin: 0 15px;
+    padding: 0;
+}
+
+main .profileData .doctorPrevWork .modal .prevWorkImgsModal .modal-body .prevWorkSlider .slick-list {
+    margin: 0 0px;
+}
+
+main .profileData .doctorPrevWork .modal .prevWorkImgsModal .modal-body .prevWorkSlider img {
+    outline: none;
+    overflow: hidden;
+}
 /* ######### End profileData ######### */
 
 /* $$$$$$$ Start clientEvaluation $$$$$$$ */

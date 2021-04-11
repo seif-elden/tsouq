@@ -19,4 +19,33 @@ $(document).ready(function(){
           scrollTop: 0
       },1000);
     });    
+
+    // slider prevWorkSlider
+    var bodyDirection = $('body').css('direction');
+    if( bodyDirection == 'rtl'){
+      $('.prevWorkSlider').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        rtl:true,
+        autoplay:true,
+      });
+    } else {
+      $('.prevWorkSlider').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        rtl:false,
+        autoplay:true,
+      });
+    }
+
+    
 });
+
+
+
+
+
+
+
