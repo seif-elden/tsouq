@@ -49,11 +49,13 @@ main .profileData .totalProfileData {
 
 main .profileData .totalProfileData .profileImg {
     padding: 0;
+    height: 254px;
 }
 
 main .profileData .totalProfileData .profileImg img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 main .profileData .totalProfileData .profileInfo .profileName {
@@ -569,6 +571,11 @@ main .booking form .submitBtn:hover {
     /* ============== Start main =============== */
     /* ######### Start profileData ######### */
     /* $$$$$$$ Start totalProfileData $$$$$$$ */
+    main .profileData .totalProfileData .profileImg {
+        padding: 0;
+        height: 296px;
+    }
+    
     main .profileData .totalProfileData .profileInfo .profileName {
         font-size: 25px;
     }
@@ -704,6 +711,11 @@ main .booking form .submitBtn:hover {
     /* ============== Start main =============== */
     /* ######### Start profileData ######### */
     /* $$$$$$$ Start totalProfileData $$$$$$$ */
+    main .profileData .totalProfileData .profileImg {
+        padding: 0;
+        height: 240px;
+    }
+
     main .profileData .totalProfileData .profileInfo .profileName {
         font-size: 23px;
     }
@@ -833,6 +845,11 @@ main .booking form .submitBtn:hover {
     /* ============== Start main =============== */
     /* ######### Start profileData ######### */
     /* $$$$$$$ Start totalProfileData $$$$$$$ */
+    main .profileData .totalProfileData .profileImg {
+        padding: 0;
+        height: 222px;
+    }
+
     main .profileData .totalProfileData .profileInfo .profileSocialMedia {
         width: 56%;
     }
@@ -933,6 +950,11 @@ main .booking form .submitBtn:hover {
     /* ============== Start main =============== */
     /* ######### Start profileData ######### */
     /* $$$$$$$ Start totalProfileData $$$$$$$ */
+    main .profileData .totalProfileData .profileImg {
+        padding: 0;
+        height: 40%;
+    }
+    
     main .profileData .totalProfileData .profileInfo .profileName {
         font-size: 21px;
     }
