@@ -1,4 +1,19 @@
 
+/* ################### Start Global ################### */
+.NavbarTop .contactInfo {
+    right: 0;
+}
+
+.NavbarTop .contactInfo .email {
+    border-left: 2px solid #fff;
+    padding-left: 10px;
+}
+
+.NavbarTop .contactInfo .phone {
+    padding-right: 10px;
+}
+/* ################### End Global ################### */
+
 /* ============== Start main =============== */
 /* ######### Start profileData ######### */
 /* $$$$$$$ Start profileBranches $$$$$$$ */
@@ -41,7 +56,15 @@ main .booking {
 
 /* ################ Medium devices (tablets, less than 992px) ################ */
 @media (max-width: 991.98px) {
-    
+    /* ============== Start NavbarMobile =============== */
+    .NavbarMobile .navMenuMobile {
+        left: 0;
+    }
+
+    .NavbarMobile .navMenuMobile .closebtn {
+        left: 100%;
+    }
+    /* ============== End NavbarMobile =============== */
 }
 
 /* ################ Small devices (landscape phones, less than 768px) ################ */

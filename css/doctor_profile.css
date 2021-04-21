@@ -11,7 +11,321 @@
 * {
     font-family: 'coconFont';
 }
+
+/* ============== Start NavbarTop =============== */
+.NavbarTop {
+    background: #12758b;
+    padding: 10px 0;
+}
+
+.NavbarTop ul {
+    margin: 0;
+}
+
+.NavbarTop ul a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.NavbarTop ul a i {
+    color: #fff !important;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    border-radius: 5px;
+}
+
+.NavbarTop ul a i.fa-facebook-f {
+    background: #3b5999;
+}
+
+.NavbarTop ul a i.fa-twitter {
+    background: #55acee;
+}
+
+.NavbarTop ul a i.fa-instagram {
+    background: #e4405f;
+}
+
+.NavbarTop ul a i.fa-linkedin-in {
+    background: #0077B5;
+}
+
+.NavbarTop .contactInfo {
+    padding: 0 20px;
+    position: absolute;
+}
+
+.NavbarTop .contactInfo .phone a,
+.NavbarTop .contactInfo .email a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.NavbarTop .contactInfo .phone a i,
+.NavbarTop .contactInfo .email a i {
+    padding: 0 4px;
+
+}
+/* ============== End NavbarTop =============== */
+/* ============== Start NavbarMobile =============== */
+.NavbarMobile {
+    display: none;
+}
+/* ============== End NavbarMobile =============== */
+/* ============== Start navLarge =============== */
+.navLarge {
+    background: #fff;
+    padding: 0 !important;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge .navbar-brand {
+    height: 70px;
+    width: 225px;
+    padding: 0 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge .navbar-brand img {
+    height: 100%;
+    width: 150px;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge ul {
+    padding: 0 !important;
+}
+
+.navLarge ul li a {
+    color: #929292; 
+    font-size: 16px;
+    padding: 40px 20px !important;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge ul li a:hover {
+    color: #07b2e6;
+}
+
+.navLarge ul li a.active {
+    color: #07b2e6;
+}
+
+.navLarge ul li a.active::before {
+    top: 0%;
+    height: 4px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge ul li a:hover::before {
+    top: 0%;
+    height: 4px;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge ul li a::before {
+    content: '';
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    top: 5%;
+    opacity: 0;
+    left: 0;
+    background: #07b2e6;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge .langLink a::before{
+    display: none;
+}
+
+.navLarge .langLink .langIconLink {
+    padding: 35px 20px !important;
+    transition: 0.3s ease-in-out;
+}
+
+.navLarge .langLink .langIconLink i {
+    color: #A4C2F7;
+    background: #E3E7F2;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #A4C2F7;
+    border-radius: 50%;
+}
+
+.navLarge .langLink .langAbbrLink {
+    color: #111;
+    font-size: 20px;
+    padding: 30px 20px 0 !important;
+    transition: 0.3s ease-in-out;
+}
+
+.navLargeTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    transition: 0.3s ease-in-out;
+}
+
+.navLargeTop .navbar-brand {
+    height: 55px;
+}
+
+.navLargeTop .navbar-brand img {
+    width: 120px;
+}
+
+.navLargeTop ul li a {
+    padding: 20px !important;
+}
+
+.navLargeTop ul li a:hover::before {
+    height: 3px;
+}
+
+.navLargeTop .langLink .langIconLink {
+    padding: 15px 20px !important;
+}
+
+.navLargeTop .langLink .langAbbrLink {
+    padding: 15px 20px 0 !important;
+}
+/* ============== End navLarge =============== */
+
+/* ============== Start footer =============== */
+
+footer {
+    background: #142941;
+    padding: 40px 20px;
+}
+
+footer .aboutUsData .footerLogo {
+    padding-bottom: 8px;
+}
+
+footer .aboutUsData .footerLogo img {
+    width: 100px;
+    height: 45px;
+}
+
+footer .aboutUsData p {
+    border-top: 1px dashed #f9f9f9;
+    border-bottom: 1px dashed #f9f9f9;
+    line-height: 23px;
+    padding: 8px 0;
+    margin: 0;
+}
+
+footer .aboutUsData p,
+footer .websiteMap p {
+    color: #f9f9f9;
+    font-size: 1.25rem;
+} 
+
+footer .websiteMap h2,
+footer .contactWithUs h2 {
+    color: #b6b6b6; 
+    font-size: 1rem;
+}
+
+footer .websiteMap .websiteMapLinks li {
+    list-style: none;
+    padding: 4px 0;
+}
+
+footer .websiteMap .websiteMapLinks a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 1.25rem;
+    position: relative !important;
+}
+
+footer .websiteMap .websiteMapLinks a:hover::after {
+    top: 100%;
+    height: 3px;
+}
+
+footer .websiteMap .websiteMapLinks a::after {
+    position: absolute;
+    content: '';
+    height: 0px;
+    width: 100%;
+    background: #55acee;
+    top: 110%;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+footer .contactWithUs .contactMatrial {
+    border-bottom: 1px dashed #f9f9f9;
+    padding-bottom: 8px;
+    font-size: 1.25rem;
+}
+
+footer .contactWithUs .contactMatrial a {
+    font-weight: bolder;
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+footer .contactWithUs .contactMatrial a i {
+    color: #29c3ef;
+    font-size: 17px;
+    padding: 0 10px;
+}
+
+footer .contactSocial {
+    padding: 20px 0;
+}
+
+footer .contactSocial ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer .contactSocial ul a {
+    text-decoration: none;
+}
+
+footer .contactSocial ul a i {
+    color: #fff !important;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    border-radius: 5px;
+}
+
+footer .contactSocial ul a i.fa-facebook-f {
+    background: #3b5999;
+}
+
+footer .contactSocial ul a i.fa-twitter {
+    background: #55acee;
+}
+
+footer .contactSocial ul a i.fa-instagram {
+    background: #e4405f;
+}
+
+footer .contactSocial ul a i.fa-linkedin-in {
+    background: #0077B5;
+}
+/* ============== End footer =============== */
 /* ################### End Global ################### */
+
 /* ============== Start go_up icon =============== */
 .go_up {
     position: fixed;
@@ -32,7 +346,7 @@
 /* ============== Start main =============== */
 main {
     background: #f1eeee;
-    padding: 20px 0;
+    padding: 40px 0 20px;
 }
 
 /* ######### Start profileData ######### */
@@ -563,6 +877,64 @@ main .booking form .submitBtn:hover {
 
 /* ################ Large devices (desktops, less than 1200px) ################ */
 @media (max-width: 1199.98px) {
+    /* ################### Start Global ################### */
+    /* ============== Start navLarge =============== */
+    .navLarge .navbar-brand {
+        height: 60px;
+        width: 150px;
+    }
+
+    .navLarge .navbar-brand img {
+        height: 100%;
+        width: 120px;
+    }
+
+    .navLarge ul {
+        padding: 0 !important;
+    }
+
+    .navLarge ul li a {
+        padding: 40px 10px !important;
+    }
+
+    .navLarge .langLink a::before {
+        display: none;
+    }
+
+    .navLarge .langLink .langIconLink {
+        padding: 35px 0px !important;
+    }
+
+    .navLarge .langLink .langAbbrLink {
+        padding: 30px 10px 0 !important;
+    }
+
+    .navLargeTop .navbar-brand {
+        height: 50px;
+    }
+    
+    .navLargeTop .navbar-brand img {
+        width: 100px;
+    }
+    
+    .navLargeTop ul li a {
+        padding: 15px 10px !important;
+    }
+    
+    .navLargeTop ul li a:hover::before {
+        height: 3px;
+    }
+    
+    .navLargeTop .langLink .langIconLink {
+        padding: 15px 0px !important;
+    }
+    
+    .navLargeTop .langLink .langAbbrLink {
+        padding: 15px 10px 0 !important;
+    }
+    /* ============== End navLarge =============== */
+    /* ################### End Global ################### */
+
     /* ============== Start go_up icon =============== */
     .go_up {
         top: 90%; 
@@ -708,6 +1080,190 @@ main .booking form .submitBtn:hover {
 
 /* ################ Medium devices (tablets, less than 992px) ################ */
 @media (max-width: 991.98px) {
+    /* ################### Start Global ################### */
+    /* ============== Start NavbarTop =============== */
+    .NavbarTop {
+        display: none !important;
+    }
+    /* ============== End NavbarTop =============== */
+    /* ============== Start NavbarMobile =============== */
+    .NavbarMobile {
+        display: flex !important;
+        flex-flow: row;
+        padding: 6px 0;
+        background: #fff;
+        transition: 0.3s ease-in-out;
+    }
+
+    .NavbarMobileTop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1030;
+        transition: 0.3s ease-in-out;
+    }
+
+    .NavbarMobile .navbar-brand {
+        height: 36px;
+        padding: 0 20px;
+    }
+    
+    .NavbarMobile .navbar-brand img {
+        height: 100%;
+        width: 80px;
+    }
+
+    .NavbarMobile .navMenuMobile {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        background-color: #fff;
+        transition: 0.3s;
+        padding: 70px 0px;
+    }
+
+    .NavbarMobile .navMenuMobile .closebtn {
+        content: '';
+        position: absolute;
+        background: #cc2121;
+        color: #fff;
+        font-size: 40px;
+        height: 40px;
+        width: 40px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .NavbarMobile .navMenuMobile a {
+        padding: 8px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        color: #111;
+        transition: 0.3s;
+        display: none;
+    }
+
+    .NavbarMobile .navMenuMobile a.active {
+        color: #cc2121;
+    }
+
+    .NavbarMobile .navMenuMobile a:hover {
+        color: #cc2121;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo {
+        display: flex;
+        flex-flow: column;
+        padding: 80px 20px 0;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactMatrial a {
+        padding: 0 0 0px;
+        font-size: 17px;
+        font-weight: 600;
+        color: #555;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactMatrial i {
+        padding: 0 10px;
+        color: #555;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial ul {
+        margin: 0;
+        padding: 0;
+    } 
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial ul a {
+        padding: 0;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial ul a i {
+        color: #fff !important;
+        height: 24px;
+        width: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2px;
+        border-radius: 5px;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial ul i.fa-facebook-f {
+        background: #3b5999;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial i.fa-twitter {
+        background: #55acee;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial ul i.fa-instagram {
+        background: #e4405f;
+    }
+
+    .NavbarMobile .navMenuMobile .contactInfo .contactSocial ul i.fa-linkedin-in {
+        background: #0077B5;
+    }
+
+    .NavbarMobile .navMobileOptions .navbar-toggler {
+        outline: none;
+    }
+    
+    .NavbarMobile .langLink .langIconLink i {
+        color: #A4C2F7;
+        background: #E3E7F2;
+        height: 25px;
+        width: 25px;
+        border: 2px solid #A4C2F7;
+        border-radius: 50%;
+        font-size: 13px;
+        margin: 0 12px;
+    }
+
+    .NavbarMobile .langFlagLink img{
+        width: 24px;
+        height: 24px;
+    }
+    /* ============== End NavbarMobile =============== */
+    /* ============== Start navLarge =============== */
+    .navLarge {
+        display: none !important;
+    }
+
+    /* ============== End navLarge =============== */
+    /* ============== Start footer =============== */
+    footer .aboutUsData .footerLogo {
+        padding-bottom: 8px;
+    }
+
+    footer .aboutUsData p,
+    footer .websiteMap p {
+        font-size: 20px;
+    } 
+
+    footer .websiteMap h2,
+    footer .contactWithUs h2 {
+        font-size: 1rem;
+    }
+
+    footer .websiteMap .websiteMapLinks a {
+        font-size: 17px;
+    }
+
+    footer .websiteMap .websiteMapLinks a:hover::after {
+        height: 2px;
+    }
+
+    footer .contactWithUs .contactMatrial {
+        font-size: 17px;
+    }
+    /* ============== End footer =============== */
+    /* ################### End Global ################### */
+
     /* ============== Start main =============== */
     /* ######### Start profileData ######### */
     /* $$$$$$$ Start totalProfileData $$$$$$$ */
@@ -842,6 +1398,48 @@ main .booking form .submitBtn:hover {
 
 /* ################ Small devices (landscape phones, less than 768px) ################ */
 @media (max-width: 767.98px) {
+    /* ################### Start Global ################### */
+    /* ============== Start footer =============== */
+    footer .aboutUsData .footerLogo {
+        padding-bottom: 15px;
+    }
+
+    footer .aboutUsData p {
+        padding: 15px 0;
+    }
+
+    footer .aboutUsData p,
+    footer .websiteMap p {
+        font-size: 20px;
+    } 
+
+    footer .websiteMap h2,
+    footer .contactWithUs h2 {
+        font-size: 1rem;
+    }
+
+    footer .websiteMap {
+        padding: 30px 15px;
+    }
+
+    footer .websiteMap .websiteMapLinks a {
+        font-size: 20px;
+    }
+
+    footer .websiteMap .websiteMapLinks a:hover::after {
+        height: 2px;
+    }
+
+    footer .contactWithUs {
+        padding: 30px 15px;
+    }
+
+    footer .contactWithUs .contactMatrial {
+        font-size: 17px;
+    }
+    /* ============== End footer =============== */
+    /* ################### End Global ################### */
+
     /* ============== Start main =============== */
     /* ######### Start profileData ######### */
     /* $$$$$$$ Start totalProfileData $$$$$$$ */
@@ -947,6 +1545,40 @@ main .booking form .submitBtn:hover {
 
 /* ################ Extra small devices (portrait phones, less than 576px) ################ */
 @media (max-width: 575.98px) {
+    /* ################### Start Global ################### */
+    /* ============== Start footer =============== */
+    footer .aboutUsData .footerLogo {
+        padding-bottom: 15px;
+    }
+
+    footer .aboutUsData p {
+        padding: 15px 0;
+    }
+
+    footer .aboutUsData p,
+    footer .websiteMap p {
+        font-size: 20px;
+    } 
+
+    footer .websiteMap h2,
+    footer .contactWithUs h2 {
+        font-size: 1rem;
+    }
+
+    footer .websiteMap {
+        padding: 20px 15px 10px;
+    }
+
+    footer .websiteMap .websiteMapLinks a {
+        font-size: 20px;
+    }
+
+    footer .contactWithUs {
+        padding: 20px 15px;
+    }
+    /* ============== End footer =============== */
+    /* ################### End Global ################### */
+
     /* ============== Start main =============== */
     /* ######### Start profileData ######### */
     /* $$$$$$$ Start totalProfileData $$$$$$$ */
