@@ -21,6 +21,10 @@
 
 /* ============== Start main =============== */
 /* ######### Start profileData ######### */
+/* $$$$$$$ Start profileInfo $$$$$$$ */
+main .profileData .totalProfileData .profileInfo .profileSocialMedia i:nth-child(1) {
+    padding-right: 0;
+}
 /* $$$$$$$ Start profileBranches $$$$$$$ */
 main .profileData .profileBranches .totalProfileBranches .branchLocation {
     padding: 10px 15px 10px 0;
@@ -75,5 +79,11 @@ main .booking {
 
 /* ################ Extra small devices (portrait phones, less than 576px) ################ */
 @media (max-width: 575.98px) {
-    
+    /* ============== Start main =============== */
+    /* ######### Start profileData ######### */
+    /* $$$$$$$ Start profileInfo $$$$$$$ */
+    main .profileData .totalProfileData .profileInfo .profileSocialMedia i:nth-child(1) {
+        padding: 0 5px;
+    }
+    /* ============== End main =============== */
 }

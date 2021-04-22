@@ -103,7 +103,7 @@
 .navLarge ul li a {
     color: #929292; 
     font-size: 16px;
-    padding: 40px 20px !important;
+    padding: 40px 10px !important;
     font-weight: 500;
     position: relative;
     transition: 0.3s ease-in-out;
@@ -387,13 +387,18 @@ main .profileData .totalProfileData .profileInfo .profileSpecialty {
 main .profileData .totalProfileData .profileInfo .profileSocialMedia {
     padding: 0 0 10px;
     margin-bottom: 0;
-    width: 65%;
+    /* width: 65%; */
 }
 
 main .profileData .totalProfileData .profileInfo .profileSocialMedia i {
     color: #07b2e6;
     font-size: 22px;
     cursor: pointer;
+    padding: 0 5px;
+}
+
+main .profileData .totalProfileData .profileInfo .profileSocialMedia i:nth-child(1) {
+    padding-right: 0;
 }
 
 main .profileData .totalProfileData .profileInfo .profileSocialMedia .fa-whatsapp:hover {
@@ -1122,7 +1127,10 @@ main .booking form .submitBtn:hover {
         top: 0;
         background-color: #fff;
         transition: 0.3s;
-        padding: 70px 0px;
+    }
+
+    .NavbarMobile .navMenuMobile .menuAllSections {
+        height: 80%;
     }
 
     .NavbarMobile .navMenuMobile .closebtn {
@@ -1155,10 +1163,15 @@ main .booking form .submitBtn:hover {
         color: #cc2121;
     }
 
+    .NavbarMobile .navMenuMobile ul.navbar-nav {
+        padding-top: 50px;
+    }
+
     .NavbarMobile .navMenuMobile .contactInfo {
         display: flex;
         flex-flow: column;
-        padding: 80px 20px 0;
+        padding: 0 20px;
+        /* padding: 80px 10px 0; */
     }
 
     .NavbarMobile .navMenuMobile .contactInfo .contactMatrial a {
@@ -1448,10 +1461,6 @@ main .booking form .submitBtn:hover {
         height: 222px;
     }
 
-    main .profileData .totalProfileData .profileInfo .profileSocialMedia {
-        width: 56%;
-    }
-
     main .profileData .totalProfileData .profileOptions {
         padding: 20px 0 0px;
     }
@@ -1602,7 +1611,6 @@ main .booking form .submitBtn:hover {
     }
 
     main .profileData .totalProfileData .profileInfo .profileSocialMedia {
-        width: 65%;
         padding: 7px 0 15px;
     }
 
