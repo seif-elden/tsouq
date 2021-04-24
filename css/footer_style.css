@@ -1,0 +1,230 @@
+/* ============== Start footer =============== */
+footer {
+    background: #142941;
+    padding: 40px 20px;
+}
+
+footer .aboutUsData .footerLogo {
+    padding-bottom: 8px;
+}
+
+footer .aboutUsData .footerLogo img {
+    width: 100px;
+    height: 45px;
+}
+
+footer .aboutUsData p {
+    border-top: 1px dashed #f9f9f9;
+    border-bottom: 1px dashed #f9f9f9;
+    line-height: 23px;
+    padding: 8px 0;
+    margin: 0;
+}
+
+footer .aboutUsData p,
+footer .websiteMap p {
+    color: #f9f9f9;
+    font-size: 1.25rem;
+} 
+
+footer .websiteMap h2,
+footer .contactWithUs h2 {
+    color: #b6b6b6; 
+    font-size: 1rem;
+}
+
+footer .websiteMap .websiteMapLinks li {
+    list-style: none;
+    padding: 4px 0;
+}
+
+footer .websiteMap .websiteMapLinks a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 1.25rem;
+    position: relative !important;
+}
+
+footer .websiteMap .websiteMapLinks a:hover::after {
+    top: 100%;
+    height: 3px;
+}
+
+footer .websiteMap .websiteMapLinks a::after {
+    position: absolute;
+    content: '';
+    height: 0px;
+    width: 100%;
+    background: #55acee;
+    top: 110%;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+footer .contactWithUs .contactMatrial {
+    border-bottom: 1px dashed #f9f9f9;
+    padding-bottom: 8px;
+    font-size: 1.25rem;
+}
+
+footer .contactWithUs .contactMatrial a {
+    font-weight: bolder;
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+footer .contactWithUs .contactMatrial a i {
+    color: #29c3ef;
+    font-size: 17px;
+    padding: 0 10px;
+}
+
+footer .contactSocial {
+    padding: 20px 0;
+}
+
+footer .contactSocial ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer .contactSocial ul a {
+    text-decoration: none;
+}
+
+footer .contactSocial ul a i {
+    color: #fff !important;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    border-radius: 5px;
+}
+
+footer .contactSocial ul a i.fa-facebook-f {
+    background: #3b5999;
+}
+
+footer .contactSocial ul a i.fa-twitter {
+    background: #55acee;
+}
+
+footer .contactSocial ul a i.fa-instagram {
+    background: #e4405f;
+}
+
+footer .contactSocial ul a i.fa-linkedin-in {
+    background: #0077B5;
+}
+/* ============== End footer =============== */
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) {
+    /* ============== Start footer =============== */
+    footer .aboutUsData .footerLogo {
+        padding-bottom: 8px;
+    }
+
+    footer .aboutUsData p,
+    footer .websiteMap p {
+        font-size: 20px;
+    } 
+
+    footer .websiteMap h2,
+    footer .contactWithUs h2 {
+        font-size: 1rem;
+    }
+
+    footer .websiteMap .websiteMapLinks a {
+        font-size: 17px;
+    }
+
+    footer .websiteMap .websiteMapLinks a:hover::after {
+        height: 2px;
+    }
+
+    footer .contactWithUs .contactMatrial {
+        font-size: 17px;
+    }
+    /* ============== End footer =============== */
+}
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) {
+    /* ============== Start footer =============== */
+    footer .aboutUsData .footerLogo {
+        padding-bottom: 15px;
+    }
+
+    footer .aboutUsData p {
+        padding: 15px 0;
+    }
+
+    footer .aboutUsData p,
+    footer .websiteMap p {
+        font-size: 20px;
+    } 
+
+    footer .websiteMap h2,
+    footer .contactWithUs h2 {
+        font-size: 1rem;
+    }
+
+    footer .websiteMap {
+        padding: 30px 15px;
+    }
+
+    footer .websiteMap .websiteMapLinks a {
+        font-size: 20px;
+    }
+
+    footer .websiteMap .websiteMapLinks a:hover::after {
+        height: 2px;
+    }
+
+    footer .contactWithUs {
+        padding: 30px 15px;
+    }
+
+    footer .contactWithUs .contactMatrial {
+        font-size: 17px;
+    }
+    /* ============== End footer =============== */
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) {
+    /* ============== Start footer =============== */
+    footer .aboutUsData .footerLogo {
+        padding-bottom: 15px;
+    }
+
+    footer .aboutUsData p {
+        padding: 15px 0;
+    }
+
+    footer .aboutUsData p,
+    footer .websiteMap p {
+        font-size: 20px;
+    } 
+
+    footer .websiteMap h2,
+    footer .contactWithUs h2 {
+        font-size: 1rem;
+    }
+
+    footer .websiteMap {
+        padding: 20px 15px 10px;
+    }
+
+    footer .websiteMap .websiteMapLinks a {
+        font-size: 20px;
+    }
+
+    footer .contactWithUs {
+        padding: 20px 15px;
+    }
+    /* ============== End footer =============== */
+}

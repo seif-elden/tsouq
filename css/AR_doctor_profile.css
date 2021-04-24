@@ -3,22 +3,6 @@
     direction: rtl;
 } 
 /* ################### End coconFont ################### */
-
-/* ################### Start Global ################### */
-.NavbarTop .contactInfo {
-    left: 0;
-}
-
-.NavbarTop .contactInfo .email {
-    border-right: 2px solid #fff;
-    padding-right: 10px;
-}
-
-.NavbarTop .contactInfo .phone {
-    padding-left: 10px;
-}
-/* ################### End Global ################### */
-
 /* ============== Start main =============== */
 /* ######### Start profileData ######### */
 /* $$$$$$$ Start profileInfo $$$$$$$ */
@@ -61,15 +45,6 @@ main .booking {
 
 /* ################ Medium devices (tablets, less than 992px) ################ */
 @media (max-width: 991.98px) {
-    /* ============== Start NavbarMobile =============== */
-    .NavbarMobile .navMenuMobile {
-        right: 0;
-    }
-
-    .NavbarMobile .navMenuMobile .closebtn {
-        right: 100%;
-    }
-    /* ============== End NavbarMobile =============== */
 }
 
 /* ################ Small devices (landscape phones, less than 768px) ################ */
