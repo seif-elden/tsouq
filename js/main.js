@@ -46,9 +46,7 @@ $(document).ready(function(){
         rtl:false,
         autoplay:true,
       });
-    }
-
-    
+    }  
 });
 
 

@@ -9,12 +9,15 @@
 main .profileData .totalProfileData .profileInfo .profileSocialMedia i:nth-child(1) {
     padding-right: 0;
 }
+
+.jq-ry-rated-group {
+    direction: ltr;
+}
 /* $$$$$$$ Start profileBranches $$$$$$$ */
 main .profileData .profileBranches .totalProfileBranches .branchLocation {
     padding: 10px 15px 10px 0;
 }
 /* $$$$$$$ Start profileBranches $$$$$$$ */
-
 /* $$$$$$$ Start doctorServices $$$$$$$ */
 main .profileData .doctorServices .totalServices .serviceDetails .exampleImg {
     padding-right: 0;
