@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/doctor_profile.css">
     <link rel="stylesheet" href="css/AR_doctor_profile.css">
+    <!-- <link rel="stylesheet" href='css/mapBox.css'> -->
 </head>
 <body>
     <!-- ============== Start go_up icon =============== -->
@@ -94,22 +95,22 @@
                                 <div class="locationMap">
                                     <a href="#" data-toggle="modal" data-target="#locationMap_1">الموقع على الخريطة</a>
                                 </div>
-                                <!-- $$$$$$$ Start modal of map (1) $$$$$$$ -->
+                                <!-- $$$$$$$ Start modal of map (2) $$$$$$$ -->
                                 <div class="modal fade" id="locationMap_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                                     <div class="modal-dialog mapModal" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header d-flex">
+                                        <div class="modal-content"> 
+                                            <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
                                             <div class="modal-body">  
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d712.5238608715254!2d31.20018303671682!3d30.47427270771645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf23e10419a7decdf!2z2YPZhNmK2Kkg2KfZhNit2KfYs9io2KfYqiDZiNin2YTYsNmD2KfYoSDYp9mE2KfYtdi32YbYp9i52YktINis2KfZhdi52Kkg2KjZhtmH2Kc!5e0!3m2!1sar!2seg!4v1617993806509!5m2!1sar!2seg" loading="lazy"></iframe>
+                                                <div class="mapLocationGPS" id="mapLocationGPS_1"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- $$$$$$$ End modal of map (1) $$$$$$$ -->
+                                <!-- $$$$$$$ End modal of map (2) $$$$$$$ -->
                             </div>
                             <!-- start branchLocation 2 -->
                             <div class="branchLocation">
@@ -134,7 +135,7 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">  
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d712.5238608715254!2d31.20018303671682!3d30.47427270771645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf23e10419a7decdf!2z2YPZhNmK2Kkg2KfZhNit2KfYs9io2KfYqiDZiNin2YTYsNmD2KfYoSDYp9mE2KfYtdi32YbYp9i52YktINis2KfZhdi52Kkg2KjZhtmH2Kc!5e0!3m2!1sar!2seg!4v1617993806509!5m2!1sar!2seg" loading="lazy"></iframe>
+                                                <div class="mapLocationGPS" id="mapLocationGPS_2"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -164,7 +165,7 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">  
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d712.5238608715254!2d31.20018303671682!3d30.47427270771645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf23e10419a7decdf!2z2YPZhNmK2Kkg2KfZhNit2KfYs9io2KfYqiDZiNin2YTYsNmD2KfYoSDYp9mE2KfYtdi32YbYp9i52YktINis2KfZhdi52Kkg2KjZhtmH2Kc!5e0!3m2!1sar!2seg!4v1617993806509!5m2!1sar!2seg" loading="lazy"></iframe>
+                                                <div class="mapLocationGPS" id="mapLocationGPS_3"></div>                                            
                                             </div>
                                         </div>
                                     </div>
@@ -578,19 +579,19 @@
     <script src="js/bootstrap_rtl_4.5.3.bundle.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.rateyo.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkcXBxLeAKoqBx_ODqBUX0bvgP8_NswbI&callback=initMap&libraries=&v=weekly">
+    </script>
     <script src="js/main.js"></script>    
+    <script>
 
-    <!-- ######### Start Script of Stars ######### -->
-    <script> 
+        // ######### Start Script of Stars #########
         // ######## properites of stars in profile section ########
         $("#profileOptionsStars").rateYo({
-            starWidth: "30px"
-        });
-
-        $("#profileOptionsStars").on('click',function(){
-            // this to return the value of stars when click on them
-            var normalFill = $("#profileOptionsStars").rateYo("option", "rating");   
-            alert("The Rate = " + normalFill);
+            starWidth: "30px",
+            rating: 4.5,
+            readOnly: true
         });
 
         // ######## properites of stars in clientNameAndRate section ########
@@ -598,36 +599,91 @@
         // ------------ number 1 ------------
         $(".clientNameAndRateStars_1").rateYo({
             starWidth: "20px",
-        });
-
-        $(".clientNameAndRateStars_1").on('click',function(){
-            // this to return the value of stars when click on them
-            var normalFill = $(".clientNameAndRateStars_1").rateYo("option", "rating");   
-            alert("The Rate = " + normalFill);
+            rating: 3.4,
+            readOnly: true
         });
 
         // ------------ number 2 ------------
-        $(".clientNameAndRateStars_2").rateYo({
+        $(".clientNameAndRateStars_2").rateYo({ 
             starWidth: "20px",
-        });
-
-        $(".clientNameAndRateStars_2").on('click',function(){
-            // this to return the value of stars when click on them
-            var normalFill = $(".clientNameAndRateStars_2").rateYo("option", "rating");   
-            alert("The Rate = " + normalFill);
+            rating: 4.5,
+            readOnly: true
         });
 
         // ------------ number 3 ------------
         $(".clientNameAndRateStars_3").rateYo({
             starWidth: "20px",
+            rating: 2,
+            readOnly: true
         });
 
-        $(".clientNameAndRateStars_3").on('click',function(){
-            // this to return the value of stars when click on them
-            var normalFill = $(".clientNameAndRateStars_3").rateYo("option", "rating");   
-            alert("The Rate = " + normalFill);
-        });
+
+        // ######### Start Script of maps #########
+        // ########### mapLocationGPS_1
+        function initMap() {
+            // ########## mapLocationGPS_1
+            mapLocationGPS_1 = new google.maps.Map(document.getElementById("mapLocationGPS_1"), 
+            {
+                center: { lat: 30.47413000377901, lng: 31.200109136262043},
+                zoom: 8,
+            });
+
+            var provieder_mapLocationGPS_1 =[{
+                position: new google.maps.LatLng(30.47413000377901,31.200109136262043),
+                type: "images/blue-dot.png",
+            }];
+
+            // Create markers.
+            for (let i = 0; i < provieder_mapLocationGPS_1.length; i++) {
+                const marker = new google.maps.Marker({
+                    position: provieder_mapLocationGPS_1[i].position,
+                    icon: provieder_mapLocationGPS_1[i].type,
+                    map: mapLocationGPS_1,
+                });
+            }
+
+            // ########## mapLocationGPS_2
+            mapLocationGPS_2 = new google.maps.Map(document.getElementById("mapLocationGPS_2"), 
+            {
+                center: { lat: 29.977455771807318, lng: 31.132496902210995},
+                zoom: 8,
+            });
+
+            var provieder_mapLocationGPS_2 =[{
+                position: new google.maps.LatLng(29.977455771807318,31.132496902210995),
+                type: "images/blue-dot.png",
+            }];
+
+            // Create markers.
+            for (let i = 0; i < provieder_mapLocationGPS_2.length; i++) {
+                const marker = new google.maps.Marker({
+                    position: provieder_mapLocationGPS_2[i].position,
+                    icon: provieder_mapLocationGPS_2[i].type,
+                    map: mapLocationGPS_2,
+                });
+            }
+
+            // ########## mapLocationGPS_3
+            mapLocationGPS_3 = new google.maps.Map(document.getElementById("mapLocationGPS_3"), 
+            {
+                center: { lat: 31.501548, lng: 34.454571},
+                zoom: 8,
+            });
+
+            var provieder_mapLocationGPS_3 =[{
+                position: new google.maps.LatLng(31.501548,34.454571),
+                type: "images/blue-dot.png",
+            }];
+
+            // Create markers.
+            for (let i = 0; i < provieder_mapLocationGPS_3.length; i++) {
+                const marker = new google.maps.Marker({
+                    position: provieder_mapLocationGPS_3[i].position,
+                    icon: provieder_mapLocationGPS_3[i].type,
+                    map: mapLocationGPS_3,
+                });
+            }                
+        }
     </script>
-    <!-- ######### End Script of Stars ######### -->
 </body>
 </html>
