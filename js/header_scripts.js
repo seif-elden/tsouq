@@ -14,7 +14,7 @@ $(document).ready(function(){
         } else if(bodyWidth >= 310 && bodyWidth <= 557){
           $(".NavbarMobile .navMenuMobile").css('width','60%');
         }
-  
+   
         $('.NavbarMobile .navMenuMobile a').css('display','flex');
         $('body').css('background-colo'); 
       }

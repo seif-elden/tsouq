@@ -47,6 +47,7 @@ $(document).ready(function(){
         autoplay:true,
       });
     }  
+   // ######### Start Script of Stars #########
 });
 
 
