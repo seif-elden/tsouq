@@ -1,11 +1,23 @@
+@font-face {
+    font-family: 'coconFont';
+    src: url('../fonts/cocon-next-arabic.ttf');
+}
+
+* {
+    font-family: 'coconFont';
+} 
 /* ============== Start NavbarTop =============== */
 .NavbarTop {
-    background: #12758b;
+    background: #12758b; 
     padding: 10px 0;
 }
 
 .NavbarTop ul {
     margin: 0;
+}
+
+.navLarge ul a { 
+    text-align: center;
 }
 
 .NavbarTop ul a {
@@ -133,9 +145,16 @@
     display: none;
 }
 
-.navLarge .langLink .langIconLink {
-    padding: 35px 20px !important;
+.navLarge .langLink .langIconLink,
+.navLarge .langLink .langIconLinkAfterLogin {
+    padding: 0;
     transition: 0.3s ease-in-out;
+}
+
+.navLarge .langLink .langIconLink a,
+.navLarge .langLink .langIconLinkAfterLogin a {
+    padding: 0 !important;
+    text-decoration: none;
 }
 
 .navLarge .langLink .langIconLink i {
@@ -147,10 +166,52 @@
     border-radius: 50%;
 }
 
+.navLarge .langLink .langIconLinkAfterLogin a {
+    margin: 0 7px;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin i.fa-bell {
+    color: #000;
+    height: 30px;
+    width: 30px;
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin i.fa-user {
+    color: #A4C2F7;
+    background: #E3E7F2;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #A4C2F7;
+    border-radius: 50%;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin a .fa-bell {
+    position: relative
+}
+
+.navLarge .langLink .langIconLinkAfterLogin a span {
+    position: absolute;
+    top: -12px;
+    left: -7px;
+    background: rgb(187, 0, 0);
+    color: #fff;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin img {
+    height: 30px;
+    width: 30px;
+}
+
 .navLarge .langLink .langAbbrLink {
     color: #111;
     font-size: 20px;
-    padding: 30px 20px 0 !important;
+    padding: 0 20px 0px !important;
     transition: 0.3s ease-in-out;
 }
 
@@ -165,6 +226,7 @@
 
 .navLargeTop .navbar-brand {
     height: 55px;
+    margin: 0;
 }
 
 .navLargeTop .navbar-brand img {
@@ -184,7 +246,7 @@
 }
 
 .navLargeTop .langLink .langAbbrLink {
-    padding: 15px 20px 0 !important;
+    padding: 0 10px !important;
 }
 /* ============== End navLarge =============== */
 
@@ -195,6 +257,7 @@
     .navLarge .navbar-brand {
         height: 60px;
         width: 150px;
+        margin: 0;
     }
 
     .navLarge .navbar-brand img {
@@ -207,19 +270,34 @@
     }
 
     .navLarge ul li a {
-        padding: 40px 10px !important;
+        padding: 40px 7px !important;
     }
 
-    .navLarge .langLink a::before {
-        display: none;
+    .navLarge .langLink .langIconLinkAfterLogin a {
+        margin: 0 7px;
     }
 
-    .navLarge .langLink .langIconLink {
-        padding: 35px 0px !important;
+    .navLarge .langLink .langIconLinkAfterLogin i.fa-bell {
+        height: 25px;
+        width: 25px;
+    }
+
+    .navLarge .langLink .langIconLinkAfterLogin i.fa-user {
+        height: 25px;
+        width: 25px;
+        font-size: 13px;
+    }
+
+    .navLarge .langLink .langIconLinkAfterLogin a span {
+        top: -15px;
+        left: -10px;
+        height: 22px;
+        width: 22px;
+        font-size: 13px;
     }
 
     .navLarge .langLink .langAbbrLink {
-        padding: 30px 10px 0 !important;
+        padding: 0 15px 0px !important;
     }
 
     .navLargeTop .navbar-brand {
@@ -231,19 +309,19 @@
     }
     
     .navLargeTop ul li a {
-        padding: 15px 10px !important;
+        padding: 15px 7px !important;
     }
     
     .navLargeTop ul li a:hover::before {
         height: 3px;
     }
-    
-    .navLargeTop .langLink .langIconLink {
-        padding: 15px 0px !important;
+
+    .navLargeTop .langLink .langIconLinkAfterLogin a span {
+        top: -10px;
     }
     
     .navLargeTop .langLink .langAbbrLink {
-        padding: 15px 10px 0 !important;
+        padding: 0 10px !important;
     }
     /* ============== End navLarge =============== */
     /* ################### End Global ################### */
@@ -338,7 +416,6 @@
         display: flex;
         flex-flow: column;
         padding: 0 20px;
-        /* padding: 80px 10px 0; */
     }
 
     .NavbarMobile .navMenuMobile .contactInfo .contactMatrial a {
@@ -392,21 +469,81 @@
     .NavbarMobile .navMobileOptions .navbar-toggler {
         outline: none;
     }
-    
-    .NavbarMobile .langLink .langIconLink i {
-        color: #A4C2F7;
-        background: #E3E7F2;
-        height: 25px;
-        width: 25px;
-        border: 2px solid #A4C2F7;
-        border-radius: 50%;
-        font-size: 13px;
-        margin: 0 12px;
-    }
-
+   
     .NavbarMobile .langFlagLink img{
         width: 24px;
         height: 24px;
+    }
+
+    .NavbarMobile .langLink .langIconLink,
+    .NavbarMobile .langLink .langIconLinkAfterLogin {
+        padding: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .NavbarMobile .langLink .langIconLink a,
+    .NavbarMobile .langLink .langIconLinkAfterLogin a {
+        padding: 0 !important;
+        text-decoration: none;
+    }
+
+    .NavbarMobile .langLink .langIconLink i {
+        color: #A4C2F7;
+        background: #E3E7F2;
+        height: 30px;
+        width: 30px;
+        border: 2px solid #A4C2F7;
+        border-radius: 50%;
+        margin: 0 7px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin a {
+        margin: 0 7px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin i.fa-bell {
+        color: #000;
+        height: 30px;
+        width: 30px;
+        font-size: 22px;
+        border-radius: 50%;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin i.fa-user {
+        color: #A4C2F7;
+        background: #E3E7F2;
+        height: 30px;
+        width: 30px;
+        border: 2px solid #A4C2F7;
+        border-radius: 50%;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin a .fa-bell {
+        position: relative
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin a span {
+        position: absolute;
+        top: -10px;
+        left: -5px;
+        background: rgb(187, 0, 0);
+        color: #fff;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        font-size: 12px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .NavbarMobile .langLink .langAbbrLink {
+        color: #111;
+        font-size: 20px;
+        padding: 0 20px 0px !important;
+        transition: 0.3s ease-in-out;
     }
     /* ============== End NavbarMobile =============== */
     /* ============== Start navLarge =============== */
@@ -414,4 +551,63 @@
         display: none !important;
     }
     /* ============== End navLarge =============== */
+}
+
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) {
+
+    .NavbarMobile .navbar-brand {
+        margin: 0;
+    }
+
+    .NavbarMobile .langLink .langIconLink,
+    .NavbarMobile .langLink .langIconLinkAfterLogin {
+        padding: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .NavbarMobile .langLink .langIconLink a,
+    .NavbarMobile .langLink .langIconLinkAfterLogin a {
+        padding: 0 !important;
+        text-decoration: none;
+    }
+
+    .NavbarMobile .langLink .langIconLink i {
+        border-radius: 50%;
+        margin: 0 7px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin a {
+        margin: 0 3px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin i.fa-bell {
+        height: 30px;
+        width: 30px;
+        font-size: 22px;
+        border-radius: 50%;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin a .fa-bell {
+        position: relative
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin a span {
+        top: -10px;
+        left: -5px;
+        height: 20px;
+        width: 20px;
+        font-size: 12px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .NavbarMobile .langLink .langAbbrLink {
+        font-size: 20px;
+        padding: 0 20px 0px !important;
+    }
 }

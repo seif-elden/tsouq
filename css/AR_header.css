@@ -1,7 +1,8 @@
 /* ################### Start Global ################### */
 * {
-    direction: rtl;
+    direction: rtl; 
 } 
+
 .NavbarTop .contactInfo {
     left: 0;
 }

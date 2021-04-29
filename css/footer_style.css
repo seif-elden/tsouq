@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'coconFont';
+    src: url('../fonts/cocon-next-arabic.ttf');
+}
+
+* {
+    font-family: 'coconFont';
+} 
 /* ============== Start footer =============== */
 footer {
     background: #142941;

@@ -17,6 +17,10 @@ main .profileData .totalProfileData .profileInfo .profileSocialMedia i:nth-child
 main .profileData .profileBranches .totalProfileBranches .branchLocation {
     padding: 10px 15px 10px 0;
 }
+
+main .profileData .mapContainerRow {
+    margin-right: -30px !important;
+}
 /* $$$$$$$ Start profileBranches $$$$$$$ */
 /* $$$$$$$ Start doctorServices $$$$$$$ */
 main .profileData .doctorServices .totalServices .serviceDetails .exampleImg {
