@@ -114,6 +114,60 @@ main .profileData .totalProfileData .profileInfo .profileShare {
     font-size: 22px;
 }
 
+main .profileData .totalProfileData .profileInfo .profileShare a {
+    text-decoration: none;
+}
+
+main .profileData .totalProfileData .profileInfo .profileShare span {
+    color: #07b2e6 !important;
+}
+
+main .modal .profileShareIcons .modal-body h2 {
+    color: #07b2e6;
+    font-size: 25px;
+}
+
+main .modal .profileShareIcons .modal-body .shareSocialMediaIcons {
+    padding: 10px 0;
+}
+
+main .modal .profileShareIcons .modal-body .totalAllShareSocialMediaIcons {
+    align-items: center;
+}
+
+main .modal .profileShareIcons .modal-body .shareSocialMediaIcons a {
+    color: #07b2e6;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+main .modal .profileShareIcons .modal-body .shareSocialMediaIcons a i {
+    height: 40px;
+    width: 40px;
+    /* background: red; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+main .modal .profileShareIcons .modal-body .shareSocialMediaIcons a .fa-facebook-f {
+    background: #3b5998;
+}
+main .modal .profileShareIcons .modal-body .shareSocialMediaIcons a .fa-twitter {
+    background: #55acee;
+}
+main .modal .profileShareIcons .modal-body .shareSocialMediaIcons a .fa-whatsapp {
+    background: #25D366;
+}
+main .modal .profileShareIcons .modal-body .shareSocialMediaIcons a .fa-google-plus-g {
+    background: #bb0000;
+}
+main .modal .profileShareIcons .modal-body .shareSocialMediaIcons a .fa-linkedin-in {
+    background: #0088cc;
+}
+
 main .profileData .totalProfileData .profileInfo .profileReveal span,
 main .profileData .totalProfileData .profileInfo .profileConsultation span,
 main .profileData .totalProfileData .profileInfo .profileShare i {
