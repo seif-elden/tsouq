@@ -43,7 +43,41 @@
                             </div>
                             <h2 class="profileReveal">سعر الكشف <span>60 جنية</span></h2>
                             <h2 class="profileConsultation">سعر الأستشاره <span>80 جنية</span></h2>
-                            <h2 class="profileShare"><a href="#"><i class="fas fa-share-alt"></i></a> شارك</h2>
+                            <h2 class="profileShare d-flex align-items-center">
+                                <a href="#" data-toggle="modal" data-target="#profileShareIcons"><i class="fas fa-share-alt"></i> <span>شارك</span></a> 
+                            </h2>
+                            <!-- $$$$$$$ Start modal of profileShareIcons $$$$$$$ -->
+                            <div class="modal fade" id="profileShareIcons" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog profileShareIcons" role="document">
+                                    <div class="modal-content"> 
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">  
+                                            <h2 class="text-center"><i class="fas fa-share-alt"></i> <span>شارك</span></h2>
+                                            <div class="shareSocialMediaIcons d-flex justify-content-center">
+                                                <div class="totalAllShareSocialMediaIcons col-7 d-flex justify-content-between">
+                                                    <a class="d-flex align-items-center" href="http://www.facebook.com/share.php?u=YOUR_URL" target="_blank">
+                                                        <i class="fab fa-facebook"></i>
+                                                    </a>
+                                                    <a class="d-flex align-items-center" href="https://web.whatsapp.com/send?text=YOUR_URL" target="_blank">
+                                                        <i class="fab fa-whatsapp"></i>
+                                                    </a>
+                                                    <a class="d-flex align-items-center" href="https://twitter.com/share?url=YOUR_URL&amp;text=YOUR_TITLE&amp;hashtags=YOUR_HASHTAGS" target="_blank">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                    <a class="d-flex align-items-center" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=YOUR_URL" target="_blank">
+                                                        <i class="fab fa-linkedin-in"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- $$$$$$$ End modal of profileShareIcons $$$$$$$ -->
                         </div>
                         <!-- start profileOptions -->
                         <div class="profileOptions d-flex flex-column justify-content-center align-items-center text-center col-sm-12 col-md-3">
@@ -270,10 +304,10 @@
                                             </div>
                                             <div class="modal-body">  
                                                 <div class="prevWorkSlider">
-                                                    <img src="images/doctor.png" alt="">
-                                                    <img src="images/doctor.png" alt="">
-                                                    <img src="images/doctor.png" alt="">
-                                                    <img src="images/doctor.png" alt="">
+                                                    <img src="images/doctor.png" title="1">
+                                                    <img src="images/doctor.png" title="2">
+                                                    <img src="images/doctor.png" title="3">
+                                                    <img src="images/doctor.png" title="4">
                                                 </div>
                                             </div>
                                         </div>
