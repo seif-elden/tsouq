@@ -11,6 +11,10 @@
 .NavbarTop .contactInfo .phone {
     padding-right: 10px;
 }
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu {
+    left: -300% !important;    
+}
 /* ################### End Global ################### */
 
 /* ################ Medium devices (tablets, less than 992px) ################ */
@@ -22,6 +26,10 @@
 
     .NavbarMobile .navMenuMobile .closebtn {
         left: 100%;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu {
+        left: -300% !important;
     }
     /* ============== End NavbarMobile =============== */
 }

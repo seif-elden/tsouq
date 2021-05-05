@@ -157,6 +157,61 @@
     text-decoration: none;
 }
 
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown a::after {
+    display: none !important;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu {
+    margin-top: 10px;
+    border-radius: 0;
+    padding: 5px;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item {
+    margin: 0;
+    padding: 5px 0 !important;
+    color: #07b2e6;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item i {
+    margin: 0 2px;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item:hover {
+    color: #fff;
+    background: #12758b;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item {
+    text-align: right;
+    padding: 5px 10px !important;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item p {
+    margin: 0;
+    color: #000;
+}
+
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item:hover p {
+    color: #fff;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item .timeDate {
+    color: #9e9d9d;
+}
+
+.navLarge .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item:hover .timeDate {
+    color: #c7c4c4;
+}
+
+
 .navLarge .langLink .langIconLink i {
     color: #A4C2F7;
     background: #E3E7F2;
@@ -542,8 +597,62 @@
     .NavbarMobile .langLink .langAbbrLink {
         color: #111;
         font-size: 20px;
-        padding: 0 20px 0px !important;
+        padding: 0 10px 0px !important;
         transition: 0.3s ease-in-out;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown a::after {
+        display: none !important;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu {
+        /* right: -150% !important; */
+        margin-top: 10px;
+        border-radius: 0;
+        padding: 5px;
+        position: absolute;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item {
+        margin: 0;
+        padding: 5px 0 !important;
+        color: #07b2e6;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item i {
+        margin: 0 2px;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item:hover {
+        color: #fff;
+        background: #12758b;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item {
+        text-align: right;
+        padding: 5px 10px !important;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item h2 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item p {
+        margin: 0;
+        color: #000;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item:hover p {
+        color: #fff;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item .timeDate {
+        color: #9e9d9d;
+    }
+
+    .NavbarMobile .langLink .langIconLinkAfterLogin li.dropdown .dropdown-menu .dropdown-item:hover .timeDate {
+        color: #c7c4c4;
     }
     /* ============== End NavbarMobile =============== */
     /* ============== Start navLarge =============== */
@@ -608,6 +717,6 @@
 
     .NavbarMobile .langLink .langAbbrLink {
         font-size: 20px;
-        padding: 0 20px 0px !important;
+        padding: 0 10px 0px !important;
     }
 }
