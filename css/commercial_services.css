@@ -1,0 +1,418 @@
+/* ################### Start Global ################### */
+/* body {
+    overflow-X: hidden;
+}  */
+
+@font-face {
+    font-family: 'coconFont';
+    src: url('../fonts/cocon-next-arabic.ttf');
+}
+
+* {
+    font-family: 'coconFont';
+}
+/* ################### End Global ################### */
+/* ============== Start go_up icon =============== */
+.go_up {
+    position: fixed;
+    right: 40px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #fff;
+    border: 2px solid #07b2e6;
+    box-shadow: 0 0 10px #07b2e6;
+    color: #07b2e6;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 55 !important;
+}
+/* ============== End go_up icon =============== */ 
+/* ============== Start titleHeader =============== */
+.titleHeader {
+    padding: 60px 0;
+    background-image: url('../images/titleHeader.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.titleHeader h2 {
+    color: #fff;
+}
+/* ============== Start titleHeader =============== */
+
+/* ============== Start main =============== */
+main {
+    background: #f1eeee;
+    padding: 40px 0 20px;
+}
+
+main .container {
+    max-width: 1300px;
+}
+
+/* ######### Start merchantData_Sorting ######### */
+main .merchantData_Sorting {
+    padding: 0;
+}
+
+/* ----- Start merchantData ----- */
+main .allMerchantData_Sorting .merchantData {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+main .allMerchantData_Sorting .merchantData h2 {
+    margin: 0;
+}
+
+main .allMerchantData_Sorting .merchantData .merchantDataTitle h2 {
+    color: #04bdf5;
+    font-size: 25px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+main .allMerchantData_Sorting .merchantData .merchantDataPersonnel img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+main .allMerchantData_Sorting .merchantData .merchantDataPersonnel .merchantName {
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+main .allMerchantData_Sorting .merchantData .merchantDataPersonnel .merchantType {
+    padding: 5px 0;
+    font-size: 25px;
+    color: #04bdf5;
+}
+
+main .allMerchantData_Sorting .merchantData .merchantDataPersonnel .merchantStatus {
+    color: #666;
+    font-size: 20px;
+}
+
+main .allMerchantData_Sorting .merchantData .merchantDataPersonnel .merchantStatus span {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    top: 20%;
+    margin: 0 5px;
+}
+
+main .allMerchantData_Sorting .merchantData .merchantDataPersonnel .merchantStatus .onlineDot {
+    background: #00cb36;
+}
+
+main .allMerchantData_Sorting .merchantData .merchantDataPersonnel .merchantStatus .offlineDot {
+    background: #d62303;
+}
+
+main .allMerchantData_Sorting .merchantData .merchantDataPersonnel .merchantRateStars {
+    padding: 5px 0;
+}
+
+main .allMerchantData_Sorting .merchantData .merchantDataPersonnel .storeInfo {
+    padding: 30px 0;
+}
+
+main .allMerchantData_Sorting .merchantData .merchantDataPersonnel .storeInfo i {
+    color: #848181;
+    font-size: 35px;
+}
+
+main .allMerchantData_Sorting .merchantData .merchantDataPersonnel .storeInfo a {
+    text-decoration: none;
+    color: #fff;
+    background: #04bdf5;
+    padding: 8px 15px;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* ----- Start CategoriesAndSorting_Sec ----- */
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec {
+    background: #fff;
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    padding: 30px 20px 5px;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .searchSection {
+    position: relative;
+    padding: 0;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .searchSection input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #b4b4b4;
+    outline: none;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .searchSection input::placeholder {
+    color: #b4b4b4;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .searchSection::before {
+    position: absolute;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f002";
+    color: #07b2e6 !important;
+    top: 20%;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .categoriesSorting {
+    padding: 10px 0;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .sortingType {
+    padding: 0;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .categoriesSorting .categoriesSortingTitle,
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .sortingType .sortingTypeTitle {
+    padding: 10px 0 10px;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .categoriesSorting h2 {
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: #04bdf5;
+    color: #fff;
+    font-size: 23px;
+    margin: 0;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxCateSec label,
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxSortSec label {
+    cursor: pointer;    
+    color: #b4b4b4;
+    font-size: 18px;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxCateSec input[type='checkbox'],
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxSortSec input[type='checkbox'] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+    outline: none;
+    font-size: inherit;
+    cursor: pointer;
+    width: 1.0em;
+    height: 1.0em;
+    background: white;
+    border-radius: 0.25em;
+    border: 0.125em solid #b4b4b4;
+    position: relative;
+    cursor: pointer;
+}
+  
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxCateSec input[type='checkbox']:checked,
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxSortSec input[type='checkbox']:checked {
+    background: #04bdf5;
+    border: 0.125em solid #04bdf5;
+}
+  
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxCateSec input[type='checkbox']:checked:after,
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxSortSec input[type='checkbox']:checked:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f00c";
+    position: absolute;
+    font-size: 75%;
+    left: 0.0625em;
+    top: -0.25em;
+    color: #fff;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxCateSec label:hover,
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxSortSec label:hover {
+    color: #04bdf5;
+} 
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .sortingType h2 {
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: #04bdf5;
+    color: #fff;
+    font-size: 23px;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .hidingSorting {
+    display: none;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .showMore {
+    padding-top: 15px;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .showMore a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .showMore a span {
+    color: #707070;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .showMore a i {
+    color: #07b2e6;
+    transition: 0.3s ease-in-out;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .showMore a:hover i {
+    transform: translateY(5px);
+}
+/* ######### End merchantData_Sorting ######### */
+/* ######### Start merchantProducts ######### */
+main .merchantProducts {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    padding: 10px 2px;
+}
+
+main .merchantProducts .row {
+    margin: 0 !important;
+}
+
+main .merchantProducts .productSecContainer {
+    /* background: red; */
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+ 
+main .merchantProducts .productSec {
+    padding: 50px 10px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    position: relative;
+}
+
+main .merchantProducts .productSec .discountOffer {
+    position: absolute;
+    background-color: #04bdf5;
+    padding: 5px 10px;
+    top: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+main .merchantProducts .productSec .prodImg img {
+    width: 100%;
+}
+
+main .merchantProducts .productSec .prodDetails {
+    padding: 5px 0;
+}
+
+main .merchantProducts .productSec .prodDetails p {
+    margin: 0;
+    font-size: 18px;
+    color: #111111;
+}
+
+main .merchantProducts .productSec .prodPrice {
+    padding: 5px 0;
+}
+
+main .merchantProducts .productSec .prodPrice p {
+    margin: 0;
+    font-size: 25px;
+    color: #04bdf5;
+    font-weight: 600;
+}
+
+main .merchantProducts .productSec .prodPrice p span {
+    color: #707070;
+    font-size: 20px;
+    margin: 0 10px;
+    font-weight: normal;
+}
+
+main .merchantProducts .productSec .prodReviews a {
+    color: #888888;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+main .merchantProducts .productSec .prodAddToCartBtn {
+    padding-top: 15px;
+}
+
+main .merchantProducts .productSec .prodAddToCartBtn a {
+    color: #fff;
+    background: #04bdf5;
+    padding: 10px 0; 
+    font-size: 18px;
+    text-decoration: none;
+}
+/* ######### End merchantProducts ######### */
+
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1339.98px) {
+    .container {
+        max-width: 1150px !important;
+    }
+    /* ============== Start go_up icon =============== */
+    .go_up {
+        top: 90%; 
+    }
+    /* ============== End go_up icon =============== */ 
+}
+
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px !important;
+    }
+    /* ============== Start go_up icon =============== */
+    .go_up {
+        top: 90%; 
+    }
+    /* ============== End go_up icon =============== */ 
+}
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) {
+    /* ============== Start main =============== */
+    aside {
+        padding: 0 !important;
+        margin-bottom: 15px;
+    }
+
+    main aside .CategoriesAndSorting_Sec {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    /* ============== End main =============== */
+}
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 545px !important;
+    }
+    /* ============== Start main =============== */
+    main .merchantProducts .row {
+        justify-content: center;
+    }
+    /* ============== End main =============== */
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) {
+}

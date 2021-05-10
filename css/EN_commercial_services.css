@@ -1,0 +1,60 @@
+/* * {
+    direction: ltr !important;
+}   */
+/* ============== Start main =============== */
+/* ----- Start CategoriesAndSorting_Sec ----- */
+main .merchantData_Sorting {
+    padding-right: 15px;
+}
+
+.checkboxCateSec {
+    /* background: red; */
+    flex-flow: column-reverse !important;
+    /* display: rtl !important; */
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxCateSec label,
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxSortSec label {
+    /* background: green;
+    padding-right: auto !important; */
+    display: flex;
+    align-items: center;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxCateSec label input,
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .checkboxSortSec label input {
+    margin-right: 5px;
+}
+
+/* ----- Start CategoriesAndSorting_Sec ----- */
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .searchSection input {
+    padding-right: 35px;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .searchSection::before {
+    right: 15px;
+}
+
+/* ----- Start merchantProducts ----- */
+main .merchantProducts .productSec .discountOffer {
+    left: 0;
+}
+/* ============== End main =============== */
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    
+}
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) {
+}
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) {
+    
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) {
+}

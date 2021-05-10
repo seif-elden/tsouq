@@ -1,0 +1,49 @@
+/* ################### Start coconFont ################### */
+* {
+    direction: rtl;
+} 
+
+/* this for stars */
+.jq-ry-rated-group {
+    direction: ltr;
+}
+/* ################### End coconFont ################### */
+
+
+/* ============== Start main =============== */
+main .merchantData_Sorting {
+    padding-left: 15px;
+}
+/* ----- Start CategoriesAndSorting_Sec ----- */
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .searchSection input {
+    padding-left: 35px;
+}
+
+main .allMerchantData_Sorting .CategoriesAndSorting_Sec .searchSection::before {
+    left: 15px;
+    transform: scaleX(-1);
+}
+
+/* ----- Start merchantProducts ----- */
+main .merchantProducts .productSec .discountOffer {
+    right: 0;
+}
+/* ============== End main =============== */
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    
+}
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) {
+}
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) {
+
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) {
+}
