@@ -1,0 +1,207 @@
+/* ################### Start Global ################### */
+
+@font-face {
+    font-family: 'coconFont';
+    src: url('../fonts/cocon-next-arabic.ttf');
+}
+
+* {
+    font-family: 'coconFont';
+}
+/* ################### End Global ################### */
+/* ============== Start go_up icon =============== */
+.go_up {
+    position: fixed;
+    right: 40px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #fff;
+    border: 2px solid #07b2e6;
+    box-shadow: 0 0 10px #07b2e6;
+    color: #07b2e6;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 55 !important;
+}
+/* ============== End go_up icon =============== */ 
+/* ============== Start titleHeader =============== */
+.titleHeader {
+    padding: 60px 0;
+    background-image: url('../images/titleHeader.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.titleHeader h2 {
+    color: #fff;
+}
+/* ============== end titleHeader =============== */
+/* ============== Start main =============== */
+
+.sec-title{
+    margin: 20px;
+}
+
+.sec-title span{
+    color:#07b2e6
+}
+
+/* start carousel */
+
+
+.my-carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 30px;
+  color: rgb(46, 25, 25);
+}
+
+.my-carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 30px;
+  color: rgb(46, 25, 25);
+}
+/* enf carousel */
+
+/* start product */
+.product-title{
+    font-size: 23px;
+}
+
+.curancy{
+    color: #07b2e6;
+    font-size: 20px;
+}
+
+.owner-name{
+    color: #07b2e6;
+    font-size: 20px;
+}
+.owner-description{
+    margin-top: -15px;
+}
+
+.product-cart{
+    padding: 8px;
+    border-radius: 5px;
+    background: #07b2e6;
+    color: #fff;
+    font-size: 23px;
+    margin :5px;
+}
+
+.product-fav{
+    padding: 8px ;
+    border-radius: 5px;
+    background: #a7c3cc;
+    color: #fff;
+    font-size: 23px;
+    margin :5px;
+
+}
+
+.product-details{
+    margin: 5px;
+
+}
+
+.product-details li {
+    list-style : none;
+}
+
+.product-details li::before {
+    content: "\2022";  
+    color: #07b2e6; 
+    font-size: 25px;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+  }
+
+.detail-title{
+    font-size: large;
+}
+
+.product-ratring{
+    margin: 5px;
+}
+.product-ratring h2{
+    color: #07b2e6; 
+}
+
+/* end product */
+
+/* start rateing */
+
+
+.be-img-comment {
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-bottom: 15px;
+}
+
+.be-ava-comment {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.be-comment-content {
+    margin-right: 70px;
+}
+
+
+
+.be-comment-name {
+    font-size: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+}
+
+
+
+.be-comment-rate {
+    margin: 5px;
+    text-align: right;
+}
+
+.be-comment-text {
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    display: block;
+    background: #f6f6f7;
+    border: 1px solid #edeff2;
+    padding: 15px 20px 20px 20px;
+}
+/* end rateing */
+
+/* start similar-item */
+.similar h2{
+    color: #07b2e6;
+}
+
+
+
+.similar-image{
+    margin: 15px;
+}
+
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+
+}
+
+.swiper-img{
+
+}
+/* end similar-item */
+
+
+/* ============== end main =============== */
+
