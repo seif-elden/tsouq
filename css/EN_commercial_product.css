@@ -53,13 +53,13 @@
 
 .my-carousel-control-next-icon:after
 {
-  content: '>';
+  content: '<';
   font-size: 30px;
   color: rgb(46, 25, 25);
 }
 
 .my-carousel-control-prev-icon:after {
-  content: '<';
+  content: '>';
   font-size: 30px;
   color: rgb(46, 25, 25);
 }
@@ -184,6 +184,7 @@
     background-color: #8e949698;
 }
 
+
 /* end product */
 
 /* start rateing */
@@ -192,7 +193,7 @@
 .be-img-comment {
     width: 60px;
     height: 60px;
-    float: right;
+    float: left;
     margin-bottom: 15px;
 }
 
@@ -203,7 +204,7 @@
 }
 
 .be-comment-content {
-    margin-right: 70px;
+    margin-left: 70px;
 }
 
 
@@ -217,7 +218,7 @@
 
 .be-comment-rate {
     margin: 5px;
-    text-align: right;
+    text-align: left;
 }
 
 .be-comment-text {
