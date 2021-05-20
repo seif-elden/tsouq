@@ -53,13 +53,13 @@
 
 .my-carousel-control-next-icon:after
 {
-  content: '<';
+  content: '>';
   font-size: 30px;
   color: rgb(46, 25, 25);
 }
 
 .my-carousel-control-prev-icon:after {
-  content: '>';
+  content: '<';
   font-size: 30px;
   color: rgb(46, 25, 25);
 }
@@ -181,7 +181,7 @@
     border-radius: 5px;
     text-align: center;
     padding: 10px;
-    background-color: #8e949698;
+    background-color: #8e94969f;
 }
 
 
