@@ -67,38 +67,40 @@
                                 <h2 class="text-center">المده</h2>
                             </div>
                             <div class="checkboxCateSec d-flex flex-column">
-                                
-                                <label for="day">
-                                    <input type="radio" id="day" name="duration"  value="day">
-                                    اليوم
-                                </label>
+                                    <label for="day">
+                                        <input type="radio" id="day" name="duration"  value="day">
+                                        اليوم
+                                    </label>
 
-                                <label for="day">
-                                    <input type="radio" id="week" name="duration" checked value="week">
-                                    اسبوع
-                                </label>
-                                
-                                <label for="month">
-                                    <input type="radio" id="month" name="duration"  value="month">
-                                    الشهر
-                                </label>
-                                
-                                <label for="year">
-                                    <input type="radio" id="year" name="duration"  value="year">
-                                    السنه
-                                </label>
+                                    <label for="day">
+                                        <input type="radio" id="week" name="duration" checked value="week">
+                                        اسبوع
+                                    </label>
+                                    
+                                    <label for="month">
+                                        <input type="radio" id="month" name="duration"  value="month">
+                                        الشهر
+                                    </label>
+                                    
+                                    <label for="year">
+                                        <input type="radio" id="year" name="duration"  value="year">
+                                        السنه
+                                    </label>
 
-                                <label for="custom">
-                                    <input type="radio" id="custom" name="duration"  value="custom">
-                                    اختر مده معينه
-                                    <br>
+                                    <label for="custom">
+                                        <input type="radio" id="custom" name="duration"  value="custom">
+                                        اختر مده معينه
+                                    </label>
+
+                                <div class="selected-date">
                                     من : 
-                                    <input type="date" id="day-date-start" placeholder="من :" class="custom-date">
+                                    <input type="date" id="day-date-start" placeholder="من :" class="custom-date" disabled>
                                     <br>
                                     الي : 
-                                    <input type="date" id="day-date-end" placeholder="الي :"  class="custom-date">
+                                    <input type="date" id="day-date-end" placeholder="الي :"  class="custom-date" disabled>
 
-                                </label>
+                                </div>
+                                    
 
                             </div>
                         </div>
@@ -244,6 +246,17 @@
 
 
         <script>
+
+
+            $(".checkboxCateSec").change(function() {
+                if ($('#custom:checked').length > 0){
+                    $("#day-date-end").removeAttr("disabled")
+                    $("#day-date-start").removeAttr("disabled")
+                }else{
+                    $("#day-date-end").prop("disabled", true)
+                    $("#day-date-start").prop("disabled", true)
+                }
+            })
             
             $("#day-date-end").click(function(){
                 this.max  = new Date().toISOString().split("T")[0];
