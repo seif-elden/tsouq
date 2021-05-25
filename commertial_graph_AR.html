@@ -27,7 +27,7 @@
             </div>
         </div>
         <!-- ============== End titleHeader =============== -->
-        <div  class="content" style="margin :50px;">
+        <div  class="content">
 
             <div class="sec-title">
                 تقارير /<span> تقارير شامله  </span>
@@ -57,7 +57,7 @@
                 </div>
             </div>
 
-            <div class="row wow bounceInUp" style="margin-top: 100px;">
+            <div class="row wow bounceInUp" style="margin-top: 50px;">
 
                 <div class="col-md-3" >
                     <div class="CategoriesAndSorting_Sec">
@@ -116,14 +116,13 @@
 
                     </div>
                 </div>
-                <div class="col-md-1"></div>
+                <div class="col-md-1"><br><br></div>
 
                 <div class="col-md-8 text-center">
                     <h3 class="chart-header">عدد المبيعات</h3>
                     <br>
  
-                    <canvas id="myChart" width="400" height="200"></canvas>
-
+                    <div class="chart-goes-here"></div>
 
                 </div>
 
@@ -132,7 +131,7 @@
             <div class="acctoger">
                 <hr>
                 <h1 class="text-center" style="color: #04bbf2;">منتجاتك</h1>
-                <br>
+                <hr width="100px">
                 <h3>ملابس حريمي</h3>
                 <br>
                 <div class="swiper-container mySwiper text-center">
@@ -217,6 +216,10 @@
                     clickable: true,
                     },
                 });
+
+                $(".chart-goes-here").prepend('<canvas id="myChart" width="400" height="400"></canvas>')
+
+                
                 }else{
                     var swiper = new Swiper(".mySwiper", {
                         slidesPerView: 4,
@@ -226,6 +229,8 @@
                         clickable: true,
                         },
                     });
+                    $(".chart-goes-here").prepend('<canvas id="myChart" width="400" height="200"></canvas>')
+
                 }
 
 
@@ -271,6 +276,7 @@
                         }]
                     },
                     options: {
+                        responsive: true,
                         scales: {
                             y: {
                                 beginAtZero: true
