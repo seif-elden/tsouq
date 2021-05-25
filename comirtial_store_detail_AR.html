@@ -281,10 +281,10 @@
                                     </div>
                                 </div>
                                 <div class="locationMap">
-                                    <a href="#" data-toggle="modal" data-target="#locationMap_1">الموقع على الخريطة</a>
+                                    <a href="#" data-toggle="modal" data-target="#locationMap_2">الموقع على الخريطة</a>
                                 </div>
                                 <!-- $$$$$$$ Start modal of map (2) $$$$$$$ -->
-                                <div class="modal fade" id="locationMap_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal fade" id="locationMap_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                                     <div class="modal-dialog mapModal" role="document">
                                         <div class="modal-content"> 
                                             <div class="modal-header">
@@ -293,7 +293,7 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">  
-                                                <div class="mapLocationGPS" id="mapLocationGPS_1"></div>
+                                                <div class="mapLocationGPS" id="mapLocationGPS_2"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -351,7 +351,7 @@
     <script src="js/jquery_3.6.0.min.js"></script>
     <!-- <script src="js/propper.js"></script> -->
     <script src="js/bootstrap_rtl_4.5.3.bundle.min.js"></script>
-    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="js/slick.min.js"></script>
     <!-- <script src="js/jquery.rateyo.min.js"></script> -->
     <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
     <script async defer
@@ -366,6 +366,54 @@
 
     <!-- Initialize Swiper -->
     <script>
+
+function initMap() {
+            // ########## mapLocationGPS_1
+            mapLocationGPS_1 = new google.maps.Map(document.getElementById("mapLocationGPS_1"), 
+            {
+                center: { lat: 30.47413000377901, lng: 31.200109136262043},
+                zoom: 8,
+            });
+
+            var provieder_mapLocationGPS_1 =[{
+                position: new google.maps.LatLng(30.47413000377901,31.200109136262043),
+                type: "images/blue-dot.png",
+            }];
+
+            // Create markers.
+            for (let i = 0; i < provieder_mapLocationGPS_1.length; i++) {
+                const marker = new google.maps.Marker({
+                    position: provieder_mapLocationGPS_1[i].position,
+                    icon: provieder_mapLocationGPS_1[i].type,
+                    map: mapLocationGPS_1,
+                });
+            }
+
+            // ########## mapLocationGPS_2
+            mapLocationGPS_2 = new google.maps.Map(document.getElementById("mapLocationGPS_2"), 
+            {
+                center: { lat: 29.977455771807318, lng: 31.132496902210995},
+                zoom: 8,
+            });
+
+            var provieder_mapLocationGPS_2 =[{
+                position: new google.maps.LatLng(29.977455771807318,31.132496902210995),
+                type: "images/blue-dot.png",
+            }];
+
+            // Create markers.
+            for (let i = 0; i < provieder_mapLocationGPS_2.length; i++) {
+                const marker = new google.maps.Marker({
+                    position: provieder_mapLocationGPS_2[i].position,
+                    icon: provieder_mapLocationGPS_2[i].type,
+                    map: mapLocationGPS_2,
+                });
+            }
+
+              
+        }
+
+        
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,
