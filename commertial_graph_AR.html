@@ -72,6 +72,11 @@
                                     <input type="radio" id="day" name="duration"  value="day">
                                     اليوم
                                 </label>
+
+                                <label for="day">
+                                    <input type="radio" id="week" name="duration" checked value="week">
+                                    اسبوع
+                                </label>
                                 
                                 <label for="month">
                                     <input type="radio" id="month" name="duration"  value="month">
@@ -83,6 +88,18 @@
                                     السنه
                                 </label>
 
+                                <label for="custom">
+                                    <input type="radio" id="custom" name="duration"  value="custom">
+                                    اختر مده معينه
+                                    <br>
+                                    من : 
+                                    <input type="date" id="day-date-start" placeholder="من :" class="custom-date">
+                                    <br>
+                                    الي : 
+                                    <input type="date" id="day-date-end" placeholder="الي :"  class="custom-date">
+
+                                </label>
+
                             </div>
                         </div>
                         <div class="sortingType col-sm-10 col-md-8 col-lg-12">
@@ -90,6 +107,11 @@
                                 <h2 class="text-center"> القسم</h2>
                             </div>
                             <div class="checkboxSortSec d-flex flex-column">
+                                    <label for="clothes">
+                                        <input type="radio" id="all" checked name="categorie"  value="الكل ">
+                                        الكل
+                                    </label>
+
                                     <label for="clothes">
                                         <input type="radio" id="clothes" name="categorie"  value="ملابس رجالي">
                                         ملابس رجالي
@@ -120,9 +142,24 @@
 
                 <div class="col-md-8 text-center">
                     <h3 class="chart-header">عدد المبيعات</h3>
+                    <p>خلال الاسبوع</p>
                     <br>
- 
-                    <div class="chart-goes-here"></div>
+                    
+
+
+                    <div class="chart-goes-here">
+                        <!-- cahrt goes hree -->
+                    </div>
+
+                    <div class="next-prev-container">
+                        <a href="#" class="prev-chart">
+                            السابق &#62; 
+                        </a>
+                        <a href="#" class="next-chart">
+                            &#60; التالي
+
+                        </a>
+                    </div>
 
                 </div>
 
@@ -207,7 +244,16 @@
 
 
         <script>
-             if (screen.width <= 800) {
+            
+            $("#day-date-end").click(function(){
+                this.max  = new Date().toISOString().split("T")[0];
+
+                var date = new Date($('#day-date-start').val()).toISOString().split("T")[0];
+                this.min  =  date ;
+
+            })
+
+            if (screen.width <= 800) {
                 var swiper = new Swiper(".mySwiper", {
                     slidesPerView: 1,
                     spaceBetween: 30,
@@ -252,7 +298,7 @@
                     data: {
                         labels: ['سبت', 'احد', 'اثنين', 'ثلثاء', 'اربعاء', 'خميس',"جمعه"],
                         datasets: [{
-                            label: ' ',
+                            label: 'من 25/7/2004 الي 1/6/2004',
                             data: [12, 19, 3, 5, 2, 12,5],
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',
@@ -276,7 +322,6 @@
                         }]
                     },
                     options: {
-                        responsive: true,
                         scales: {
                             y: {
                                 beginAtZero: true

@@ -150,3 +150,26 @@
     }
     
 }
+
+.custom-date{
+    width: 100%;
+}
+
+.next-prev-container{
+    position:relative;
+    height: 40px;
+}
+
+
+.next-chart{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+
+.prev-chart{
+    position: absolute;
+    left: 30px;
+    top: 15px;
+}
+
