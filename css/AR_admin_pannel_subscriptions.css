@@ -1,0 +1,109 @@
+/* ################### Start Global ################### */
+
+@font-face {
+  font-family: "coconFont";
+  src: url("../fonts/cocon-next-arabic.ttf");
+}
+
+* {
+  font-family: "coconFont";
+}
+/* ################### End Global ################### */
+
+/* ============== Start go_up icon =============== */
+.go_up {
+  position: fixed;
+  right: 40px;
+  top: 90%;
+  padding: 15px 10px;
+  background: #fff;
+  border: 2px solid #07b2e6;
+  box-shadow: 0 0 10px #07b2e6;
+  color: #07b2e6;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  z-index: 55 !important;
+}
+/* ============== End go_up icon =============== */
+
+/* ============== Start titleHeader =============== */
+.titleHeader {
+  padding: 60px 0;
+  background-image: url("../images/titleHeader.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.titleHeader h2 {
+  color: #fff;
+}
+/* ============== end titleHeader =============== */
+/* ################### start navbar ################# */
+.nav-link {
+  color: #989393;
+  font-size: 20px;
+}
+.nav-link.active {
+  color: #04bdf5;
+}
+.nav-link:hover {
+  color: #04bdf5;
+}
+.nav-link img {
+  width: 18.5px;
+  height: 18.5px;
+  margin: 0 1px;
+}
+/* ################## end navbar ################## */
+/* ################## start main ################## */
+main {
+  background-color: #04bdf5;
+  padding: 30px;
+}
+main .date {
+  color: #fff;
+  font-size: 20px;
+  margin: 20px;
+  text-align: left;
+}
+main .row > div div {
+  background-color: #fff;
+  padding: 22px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+main .row div img {
+  width: 57px;
+}
+main .row > div > div > p {
+  font-size: 22px;
+  color: #000;
+  margin-top: -5px;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+main .row div > div > p.light {
+  color: #afafaf;
+  margin-top: 2px;
+  margin-bottom: -15px;
+}
+main .details {
+  text-align: right;
+}
+main .details p {
+  color: #afafaf;
+  margin: 5px;
+  font-size: 18px;
+}
+main .subscripe {
+  color: #04bdf5;
+  border: 2px solid #04bdf5;
+  line-height: 45px;
+  padding: 0px 36px !important;
+}
+main .subscripe:hover {
+  color: rgba(4, 189, 245, 0.7);
+  border: 2px solid rgba(4, 189, 245, 0.7);
+}

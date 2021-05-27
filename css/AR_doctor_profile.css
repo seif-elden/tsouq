@@ -1,44 +1,48 @@
 /* ################### Start coconFont ################### */
 * {
-    direction: rtl;
-} 
+  direction: rtl;
+}
 /* ################### End coconFont ################### */
 /* ============== Start main =============== */
 /* ######### Start profileData ######### */
 /* $$$$$$$ Start profileInfo $$$$$$$ */
-main .profileData .totalProfileData .profileInfo .profileSocialMedia i:nth-child(1) {
-    padding-right: 0;
+main
+  .profileData
+  .totalProfileData
+  .profileInfo
+  .profileSocialMedia
+  i:nth-child(1) {
+  padding-right: 0;
 }
 
 .jq-ry-rated-group {
-    direction: ltr;
+  direction: ltr;
 }
 /* $$$$$$$ Start profileBranches $$$$$$$ */
 main .profileData .profileBranches .totalProfileBranches .branchLocation {
-    padding: 10px 15px 10px 0;
+  padding: 10px 15px 10px 0;
 }
 
 main .profileData .mapContainerRow {
-    margin-right: -30px !important;
+  margin-right: -30px !important;
 }
 /* $$$$$$$ Start profileBranches $$$$$$$ */
 /* $$$$$$$ Start doctorServices $$$$$$$ */
 main .profileData .doctorServices .totalServices .serviceDetails .exampleImg {
-    padding-right: 0;
-    padding-left: 10px;
+  padding-right: 0;
+  padding-left: 10px;
 }
 /* $$$$$$$ End doctorServices $$$$$$$ */
 
 /* $$$$$$$ Start clientEvaluationSection $$$$$$$ */
 main .profileData .clientEvaluation .clientEvaluationSection .clientComment {
-    padding: 10px  25px 0 15px;
+  padding: 10px 25px 0 15px;
 }
 /* $$$$$$$ End clientEvaluationSection $$$$$$$ */
 
-
 /* ######### Start booking ######### */
 main .booking {
-    padding-left: 0;
+  padding-left: 0;
 }
 /* ######### End booking ######### */
 
@@ -47,7 +51,6 @@ main .booking {
 
 /* ################ Large devices (desktops, less than 1200px) ################ */
 @media (max-width: 1199.98px) {
-    
 }
 
 /* ################ Medium devices (tablets, less than 992px) ################ */
@@ -56,16 +59,20 @@ main .booking {
 
 /* ################ Small devices (landscape phones, less than 768px) ################ */
 @media (max-width: 767.98px) {
-
 }
 
 /* ################ Extra small devices (portrait phones, less than 576px) ################ */
 @media (max-width: 575.98px) {
-    /* ============== Start main =============== */
-    /* ######### Start profileData ######### */
-    /* $$$$$$$ Start profileInfo $$$$$$$ */
-    main .profileData .totalProfileData .profileInfo .profileSocialMedia i:nth-child(1) {
-        padding: 0 5px;
-    }
-    /* ============== End main =============== */
+  /* ============== Start main =============== */
+  /* ######### Start profileData ######### */
+  /* $$$$$$$ Start profileInfo $$$$$$$ */
+  main
+    .profileData
+    .totalProfileData
+    .profileInfo
+    .profileSocialMedia
+    i:nth-child(1) {
+    padding: 0 5px;
+  }
+  /* ============== End main =============== */
 }
