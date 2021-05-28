@@ -87,10 +87,26 @@
                 <div class="small-header-container" >
                     <div  class="right-part">
                         الطلبات
+                        <br>
+                        <br>
+                        <div >
+                            المده : 
+                            <select class="form-select" style="display: inline-block !important;width: 290px  !important;">
+                                <option selected  >يوم</option>
+                                <option value="1">اخر شهر</option>
+                                <option value="2">اخر 3 شهور</option>
+                                <option value="3">اخر 6 شهور</option>
+                                <option value="4">اخر سنه</option>
+                                <option value="4">اخر سنتان</option>
+
+    
+                            </select>
+                        </div>
+
                     </div>
                     <div  class="left-part">
                         <div class="searchSection">
-                            <input type="text" placeholder="ابحث عن منتج ....">
+                            <input type="text" placeholder="ابحث....">
                         </div>
                     </div>
                 </div>
@@ -98,28 +114,28 @@
                 <div class="row filter">
                     <div class="col-6 col-md-3">
                         <div class="filter-item form-check">
-                            <input type="checkbox"  name="completed" id="completed">
+                            <input type="checkbox"  name="completed" id="completed" class="green">
                             <label for="completed"> المكتمله</label>
                         </div>
                     </div>
 
                     <div class="col-6 col-md-3">
                         <div class="filter-item">
-                            <input type="checkbox" name="refused" id="refused">
+                            <input type="checkbox" name="refused" id="refused" class="red">
                             <label for="refused"> المرفوضه </label>
                         </div>
                     </div>
 
                     <div class="col-6 col-md-3">
                         <div class="filter-item">
-                            <input type="checkbox" name="doing" id="doing">
+                            <input type="checkbox" name="doing" id="doing" class="yellow">
                             <label for="doing">  تعمل عليها  </label>
                         </div>
                     </div>
 
                     <div class="col-6 col-md-3">
                         <div class="filter-item">
-                            <input type="checkbox" name="not-done" id="not-done">
+                            <input type="checkbox" name="not-done" id="not-done" class="blue">
                             <label for="not-done"> لم تتم </label>
                         </div>
                     </div>
@@ -146,7 +162,7 @@
                                                 <i class="fas fa-dollar-sign"></i>
                                                  50 جنيه
                                             </p>
-                                            <p class="column">
+                                            <p class="column green">
                                                 <i class="far fa-clock"></i>
                                                  تم التسليم 
                                             </p>
@@ -185,9 +201,9 @@
                                                 <i class="fas fa-dollar-sign"></i>
                                                  50 جنيه
                                             </p>
-                                            <p class="column">
+                                            <p class="column yellow">
                                                 <i class="far fa-clock"></i>
-                                                 تم التسليم 
+                                                 تعمل عليها
                                             </p>
                                             <p class="column">
                                                 <i class="far fa-clock"></i>
@@ -224,8 +240,8 @@
                                                 <i class="fas fa-dollar-sign"></i>
                                                  50 جنيه
                                             </p>
-                                            <p class="column">
-                                                <i class="far fa-clock"></i>
+                                            <p class="column green">
+                                                <i class="far fa-clock "></i>
                                                  تم التسليم 
                                             </p>
                                             <p class="column">
@@ -264,9 +280,9 @@
                                                 <i class="fas fa-dollar-sign"></i>
                                                  50 جنيه
                                             </p>
-                                            <p class="column">
-                                                <i class="far fa-clock"></i>
-                                                 تم التسليم 
+                                            <p class="column red">
+                                                <i class="far fa-clock "></i>
+                                                 ملغي
                                             </p>
                                             <p class="column">
                                                 <i class="far fa-clock"></i>
@@ -302,9 +318,9 @@
                                                 <i class="fas fa-dollar-sign"></i>
                                                  50 جنيه
                                             </p>
-                                            <p class="column">
+                                            <p class="column blue">
                                                 <i class="far fa-clock"></i>
-                                                 تم التسليم 
+                                                 لم تتم  
                                             </p>
                                             <p class="column">
                                                 <i class="far fa-clock"></i>

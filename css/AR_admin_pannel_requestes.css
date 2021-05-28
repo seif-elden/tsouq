@@ -81,7 +81,7 @@
 
 }
 .small-header-container{
-    height: 60px;
+    min-height: 115px;
 }
 .searchSection {
     position: relative;
@@ -153,7 +153,23 @@
     font-size: 70%;
     left: 0.0625em;
     top: -0.25em;
-    color: #04bdf5;
+    
+}
+
+.green:checked:after{
+  color: #1fd71f;
+}
+
+.red:checked:after{
+  color: #ff6161 ;
+}
+
+.yellow:checked:after{
+  color: #ffb100;
+}
+
+.blue:checked:after{
+  color: #1e6dff;
 }
 
 .product{
@@ -170,7 +186,22 @@
 }
 
 .column i{
-    font-size: 12px;
+    font-size: 10px;
     margin-right: 3px;
 }
 
+.red{
+  color: #ff6161 ;
+}
+
+.yellow{
+  color: #ffb100;
+}
+
+.green{
+  color: #1fd71f;
+}
+
+.blue{
+  color: #1e6dff;
+}
