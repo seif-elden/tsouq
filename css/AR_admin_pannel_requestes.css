@@ -1,0 +1,176 @@
+/* ################### Start Global ################### */
+
+@font-face {
+    font-family: "coconFont";
+    src: url("../fonts/cocon-next-arabic.ttf");
+  }
+  
+  * {
+    font-family: "coconFont";
+  }
+  /* ################### End Global ################### */
+  
+  /* ============== Start go_up icon =============== */
+  .go_up {
+    position: fixed;
+    right: 40px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #fff;
+    border: 2px solid #07b2e6;
+    box-shadow: 0 0 10px #07b2e6;
+    color: #07b2e6;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 55 !important;
+  }
+  /* ============== End go_up icon =============== */
+  
+  /* ============== Start titleHeader =============== */
+  .titleHeader {
+    padding: 60px 0;
+    background-image: url("../images/titleHeader.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .titleHeader h2 {
+    color: #fff;
+  }
+  /* ============== end titleHeader =============== */
+  /* ################### start navbar ################# */
+  .sidebar{
+      background-color: #fff;
+  }
+  .nav-link {
+    color: #989393;
+    font-size: 20px;
+  }
+  .nav-link.active {
+    color: #04bdf5;
+  }
+  .nav-link:hover {
+    color: #04bdf5;
+  }
+  .nav-link img {
+    width: 18.5px;
+    height: 18.5px;
+    margin: 0 1px;
+  }
+  /* ################## end navbar ################## */
+  /* ################## start main ################## */
+
+.spacing{
+    background-color: #F1EEEE;
+    height: 10px;
+}
+.right-part{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size:18px ;
+    color: #989393;
+}
+
+.left-part{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}
+.small-header-container{
+    height: 60px;
+}
+.searchSection {
+    position: relative;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.searchSection input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #b4b4b4;
+    outline: none;
+}
+
+.searchSection input::placeholder {
+    color: #b4b4b4;
+}
+
+.searchSection::after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f002";
+    color: #07b2e6 !important;
+    top: 20%;
+    left: 10px;
+}
+
+.filter{
+    background-color: #04bdf5;
+    border-radius: 8px;
+}
+
+.filter-item{
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    height: 80%;
+}
+
+.filter-item input[type='checkbox']{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+    font-size: inherit;
+    cursor: pointer;
+    width: 1.0em;
+    height: 1.0em;
+    background: #04bdf5;
+    border-radius: 0.25em;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+}
+  
+.filter-item input[type='checkbox']:checked {
+    border: 0.125em solid #04bdf5;
+}
+  
+.filter-item input[type='checkbox']:checked:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f00c";
+    position: absolute;
+    font-size: 70%;
+    left: 0.0625em;
+    top: -0.25em;
+    color: #04bdf5;
+}
+
+.product{
+    background-color: #fff;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.column{
+    padding: 10px;
+    color :#989393;
+    font-size: 14px;
+}
+
+.column i{
+    font-size: 12px;
+    margin-right: 3px;
+}
+
