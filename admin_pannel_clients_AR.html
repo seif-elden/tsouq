@@ -117,7 +117,7 @@
                 <div class="customers">
 
                     <div style="overflow-x:auto;">
-                        <table>
+                        <table id="table1">
                             <tr>
                                 <th>ID</th>
                                 <th>اسم العميل</th>
@@ -193,14 +193,10 @@
                 <div class="export">
                     <div class="row">
                         <div class="column pdf" >
-                            <a href="#">
                                 حفظ &nbsp;&nbsp;  pdf &nbsp;<i class="far fa-file-pdf"></i> 
-                            </a>
                         </div>
-                        <div  class="column excel">
-                            <a href="#">
+                        <div  class="column excel" id="exportBtn1">
                                 <p>حفظ  &nbsp;&nbsp; excel &nbsp;<i class="far fa-file-excel"></i></p>
-                            </a>
                         </div>
                     </div>
                     
@@ -216,6 +212,7 @@
     <script src="js/wow.min.js"></script>
     <script src="js/jquery_3.6.0.min.js"></script>
     <script src="js/bbbb.js"></script>
+    <script src="js/tableToExcel.js"></script>
 
     <script>
         $(".fa-bars").click(function(){
@@ -226,6 +223,17 @@
             $(this).hide()
             $(".fa-bars").slideToggle('slow')
         })
+        $("#exportBtn1").click(function(){
+            TableToExcel.convert(document.getElementById("table1"), {
+                name: "مبيعات.xlsx",
+                sheet: {
+                name: "Sheet1"
+                }
+            })
+
+            
+        });
+
     </script>
 
 
