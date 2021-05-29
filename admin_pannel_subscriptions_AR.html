@@ -22,7 +22,10 @@
             <div class="container text-center">
               <div class=" navbar-dark  flex-md-nowrap p-0 shadow" style=" position:absolute;top:10px; right:10px" >
                 <div class="navbar-toggler d-md-none collapsed  " type="button"  data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                  <span> <i class="fas fa-bars " style="color: black; font-size:25px;"></i> </span>
+                  <span>
+                    <i class="fas fa-bars " style="color: black; font-size:25px;"></i>
+                    <i class="fas fa-times" style="color: black; font-size:25px;display:none"></i>
+                  </span>
                 </div>
               </div>
 
@@ -166,12 +169,17 @@
     <script src="js/wow.min.js"></script>
     <script src="js/jquery_3.6.0.min.js"></script>
     <script src="js/bbbb.js"></script>
-    <!-- <script src="js/bootstrap_rtl_4.5.3.bundle.min.js"></script> -->
-    <!-- <script src="js/jquery.waypoints.min.js"></script> -->
-    <!-- <script src="js/jquery.counterup.min.js"></script> -->
-    <!-- <script src="js/chart.min.js"></script> -->
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-    <!-- <script src="js/commertial_graph.js"></script> -->
+    <script>
+      $(".fa-bars").click(function(){
+          $(this).hide()
+          $(".fa-times").slideToggle('slow')
+      })
+      $(".fa-times").click(function(){
+          $(this).hide()
+          $(".fa-bars").slideToggle('slow')
+      })
+  </script>
+
 
 </body>
 </html>

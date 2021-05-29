@@ -61,6 +61,28 @@
   }
   /* ################## end navbar ################## */
   /* ################## start main ################## */
+/* start export */
+.export{
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.pdf , .excel{
+  border:1px solid #989393;
+  border-radius: 5px;
+  margin: 5px;
+  height: 40px;
+}
+
+.pdf p, .excel p{
+  line-height: 10px;
+
+}
+
+
+/* end export */
+
+
+
 
 .spacing{
     background-color: #F1EEEE;
