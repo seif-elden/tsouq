@@ -1,0 +1,158 @@
+/* ################### Start Global ################### */
+
+@font-face {
+    font-family: "coconFont";
+    src: url("../fonts/cocon-next-arabic.ttf");
+  }
+  
+  * {
+    font-family: "coconFont";
+  }
+  /* ################### End Global ################### */
+  
+  /* ============== Start go_up icon =============== */
+  .go_up {
+    position: fixed;
+    right: 40px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #fff;
+    border: 2px solid #07b2e6;
+    box-shadow: 0 0 10px #07b2e6;
+    color: #07b2e6;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 55 !important;
+  }
+  /* ============== End go_up icon =============== */
+  
+  /* ============== Start titleHeader =============== */
+  .titleHeader {
+    padding: 60px 0;
+    background-image: url("../images/titleHeader.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .titleHeader h2 {
+    color: #fff;
+  }
+  /* ============== end titleHeader =============== */
+  /* ################### start navbar ################# */
+  .sidebar{
+      background-color: #fff;
+  }
+  .nav-link {
+    color: #989393;
+    font-size: 20px;
+  }
+  .nav-link.active {
+    color: #04bdf5;
+  }
+  .nav-link:hover {
+    color: #04bdf5;
+  }
+  .nav-link img {
+    width: 18.5px;
+    height: 18.5px;
+    margin: 0 1px;
+  }
+  /* ################## end navbar ################## */
+  /* ################## start main ################## */
+/* start export */
+.export{
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.pdf , .excel{
+  border:1px solid #989393;
+  border-radius: 5px;
+  margin: 5px;
+  height: 40px;
+}
+
+.pdf p, .excel p{
+  line-height: 10px;
+
+}
+
+/* end export */
+
+
+.spacing{
+    background-color: #F1EEEE;
+    height: 10px;
+}
+.right-part{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size:18px ;
+    color: #989393;
+}
+
+.left-part{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}
+.small-header-container{
+    min-height: 115px;
+}
+.searchSection {
+    position: relative;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.searchSection input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #b4b4b4;
+    outline: none;
+}
+
+.searchSection input::placeholder {
+    color: #b4b4b4;
+}
+
+.searchSection::after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f002";
+    color: #07b2e6 !important;
+    top: 20%;
+    left: 10px;
+}
+
+.column{
+    padding: 10px;
+    color :#989393;
+    font-size: 14px;
+}
+
+.column i{
+    font-size: 10px;
+    margin-right: 3px;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    min-width: 800px;
+    width: 100%;
+}
+  
+th, td {
+    padding: 8px;
+}
+  
+tr:nth-child(even){background-color: #f2f2f2}
