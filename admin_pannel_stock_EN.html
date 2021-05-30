@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تسوق دوت كوم</title>
-    <link rel="stylesheet" href="css/bootrap_rtl_4.5.3.min.css">
+    <link rel="stylesheet" href="css/bootrap_ltr_4.5.3.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/all.css" />
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/AR_admin_pannel_stock.css" />
+    <link rel="stylesheet" href="css/EN_admin_pannel_stock.css" />
 
 </head>
 
-<body dir="rtl">
+<body >
 
         <!-- ============== Start go_up icon =============== -->
         <i class="fas fa-angle-double-up go_up"><a href="#"></a></i>
@@ -29,7 +29,7 @@
                 </div>
               </div>
 
-                <h2 >لوحة التحكم</h2>
+                <h2 >admin pannel </h2>
             </div>
         </div>
         <!-- ============== End titleHeader =============== -->
@@ -37,70 +37,70 @@
       <div class="container-fluid">
         <div class="row">
 
-          <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block  sidebar collapse">
-            <div class="position-sticky pt-3">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">
-                    <img src="images/admin pannel/home-icon.png" />
-                    الرئيسية
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <img src="images/admin pannel/Financial-icon.png" />
-                    المالية
-                  </a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link active" href="#">
-                    <img src="images/admin pannel/Inventory-icon.png" />
-                    المخزون
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#">
-                    <img src="images/admin pannel/orders-icon.png" />
-                    الطلبات
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#">
-                    <img src="images/admin pannel/subscription-icon.png" />
-                    الاشتراك
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#">
-                    <img src="images/admin pannel/clients-icon.png" />
-                    العملاء
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <img src="images/admin pannel/logout-icon.png" />
-                    تسجيل الخروج
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block  sidebar collapse">
+                <div class="position-sticky pt-3">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#">
+                        <img src="images/admin pannel/home-icon.png" />
+                        Home
+                      </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link " href="#">
+                        <img src="images/admin pannel/Financial-icon.png" />
+                        Financial
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">
+                        <img src="images/admin pannel/Inventory-icon.png" />
+                        Stock
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">
+                        <img src="images/admin pannel/orders-icon.png" />
+                        Requestes
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">
+                        <img src="images/admin pannel/subscription-icon.png" />
+                        subscription
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">
+                        <img src="images/admin pannel/clients-icon.png" />
+                        customers
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <img src="images/admin pannel/logout-icon.png" />
+                        logout 
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
       
           <main class="col-md-9 ">
                 <div class="small-header-container" >
                     <div  class="right-part">
-                        المخزون
+                        Stock
                         <br>
                         <br>
                         <div >
-                            المده : 
+                            duration : 
                             <select class="form-select" style="display: inline-block !important;width: 290px  !important;">
-                                <option selected  >يوم</option>
-                                <option value="1">اخر شهر</option>
-                                <option value="2">اخر 3 شهور</option>
-                                <option value="3">اخر 6 شهور</option>
-                                <option value="4">اخر سنه</option>
-                                <option value="4">اخر سنتان</option>
+                                <option selected  >day</option>
+                                <option value="1">lasr month</option>
+                                <option value="2">lasr 3 months</option>
+                                <option value="3">lasr 6 months</option>
+                                <option value="4">lasr year</option>
+                                <option value="4">lasr 2 years</option>
 
     
                             </select>
@@ -109,7 +109,7 @@
                     </div>
                     <div  class="left-part">
                         <div class="searchSection">
-                            <input type="text" placeholder="ابحث....">
+                            <input type="text" placeholder="search ....">
                         </div>
                     </div>
                 </div>
@@ -120,22 +120,22 @@
                         <table id="table1">
                             <tr>
                                 <th></th>
-                                <th>اسم المنتج</th>
-                                <th>الاجمالي</th>
-                                <th>المتبقيه  </th>
-                                <th>تاريخ الاضافه </th>
-                                <th>فرع 1 </th>
-                                <th>فرع 2 </th>
-                                <th>فرع 3 </th>
+                                <th>product name</th>
+                                <th>total</th>
+                                <th>remaining  </th>
+                                <th>added date  </th>
+                                <th>branch 1 </th>
+                                <th>branch 2 </th>
+                                <th>branch 3 </th>
                             </tr>
                             
                             <tr>
                                 <th class="edit">
-                                    تعديل <i class="fas fa-edit"></i>
+                                    <i class="fas fa-edit"></i> edit
                                 </th>
                                 <td>
                                     <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
-                                    ابل 6 بلس 
+                                   apple 6 plus 
                                 </td>
                                 <td>50</td>
                                 <td>30</td>
@@ -148,29 +148,11 @@
 
                             <tr>
                                 <th class="edit">
-                                    تعديل <i class="fas fa-edit"></i>
+                                    <i class="fas fa-edit"></i> edit
                                 </th>
                                 <td>
                                     <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
-                                    ابل 6 بلس 
-                                </td>
-                                <td>50</td>
-                                <td>30</td>
-                                <td>24/7/2004</td>
-                                <td class="branch-1">5</td>
-                                <td  class="branch-2">10</td>
-                                <td  class="branch-3">8</td>
-                                
-                            </tr>
-
-
-                            <tr>
-                                <th class="edit">
-                                    تعديل <i class="fas fa-edit"></i>
-                                </th>
-                                <td>
-                                    <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
-                                    ابل 6 بلس 
+                                   apple 6 plus 
                                 </td>
                                 <td>50</td>
                                 <td>30</td>
@@ -184,11 +166,11 @@
 
                             <tr>
                                 <th class="edit">
-                                    تعديل <i class="fas fa-edit"></i>
+                                    <i class="fas fa-edit"></i> edit
                                 </th>
                                 <td>
                                     <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
-                                    ابل 6 بلس 
+                                   apple 6 plus 
                                 </td>
                                 <td>50</td>
                                 <td>30</td>
@@ -202,11 +184,11 @@
 
                             <tr>
                                 <th class="edit">
-                                    تعديل <i class="fas fa-edit"></i>
+                                    <i class="fas fa-edit"></i> edit
                                 </th>
                                 <td>
                                     <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
-                                    ابل 6 بلس 
+                                   apple 6 plus 
                                 </td>
                                 <td>50</td>
                                 <td>30</td>
@@ -220,11 +202,29 @@
 
                             <tr>
                                 <th class="edit">
-                                    تعديل <i class="fas fa-edit"></i>
+                                    <i class="fas fa-edit"></i> edit
                                 </th>
                                 <td>
                                     <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
-                                    ابل 6 بلس 
+                                   apple 6 plus 
+                                </td>
+                                <td>50</td>
+                                <td>30</td>
+                                <td>24/7/2004</td>
+                                <td class="branch-1">5</td>
+                                <td  class="branch-2">10</td>
+                                <td  class="branch-3">8</td>
+                                
+                            </tr>
+
+
+                            <tr>
+                                <th class="edit">
+                                    <i class="fas fa-edit"></i> edit
+                                </th>
+                                <td>
+                                    <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
+                                   apple 6 plus 
                                 </td>
                                 <td>50</td>
                                 <td>30</td>
@@ -237,11 +237,11 @@
 
                             <tr>
                                 <th class="edit">
-                                    تعديل <i class="fas fa-edit"></i>
+                                    <i class="fas fa-edit"></i> edit
                                 </th>
                                 <td>
                                     <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
-                                    ابل 6 بلس 
+                                   apple 6 plus 
                                 </td>
                                 <td>50</td>
                                 <td>30</td>
@@ -263,12 +263,12 @@
 
                 <div class="export">
                     <div class="row">
-                        <div class="column pdf" >
-                                حفظ &nbsp;&nbsp;  pdf &nbsp;<i class="far fa-file-pdf"></i> 
-                        </div>
-                        <div  class="column excel" id="exportBtn1">
-                                <p>حفظ  &nbsp;&nbsp; excel &nbsp;<i class="far fa-file-excel"></i></p>
-                        </div>
+                      <div class="column pdf" >
+                        <p> save &nbsp;&nbsp;<i class="far fa-file-pdf"></i>   pdf </p>
+                      </div>
+                      <div  class="column excel" id="exportBtn1">
+                              <p>save  &nbsp;&nbsp;<i class="far fa-file-excel"></i> excel</p>
+                      </div>
                     </div>
                     
                 </div>
@@ -308,12 +308,12 @@
 
         $('.edit').click(function(){
             if ( $(this).hasClass("edit") ){
-            $(this).siblings('.branch-1').html('<input  type="number"  style="width:60px" value="'+$(this).siblings('.branch-1').html()+'">')
-            $(this).siblings('.branch-2').html('<input  type="number"  style="width:60px" value="'+$(this).siblings('.branch-2').html()+'">')
-            $(this).siblings('.branch-3').html('<input  type="number"  style="width:60px" value="'+$(this).siblings('.branch-3').html()+'">')
-            $(this).removeClass('edit')
-            $(this).html(' حفظ <i class="far fa-save"></i>')
-            $(this).addClass('save')
+                $(this).siblings('.branch-1').html('<input  type="number"  style="width:60px" value="'+$(this).siblings('.branch-1').html()+'">')
+                $(this).siblings('.branch-2').html('<input  type="number"  style="width:60px" value="'+$(this).siblings('.branch-2').html()+'">')
+                $(this).siblings('.branch-3').html('<input  type="number"  style="width:60px" value="'+$(this).siblings('.branch-3').html()+'">')
+                $(this).removeClass('edit')
+                $(this).html(' <i class="far fa-save"></i> save')
+                $(this).addClass('save')
 
             }else{
                 var new_branch1 = $(this).siblings('.branch-1').find('input').val()
@@ -330,7 +330,7 @@
                     branch3: new_branch3});
                     
                 $(this).removeClass('save')
-                $(this).html('تعديل <i class="fas fa-edit"></i>')
+                $(this).html('<i class="fas fa-edit"></i> edit')
                 $(this).addClass('edit')
 
             }
