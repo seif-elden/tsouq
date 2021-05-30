@@ -57,12 +57,16 @@
   margin: 0 1px;
 }
 /* ################## end navbar ################## */
+
 /* ################## start main ################## */
 main {
+  background-color: #f1eeee;
+  padding: 10px;
+}
+.header-main {
   background-color: #04bdf5;
   padding: 30px;
 }
-
 /* start search */
 
 @media (min-width: 990px) {
@@ -74,9 +78,11 @@ main {
 main form input[type="text"] {
   padding-right: 15px !important;
 }
+
 main form {
   position: relative;
 }
+
 main form i,
 main form input[type="submit"] {
   position: absolute;
@@ -86,6 +92,7 @@ main form input[type="submit"] {
   color: #989393;
   cursor: pointer;
 }
+
 main form input[type="submit"] {
   top: 10%;
   opacity: 0;
@@ -106,13 +113,16 @@ main form input[type="submit"] {
   cursor: pointer;
   font-size: 30px;
 }
+
 .notification {
-  color: red;
-  font-size: 45px;
+  color: #ff4c09;
+  font-size: 50px;
   position: absolute;
-  bottom: 2px;
+  bottom: 0px;
   left: 15px;
+  cursor: pointer;
 }
+
 .notification-corner img {
   position: absolute;
   top: -4px;
@@ -120,3 +130,101 @@ main form input[type="submit"] {
   cursor: pointer;
 }
 /* end profile icons */
+
+/* start main info */
+
+.main-info {
+  padding: 30px;
+  margin: 20px 0;
+}
+
+.main-info .info-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.main-info .info-box h6 {
+  color: #989393;
+  font-weight: 300;
+  margin: 0 0 20px 17.8px;
+}
+
+.main-info .info-box p {
+  margin: 15px 6px 3px 24.3px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 0.23;
+  letter-spacing: 0.12px;
+}
+
+.main-info .info-box .up {
+  color: #10cb35;
+}
+
+.main-info .info-box .down {
+  color: #f80707;
+}
+
+.main-info .info-box .img-box {
+  text-align: left;
+}
+
+.main-info .info-box select {
+  margin-top: 50px;
+  border: none;
+  text-align: left;
+  color: #afacac;
+  outline: none;
+}
+
+@media (min-width: 990px) {
+  .main-info .info-box select {
+    margin-top: 35px;
+  }
+}
+
+/* end main info */
+
+/* strat chart */
+
+.chart {
+  padding: 30px;
+  background-color: #f8f8f8;
+}
+
+.chart .select {
+  text-align: left;
+}
+.chart .select select {
+  border-color: #04bdf5;
+  color: #04bdf5;
+}
+
+/* end chart */
+
+/* start tables */
+
+.tables {
+  margin: 30px 0;
+  padding: 30px;
+  background-color: #f8f8f8;
+}
+.tables .add-product {
+  text-align: left;
+}
+.tables .add-product div {
+  background-color: #04bdf5;
+  color: #fff;
+}
+.tables .add-product div i {
+  font-size: 10px;
+}
+.available {
+  color: #00c642;
+}
+.not-available {
+  color: #fb1a4f;
+}
+/* end tables */
