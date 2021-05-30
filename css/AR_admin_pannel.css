@@ -1,0 +1,122 @@
+/* ################### Start Global ################### */
+
+@font-face {
+  font-family: "coconFont";
+  src: url("../fonts/cocon-next-arabic.ttf");
+}
+
+* {
+  font-family: "coconFont";
+}
+/* ################### End Global ################### */
+
+/* ============== Start go_up icon =============== */
+.go_up {
+  position: fixed;
+  right: 40px;
+  top: 90%;
+  padding: 15px 10px;
+  background: #fff;
+  border: 2px solid #07b2e6;
+  box-shadow: 0 0 10px #07b2e6;
+  color: #07b2e6;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  z-index: 55 !important;
+}
+/* ============== End go_up icon =============== */
+
+/* ============== Start titleHeader =============== */
+.titleHeader {
+  padding: 60px 0;
+  background-image: url("../images/titleHeader.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.titleHeader h2 {
+  color: #fff;
+}
+/* ============== end titleHeader =============== */
+/* ################### start navbar ################# */
+.nav-link {
+  color: #989393;
+  font-size: 20px;
+}
+.nav-link.active {
+  color: #04bdf5;
+}
+.nav-link:hover {
+  color: #04bdf5;
+}
+.nav-link img {
+  width: 18.5px;
+  height: 18.5px;
+  margin: 0 1px;
+}
+/* ################## end navbar ################## */
+/* ################## start main ################## */
+main {
+  background-color: #04bdf5;
+  padding: 30px;
+}
+
+/* start search */
+
+@media (min-width: 990px) {
+  main form input[type="text"] {
+    width: 70% !important;
+    border-radius: 30px !important;
+  }
+}
+main form input[type="text"] {
+  padding-right: 15px !important;
+}
+main form {
+  position: relative;
+}
+main form i,
+main form input[type="submit"] {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  font-size: 18px;
+  color: #989393;
+  cursor: pointer;
+}
+main form input[type="submit"] {
+  top: 10%;
+  opacity: 0;
+}
+
+/* end searh 
+
+/* start profile icons */
+
+.notification-corner {
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.bell {
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+}
+.notification {
+  color: red;
+  font-size: 45px;
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+}
+.notification-corner img {
+  position: absolute;
+  top: -4px;
+  left: 60px;
+  cursor: pointer;
+}
+/* end profile icons */
