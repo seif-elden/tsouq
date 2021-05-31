@@ -198,7 +198,6 @@ main form input[type="submit"] {
   text-align: left;
 }
 .chart .select select {
-  border-color: #04bdf5;
   color: #04bdf5;
 }
 
@@ -227,4 +226,59 @@ main form input[type="submit"] {
 .not-available {
   color: #fb1a4f;
 }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+  min-width: 800px;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
 /* end tables */
+
+
+.column{
+  padding: 10px;
+  color :#989393;
+  font-size: 14px;
+}
+
+.column i{
+  font-size: 10px;
+  margin-right: 3px;
+}
+
+/* start export */
+.export{
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.pdf , .excel{
+  border:1px solid #989393;
+  border-radius: 5px;
+  margin: 5px;
+  height: 40px;
+}
+
+.pdf p, .excel p{
+  line-height: 10px;
+}
+
+.delete{
+  float: left;
+  border:1px solid red;
+  color: red;
+  line-height: 40px;
+  border-radius: 5px;
+  margin: 5px;
+  height: 40px;
+  width: 100px;
+}
+
+/* end export */

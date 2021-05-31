@@ -140,11 +140,11 @@
                       <div class="col-6 img-box">
                         <img src="images/admin pannel/main/sales.png" alt="نسبة المبيعات"  width="40px" height="40px"/>
 
-                        <select name="cars" id="cars">
-                          <option value="volvo">اخر شهر</option>
-                          <option value="saab">اخر 4 شهور</option>
-                          <option value="opel">اخر سنة</option>
-                          <option value="audi">اخر سنتين</option>
+                        <select>
+                          <option value="1">اخر شهر</option>
+                          <option value="2">اخر 4 شهور</option>
+                          <option value="3">اخر سنة</option>
+                          <option value="4">اخر سنتين</option>
                         </select>
 
                       </div>
@@ -168,11 +168,11 @@
                       <div class="col-6 img-box">
                         <img src="images/admin pannel/main/visitors.png" alt="نسبة المبيعات"  width="40px" height="40px"/>
 
-                        <select name="cars" id="cars">
-                          <option value="volvo">اخر شهر</option>
-                          <option value="saab">اخر 4 شهور</option>
-                          <option value="opel">اخر سنة</option>
-                          <option value="audi">اخر سنتين</option>
+                        <select>
+                          <option value="1">اخر شهر</option>
+                          <option value="2">اخر 4 شهور</option>
+                          <option value="3">اخر سنة</option>
+                          <option value="4">اخر سنتين</option>
                         </select>
 
                       </div>
@@ -197,11 +197,11 @@
                       <div class="col-6 img-box">
                         <img src="images/admin pannel/main/orders.png" alt="نسبة المبيعات"  width="40px" height="40px"/>
 
-                        <select name="cars" id="cars">
-                          <option value="saab">اخر 4 شهور</option>
-                          <option value="volvo">اخر شهر</option>
-                          <option value="opel">اخر سنة</option>
-                          <option value="audi">اخر سنتين</option>
+                        <select>
+                          <option value="1">اخر شهر</option>
+                          <option value="2">اخر 4 شهور</option>
+                          <option value="3">اخر سنة</option>
+                          <option value="4">اخر سنتين</option>
                         </select>
 
                       </div>
@@ -250,11 +250,11 @@
           </div>
 
             <div class="select col-6">
-              <select name="cars" id="cars">
-                <option value="saab">اخر 9 شهور</option>
-                <option value="volvo">اخر شهر</option>
-                <option value="opel">اخر سنة</option>
-                <option value="audi">اخر سنتين</option>
+              <select class="checkboxCateSec">
+                <option id="day" name="duration"  value="day" > يوم</option>
+                <option id="week" name="duration"  value="week" > اسبوع </option>
+                <option  id="month" name="duration"  value="month">اخر شهر </option>
+                <option  id="year" name="duration" selected value="year">اخر سنه</option>
               </select>
             </div>
             </div>
@@ -299,7 +299,9 @@
                 
                 <tr>
                   <th class="edit text-center">
-                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;"></span>
+                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;">
+                        <i class="fa fa-check" style="display: none;"></i>
+                    </span>
                 </th>
                     <td>
                         <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
@@ -308,13 +310,75 @@
                     <td>160$</td>
                     <td class="available"> <span style="font-size: 55px;">.</span>  متوفر  </td>
                     <td>الكترونيات</td>
-                    <td class="branch-1">5</td>
+                    <td class="branch-1">
+
+                      <div class=" col-md-6" >
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#393939" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                    </div>
+
+
+                    </td>
                     
                 </tr>
 
                 <tr>
                   <th class="edit text-center">
-                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;"></span>
+                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;">
+                        <i class="fa fa-check" style="display: none;"></i>
+                    </span>
+                </th>
+                    <td>
+                        <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
+                        ابل 6 بلس 
+                    </td>
+                    <td>160$</td>
+                    <td class="available"> <span style="font-size: 55px;">.</span>  متوفر  </td>
+                    <td>الكترونيات</td>
+                    <td class="branch-1">
+
+                      <div class=" col-md-6" >
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#393939" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                    </div>
+
+
+                    </td>
+                    
+                </tr>
+
+
+               <tr>
+                  <th class="edit text-center">
+                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;">
+                        <i class="fa fa-check" style="display: none;"></i>
+                    </span>
                 </th>
                     <td>
                         <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
@@ -323,14 +387,37 @@
                     <td>160$</td>
                     <td class="not-available"> <span style="font-size: 55px;">.</span>  غير متوفر  </td>
                     <td>الكترونيات</td>
-                    <td  class="branch-3">8</td>
+                    <td class="branch-1">
+
+                      <div class=" col-md-6" >
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#393939" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                    </div>
+
+
+                    </td>
                     
-                </tr>
+                </tr> 
 
 
                 <tr>
                   <th class="edit text-center">
-                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;"></span>
+                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;">
+                        <i class="fa fa-check" style="display: none;"></i>
+                    </span>
                 </th>
                     <td>
                         <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
@@ -339,46 +426,118 @@
                     <td>160$</td>
                     <td class="available"> <span style="font-size: 55px;">.</span>  متوفر  </td>
                     <td>الكترونيات</td>
-                    <td  class="branch-3">8</td>
+                    <td class="branch-1">
+
+                      <div class=" col-md-6" >
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#393939" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                    </div>
+
+
+                    </td>
                     
                 </tr>
 
 
+
                 <tr>
                   <th class="edit text-center">
-                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;"></span>
+                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;">
+                        <i class="fa fa-check" style="display: none;"></i>
+                    </span>
                 </th>
                     <td>
                         <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
                         ابل 6 بلس 
                     </td>
                     <td>160$</td>
-                    <td class="not-available"> <span style="font-size: 55px;">.</span>  غير متوفر </td>
+                    <td class="not-available"> <span style="font-size: 55px;">.</span>  غير متوفر  </td>
                     <td>الكترونيات</td>
-                    <td  class="branch-3">8</td>
+                    <td class="branch-1">
+
+                      <div class=" col-md-6" >
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#393939" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                    </div>
+
+
+                    </td>
                     
-                </tr>
+                </tr> 
 
 
-                <tr>
+
+               <tr>
                   <th class="edit text-center">
-                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;"></span>
+                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;">
+                        <i class="fa fa-check" style="display: none;"></i>
+                    </span>
                 </th>
                     <td>
                         <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
                         ابل 6 بلس 
                     </td>
                     <td>160$</td>
-                    <td class="not-available"> <span style="font-size: 55px;">.</span>  غير متوفر </td>
+                    <td class="not-available"> <span style="font-size: 55px;">.</span>  غير متوفر  </td>
                     <td>الكترونيات</td>
-                    <td  class="branch-3">8</td>
+                    <td class="branch-1">
+
+                      <div class=" col-md-6" >
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#393939" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                    </div>
+
+
+                    </td>
                     
-                </tr>
+                </tr> 
+
 
 
                 <tr>
                   <th class="edit text-center">
-                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;"></span>
+                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;">
+                        <i class="fa fa-check" style="display: none;"></i>
+                    </span>
                 </th>
                     <td>
                         <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
@@ -387,29 +546,56 @@
                     <td>160$</td>
                     <td class="available"> <span style="font-size: 55px;">.</span>  متوفر  </td>
                     <td>الكترونيات</td>
-                    <td  class="branch-3">8</td>
+                    <td class="branch-1">
+
+                      <div class=" col-md-6" >
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#f39c12" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="20px" height="20px" fill="#393939" style="margin-left: 0px;">
+                            <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                        </svg>
+                    </div>
+
+
+                    </td>
                     
                 </tr>
 
-                <tr>
-                  <th class="edit text-center">
-                    <span style="width: 30px;height: 30px;border: 1px solid #707070;border-radius: 5px;display: inline-block;margin-top: 6px;"></span>
-                </th>
-                    <td>
-                        <img src="images/mobileProdct.png" alt="product-img" width="50px" height="35px">
-                        ابل 6 بلس 
-                    </td>
-                    <td>160$</td>
-                    <td class="available"> <span style="font-size: 55px;">.</span>  متوفر  </td>
-                    <td>الكترونيات</td>
-                    <td  class="branch-3">8</td>
-                    
-                </tr>
+
 
 
 
 
             </table>
+          </div>
+
+
+
+
+          <div class="export">
+            <div class="row">
+                <div class="column pdf" >
+                        حفظ &nbsp;&nbsp;  pdf &nbsp;<i class="far fa-file-pdf"></i> 
+                </div>
+                <div  class="column excel" id="exportBtn1">
+                        <p>حفظ  &nbsp;&nbsp; excel &nbsp;<i class="far fa-file-excel"></i></p>
+                </div>
+            </div>
+
+              <div  class="delete text-center">
+                حذف  &nbsp;&nbsp;   &nbsp;&nbsp;  &nbsp; <i class="fa fa-trash"></i>
+              </div>
+            
           </div>
 
           </section>
@@ -429,7 +615,6 @@
     <script src="js/bbbb.js"></script>
     <script src="js/main.js"></script>
     <script src="js/chart.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="js/commertial_graph.js"></script>
 
@@ -474,16 +659,9 @@
 
   
 $(".checkboxCateSec").change(function() {
-  if ($('#custom:checked').length > 0){
-      $("#day-date-end").removeAttr("disabled")
-      $("#day-date-start").removeAttr("disabled")
-  }else{
-      $("#day-date-end").prop("disabled", true)
-      $("#day-date-start").prop("disabled", true)
-  }
 
   
-  if (   $(this).find('input:checked').attr('id') == "year"   ) {
+  if (   $(this).children(":selected").attr("id") == "year"   ) {
 
       myChart.data.labels = ['يناير', 'فبراير', 'مارس', 'ابريل', 'مايو', 'يونيو', 'يوليو', 'اغسطس',"سبتمبر","اكتوبر ","نوفبر","ديسامبر"];
       myChart.data.datasets[0].data[0] = 10
@@ -500,7 +678,7 @@ $(".checkboxCateSec").change(function() {
       myChart.data.datasets[0].data[11] = 5
 
       myChart.update()
-  }else if (   $(this).find('input:checked').attr('id') == "month"  ){
+  }else if (   $(this).children(":selected").attr("id") == "month"  ){
       myChart.data.labels = ['الاسبوع الاول','الاسبوع التاني','الاسبوع الثالث','الاسبوع الرابع'];
       myChart.data.datasets[0].data = [12,50,30,12]
 
@@ -508,7 +686,7 @@ $(".checkboxCateSec").change(function() {
       myChart.update()
 
 
-  }else if (   $(this).find('input:checked').attr('id') == "day"  ){
+  }else if (   $(this).children(":selected").attr("id") == "day"  ){
       
       myChart.data.labels = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
 
@@ -544,7 +722,7 @@ $(".checkboxCateSec").change(function() {
 
 
 
-  }else if (   $(this).find('input:checked').attr('id') == "week"  ){
+  }else if (   $(this).children(":selected").attr("id") == "week"  ){
       myChart.data.labels = ['سبت', 'احد', 'اثنين', 'ثلثاء', 'اربعاء', 'خميس',"جمعه"]
 
       myChart.data.datasets[0].data = [12,19,3,5,2,12,5]
