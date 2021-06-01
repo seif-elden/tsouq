@@ -28,6 +28,15 @@
     display: none;
     z-index: 55 !important;
 }
+
+.sec-title{
+    margin: 20px;
+}
+
+.sec-title span{
+    color:#07b2e6
+}
+
 /* ============== End go_up icon =============== */ 
 
 /* ============== Start main =============== */

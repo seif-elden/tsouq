@@ -40,6 +40,15 @@
 .titleHeader h2 {
     color: #fff;
 }
+
+.sec-title{
+    font-size: large;
+    margin: 20px;
+}
+
+.sec-title span{
+    color:#07b2e6
+}
 /* ============== Start titleHeader =============== */
 
 /* ============== Start main =============== */
