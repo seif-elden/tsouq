@@ -57,9 +57,9 @@
                                 </div>
                                 <div class="col-4">
                                     <h5 class="product-quntity text-center"> 
-                                            <span> + </span> &nbsp;
-                                            <span> 2 </span> &nbsp;
-                                            <span> - </span>
+                                            <span class="plus hand"> + </span> &nbsp;
+                                            <span class="quntity"> 1 </span> &nbsp;
+                                            <span class="mins hand"> - </span>
                                     </h5>
                                 </div>
                             </div>
@@ -108,9 +108,9 @@
                                 </div>
                                 <div class="col-4">
                                     <h5 class="product-quntity text-center"> 
-                                            <span> + </span> &nbsp;
-                                            <span> 2 </span> &nbsp;
-                                            <span> - </span>
+                                            <span class="plus hand"> + </span> &nbsp;
+                                            <span class="quntity"> 1 </span> &nbsp;
+                                            <span class="mins hand"> - </span>
                                     </h5>
                                 </div>
                             </div>
@@ -159,9 +159,9 @@
                                 </div>
                                 <div class="col-4">
                                     <h5 class="product-quntity text-center"> 
-                                            <span> + </span> &nbsp;
-                                            <span> 2 </span> &nbsp;
-                                            <span> - </span>
+                                            <span class="plus hand"> + </span> &nbsp;
+                                            <span class="quntity"> 1 </span> &nbsp;
+                                            <span class="mins hand"> - </span>
                                     </h5>
                                 </div>
                             </div>
@@ -211,9 +211,9 @@
                                 </div>
                                 <div class="col-4">
                                     <h5 class="product-quntity text-center"> 
-                                            <span> + </span> &nbsp;
-                                            <span> 2 </span> &nbsp;
-                                            <span> - </span>
+                                            <span class="plus hand"> + </span> &nbsp;
+                                            <span class="quntity"> 1 </span> &nbsp;
+                                            <span class="mins hand"> - </span>
                                     </h5>
                                 </div>
                             </div>
@@ -260,6 +260,51 @@
         $(".showMore").click(function(){
             $(this).next().slideToggle()
         })
+
+        $(".plus").click(function(){
+            $(this).siblings('.quntity').html(
+                parseInt($(this).siblings('.quntity').html()) + 1 
+            )
+            $(this).parents('.row').find('.product-price').html(
+                
+                parseInt( $(this).parents('.row').find('.product-price').html() ) + 350 + " جنيه "
+            )
+
+            
+        })
+
+        $(".mins").click(function(){
+            if ($(this).siblings('.quntity').html() > 1){
+                $(this).siblings('.quntity').html(
+                     parseInt($(this).siblings('.quntity').html()) - 1 
+                )
+
+                $(this).parents('.row').find('.product-price').html(
+                parseInt( $(this).parents('.row').find('.product-price').html() ) - 350 + " جنيه "
+                )
+
+
+            }else{
+                $(this).parents( ".product").next('hr').remove()
+
+                if ( $(this).parents(".products").find('.product').length == 1 ){
+                    alert('product removed')
+                    alert('store removed becaue of no products in it')
+
+                    $(this).parents( ".store").remove()
+                }else{
+                    alert('product  removed')
+
+                    $(this).parents( ".product").remove()
+
+                }
+
+
+
+            }
+
+        })
+
         $(".all").click(function(){
             if ( $(this).prop("checked") ){
                 $('input[type=checkbox]').prop( "checked", true );

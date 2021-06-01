@@ -77,6 +77,12 @@
     width: 90px;
     border: #000 1px solid;
     border-radius: 30px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .showMore{
@@ -166,5 +172,9 @@
     line-height: 18px;
     color: grey;
     
+}
+
+.hand{
+    cursor: pointer;
 }
 
