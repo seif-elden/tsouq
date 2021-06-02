@@ -1,0 +1,180 @@
+/* ################### Start Global ################### */
+
+@font-face {
+    font-family: "coconFont";
+    src: url("../fonts/cocon-next-arabic.ttf");
+  }
+  
+  * {
+    font-family: "coconFont";
+  }
+
+  body{
+      background: #f1eeee;
+  }
+  /* ################### End Global ################### */
+  
+  /* ============== Start go_up icon =============== */
+  .go_up {
+    position: fixed;
+    right: 5px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #fff;
+    border: 2px solid #07b2e6;
+    box-shadow: 0 0 10px #07b2e6;
+    color: #07b2e6;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 55 !important;
+  }
+  /* ============== End go_up icon =============== */
+  
+  /* ============== Start titleHeader =============== */
+  .titleHeader {
+    padding: 60px 0;
+    background-image: url("../images/titleHeader.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .titleHeader h2 {
+    color: #fff;
+  }
+  /* ============== end titleHeader =============== */
+  /* ################### start main ################# */
+
+.main  .store {
+    width: 95%;
+    margin: auto;
+    background: #fff;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.main .store .header .store-name {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.main .store .products .product{
+    margin: 10px;
+}
+
+.main .store .products .product .product-name{
+    display: inline-block;
+}
+.main .store .products .product .product-price ,
+.main .store .products .product .product-delevery,
+.main .store .products .product .product-quntity{
+    line-height: 50px;
+}
+
+.main .store .products .product .product-quntity {
+    width: 90px;
+    border: #000 1px solid;
+    border-radius: 30px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.showMore{
+    display: inline-block;
+}
+
+.showMore a{
+   text-decoration: none;
+}
+
+.showMore i{
+    margin-top: -12px;
+}
+
+.red{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #f00;
+    margin-bottom: 0px;
+}
+
+.green{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(132, 206, 22);
+    margin-bottom: 0px;
+}
+
+
+
+.main .store .products .product input[type='checkbox'] ,
+.pay input[type='checkbox']{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+    font-size: inherit;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 0.25em;
+    position: relative;
+    cursor: pointer;
+    border: 0.125em solid #000;
+}
+  
+.main .store .products .product input[type='checkbox']:checked ,
+.pay input[type='checkbox']:checked{
+    border: 0.125em solid #04bdf5;
+    background-color: #04bdf5;
+
+}
+  
+.main .store .products .product input[type='checkbox']:checked:after ,
+.pay input[type='checkbox']:checked:after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f00c";
+    position: absolute;
+    font-size: 70%;
+    left: 2px;
+    top: 10xp;
+    color: #fff;
+    
+}
+
+
+.pay{
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.btn{
+    width: 111px;
+    border-radius: 24px;
+}
+
+.bran{
+    line-height: 18px;
+    color: grey;
+    
+}
+
+.hand{
+    cursor: pointer;
+}
+
