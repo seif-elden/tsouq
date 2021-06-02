@@ -29,6 +29,20 @@
 }
 /* ============== End go_up icon =============== */
 
+  /* ============== Start titleHeader =============== */
+  .titleHeader {
+    padding: 60px 0;
+    background-image: url("../images/titleHeader.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .titleHeader h2 {
+    color: #fff;
+  }
+  /* ============== end titleHeader =============== */
+
 
 
 /* start main */
