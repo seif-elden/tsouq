@@ -1,0 +1,116 @@
+/* ################### Start Global ################### */
+
+@font-face {
+    font-family: "coconFont";
+    src: url("../fonts/cocon-next-arabic.ttf");
+}
+
+* {
+    font-family: "coconFont";
+}
+
+
+/* ################### End Global ################### */
+
+/* ============== Start go_up icon =============== */
+.go_up {
+    position: fixed;
+    right: 5px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #fff;
+    border: 2px solid #07b2e6;
+    box-shadow: 0 0 10px #07b2e6;
+    color: #07b2e6;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 55 !important;
+}
+/* ============== End go_up icon =============== */
+
+  /* ============== Start titleHeader =============== */
+  .titleHeader {
+    padding: 60px 0;
+    background-image: url("../images/titleHeader.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .titleHeader h2 {
+    color: #fff;
+  }
+  /* ============== end titleHeader =============== */
+
+
+
+/* start main */
+
+main{
+    margin-top: 50px;
+}
+
+main .info .info-title{
+    color: #615d5d;
+}
+
+main .info .info-title-name{
+    margin: 16px;
+    font-size: 16px;
+}
+
+@media screen and (min-width : 600px) {
+    main .info .info-title-name{
+        margin: 25px;
+        font-size: 25px;
+    }
+}
+
+
+
+
+main  .info .ship-inner{
+    box-shadow: 5px 5px 5px 5px #f0f0f0d6;
+    padding: 10px;
+    margin: 5px;
+    height: 100%;
+}
+
+.ship-name ,.ship-duration{
+    float: left;
+    height: 50px;
+}
+
+.ship-price{
+    float: right;
+    height: 50px;
+
+}
+
+
+main .cart{
+    background-color: #f8fafb;
+}
+
+main .cart .cart-title{
+    color: #07b2e6;
+    padding-top: 40px;
+}
+
+main .cart .cart-product{
+    margin-top: 30px;
+}
+
+
+
+main .cart .discound ,
+main .cart  .price ,
+main .cart  .total ,
+main .cart .shipping{
+    height: 30px;
+    margin: auto;
+    width: 90%;
+    line-height: 20px;
+}
+/* end main */
