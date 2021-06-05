@@ -78,6 +78,24 @@
                                     <i class="fas fa-store-alt"></i>
                                     <a href="#">View store information</a>
                                 </div>
+
+                                <div class="report d-flex flex-column align-items-center">
+                                    <p  id="reporttoggler" style="color: #04bdf5;cursor :pointer;">Report merchant</p>
+                                    <hr>
+                                    <form action="" id="reportform" style="display: none;">
+                                        <select name="reportoption"  style="width: 100%;">
+                                            <option value="break website rules "> break website rules  </option>
+                                            <option value=" fake person "> fake person  </option>
+                                            <option value="Fake services/products ">Fake services/products </option>
+                                            <option value="other">other</option>
+                                        </select>
+                                        <hr>
+                                        <textarea name="reportmessage"  cols="30" rows="3" style="width: 100%;" placeholder="please write down the reason "></textarea>
+                                        <button type="submit" class="btn btn-primary d-flex flex-column align-items-center">REPORT</button>
+                                    </form>
+                                    
+                                </div>
+
                             </div>
                         </div>
                         <div class="CategoriesAndSorting_Sec">
@@ -486,6 +504,13 @@
     <script src="js/main.js"></script>    
     <!-- <script src="js/header_scripts.js"></script> -->
     <script>
+        // report script
+
+        $("#reporttoggler").click(function(){
+            $("#reportform").slideToggle('slow')
+        })
+
+
         // ######## properites of stars in clientNameAndRate section ########
         // ------------ number 1 ------------
         $(".merchantRateStars").rateYo({
