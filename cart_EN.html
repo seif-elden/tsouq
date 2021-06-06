@@ -132,6 +132,21 @@
                     </div>
               
             </div>
+
+            <div class="pay ">
+                <div style="float: left;">
+                    <input type="checkbox" name="" id="" class="all">
+                    select all 
+                </div>
+                
+                <div style="float: right;">
+                    <div class="btn btn-primary ">
+                        pay
+                    </div>
+                </div>
+    
+    
+            </div>
             
         </div>
 
@@ -234,27 +249,29 @@
                     </div>
               
             </div>
-            
-        </div>
 
-
-
-
-
-        <div class="pay ">
-            <div style="float: left;">
-                <input type="checkbox" name="" id="" class="all">
-                select all 
-            </div>
-            
-            <div style="float: right;">
-                <div class="btn btn-primary ">
-                    pay
+            <div class="pay ">
+                <div style="float: left;">
+                    <input type="checkbox" name="" id="" class="all">
+                    select all 
                 </div>
+                
+                <div style="float: right;">
+                    <div class="btn btn-primary ">
+                        pay
+                    </div>
+                </div>
+    
+    
             </div>
-
-
+            
         </div>
+
+
+
+
+
+
     </div>
     <script src="js/jquery_3.6.0.min.js"></script>
     <script src="js/main.js"></script>    
@@ -310,9 +327,9 @@
 
         $(".all").click(function(){
             if ( $(this).prop("checked") ){
-                $('input[type=checkbox]').prop( "checked", true );
+                $(this).parents('.store').find('input[type=checkbox]').prop( "checked", true );
             }else{
-                $('input[type=checkbox]').prop( "checked", false );
+                $(this).parents('.store').find('input[type=checkbox]').prop( "checked", false );
             }
            
         })
