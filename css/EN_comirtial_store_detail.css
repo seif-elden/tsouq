@@ -1,0 +1,533 @@
+/* ################### Start Global ################### */
+
+@font-face {
+    font-family: 'coconFont';
+    src: url('../fonts/cocon-next-arabic.ttf');
+}
+
+* {
+    font-family: 'coconFont';
+}
+/* ################### End Global ################### */
+/* ============== Start go_up icon =============== */
+.go_up {
+    position: fixed;
+    right: 40px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #fff;
+    border: 2px solid #07b2e6;
+    box-shadow: 0 0 10px #07b2e6;
+    color: #07b2e6;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 55 !important;
+}
+/* ============== End go_up icon =============== */ 
+/* ============== Start titleHeader =============== */
+.titleHeader {
+    padding: 60px 0;
+    background-image: url('../images/titleHeader.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.titleHeader h2 {
+    color: #fff;
+}
+/* ============== end titleHeader =============== */
+
+/* start */
+
+.sec-title{
+    margin: 20px;
+}
+
+.sec-title span{
+    color:#07b2e6
+}
+
+/* ----- Start CategoriesAndSorting_Sec ----- */
+.CategoriesAndSorting_Sec {
+    background: #fff;
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    padding: 30px 20px 5px;
+}
+
+.CategoriesAndSorting_Sec .searchSection {
+    position: relative;
+    padding: 0;
+}
+
+.CategoriesAndSorting_Sec .searchSection input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #b4b4b4;
+    outline: none;
+}
+
+.CategoriesAndSorting_Sec .searchSection input::placeholder {
+    color: #b4b4b4;
+}
+
+.CategoriesAndSorting_Sec .searchSection::after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f002";
+    color: #07b2e6 !important;
+    top: 20%;
+    right: 10px;
+}
+
+.CategoriesAndSorting_Sec .categoriesSorting {
+    padding: 10px 0;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.CategoriesAndSorting_Sec .sortingType {
+    padding: 0;
+}
+
+.CategoriesAndSorting_Sec .categoriesSorting .categoriesSortingTitle,
+.CategoriesAndSorting_Sec .sortingType .sortingTypeTitle {
+    padding: 10px 0 10px;
+}
+
+.CategoriesAndSorting_Sec .categoriesSorting h2 {
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: #04bdf5;
+    color: #fff;
+    font-size: 23px;
+    margin: 0;
+}
+
+.CategoriesAndSorting_Sec .checkboxCateSec label,
+.CategoriesAndSorting_Sec .checkboxSortSec label {
+    cursor: pointer;    
+    color: #b4b4b4;
+    font-size: 18px;
+}
+
+.CategoriesAndSorting_Sec .checkboxCateSec input[type='checkbox'],
+.CategoriesAndSorting_Sec .checkboxSortSec input[type='checkbox'] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+    outline: none;
+    font-size: inherit;
+    cursor: pointer;
+    width: 1.0em;
+    height: 1.0em;
+    background: white;
+    border-radius: 0.25em;
+    border: 0.125em solid #b4b4b4;
+    position: relative;
+    cursor: pointer;
+}
+  
+.CategoriesAndSorting_Sec .checkboxCateSec input[type='checkbox']:checked,
+.CategoriesAndSorting_Sec .checkboxSortSec input[type='checkbox']:checked {
+    background: #04bdf5;
+    border: 0.125em solid #04bdf5;
+}
+  
+.CategoriesAndSorting_Sec .checkboxCateSec input[type='checkbox']:checked:after,
+.CategoriesAndSorting_Sec .checkboxSortSec input[type='checkbox']:checked:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f00c";
+    position: absolute;
+    font-size: 75%;
+    right: 0.0625em;
+    top: -0.25em;
+    color: #fff;
+}
+
+.CategoriesAndSorting_Sec .checkboxCateSec label:hover,
+.CategoriesAndSorting_Sec .checkboxSortSec label:hover {
+    color: #04bdf5;
+} 
+
+.CategoriesAndSorting_Sec .sortingType h2 {
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: #04bdf5;
+    color: #fff;
+    font-size: 23px;
+}
+
+.CategoriesAndSorting_Sec .hidingSorting {
+    display: none;
+}
+
+.CategoriesAndSorting_Sec .showMore {
+    padding-top: 15px;
+}
+
+.CategoriesAndSorting_Sec .showMore a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.CategoriesAndSorting_Sec .showMore a span {
+    color: #707070;
+}
+
+.CategoriesAndSorting_Sec .showMore a i {
+    color: #07b2e6;
+    transition: 0.3s ease-in-out;
+}
+
+.CategoriesAndSorting_Sec .showMore a:hover i {
+    transform: translateY(5px);
+}
+/* ######### End merchantData_Sorting ######### */
+
+/* $$$$$$$ Start totalProfileData $$$$$$$ */
+.profileData {
+    background: #fff;
+    margin-top: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+
+
+
+.profileImg img {
+    width: 250px ;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.swiper-container:after
+{
+  content: '-';
+  font-size: 30px;
+  opacity: 0;
+}
+
+
+
+.profileName {
+    font-size: 23px;
+    color: #07b2e6;
+    font-weight: 600;
+}
+
+
+
+.profileData .totalProfileData .profileInfo .profileSocialMedia {
+    padding: 0 0 10px;
+    margin-bottom: 0;
+}
+
+.profileData .totalProfileData .profileInfo .profileSocialMedia i {
+    color: #07b2e6;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.profileData .totalProfileData .profileInfo .profileSocialMedia i:nth-child(1) {
+    padding-right: 0;
+}
+
+.profileData .totalProfileData .profileInfo .profileSocialMedia .fa-whatsapp:hover {
+    color: #25D366;
+}
+.profileData .totalProfileData .profileInfo .profileSocialMedia .fa-facebook:hover {
+    color: #3b5998;
+}
+.profileData .totalProfileData .profileInfo .profileSocialMedia .fa-telegram:hover {
+    color: #0088cc;
+}
+.profileData .totalProfileData .profileInfo .profileSocialMedia .fa-instagram:hover {
+    color: #e4405f;
+}
+.profileData .totalProfileData .profileInfo .profileSocialMedia .fa-twitter:hover {
+    color: #55acee;
+}
+.profileData .totalProfileData .profileInfo .profileSocialMedia .fa-youtube:hover {
+    color: #bb0000;
+}
+
+.profileData .totalProfileData .profileInfo .profileReveal,
+.profileData .totalProfileData .profileInfo .profileConsultation,
+.profileData .totalProfileData .profileInfo .profileShare {
+    color: #07b2e6;
+    font-size: 22px;
+}
+
+.profileData .totalProfileData .profileInfo .profileShare a {
+    text-decoration: none;
+}
+
+.profileData .totalProfileData .profileInfo .profileShare span {
+    color: #07b2e6 !important;
+}
+
+.modal .profileShareIcons .modal-body h2 {
+    color: #07b2e6;
+    font-size: 25px;
+}
+
+.modal .profileShareIcons .modal-body .shareSocialMediaIcons {
+    padding: 10px 0;
+}
+
+.modal .profileShareIcons .modal-body .totalAllShareSocialMediaIcons {
+    align-items: center;
+}
+
+.modal .profileShareIcons .modal-body .shareSocialMediaIcons a {
+    color: #07b2e6;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.modal .profileShareIcons .modal-body .shareSocialMediaIcons a i {
+    height: 40px;
+    width: 40px;
+    /* background: red; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.modal .profileShareIcons .modal-body .shareSocialMediaIcons a .fa-facebook-f {
+    background: #3b5998;
+}
+.modal .profileShareIcons .modal-body .shareSocialMediaIcons a .fa-twitter {
+    background: #55acee;
+}
+.modal .profileShareIcons .modal-body .shareSocialMediaIcons a .fa-whatsapp {
+    background: #25D366;
+}
+.modal .profileShareIcons .modal-body .shareSocialMediaIcons a .fa-google-plus-g {
+    background: #bb0000;
+}
+.modal .profileShareIcons .modal-body .shareSocialMediaIcons a .fa-linkedin-in {
+    background: #0088cc;
+}
+
+.copy-link{
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    background-color: #8e94969f;
+}
+
+.detail-title{
+    font-size: large;
+}
+
+.profileData .totalProfileData .profileInfo .profileReveal span,
+.profileData .totalProfileData .profileInfo .profileConsultation span,
+.profileData .totalProfileData .profileInfo .profileShare i {
+    color: #707070;
+}
+
+.profileData .totalProfileData .profileInfo .profileShare i:hover {
+    color: #07b2e6;
+}
+
+.profileData .totalProfileData .profileOptions {
+    padding: 5px;
+}
+
+.profileData .totalProfileData .profileOptions ul {
+    width: 60%;
+    padding: 0;
+}
+
+.profileData .totalProfileData .profileOptions ul i {
+    color: #eed600;
+    font-size: 17px;
+}
+
+.profileData .totalProfileData .profileOptions .evaluation {
+    padding: 10px 0;
+}
+
+.profileData .totalProfileData .profileOptions .evaluation p {
+    margin: 0;
+    font-size: 18px;
+    color: #707070;
+}
+
+.profileData .totalProfileData .profileOptions .evaluation p:first-child {
+    margin-bottom: -5px;
+}
+
+.profileData .totalProfileData .contactMe {
+    background: #07b2e6;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.profileData .totalProfileData .contactMe:hover {
+    padding: 10px 30px;
+    box-shadow: 0 0 10px #07b2e6;
+}
+/* $$$$$$$ End totalProfileData $$$$$$$ */
+
+
+
+
+/* $$$$$$$ Start profileBranches $$$$$$$ */
+.profileData .profileBranches {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.profileData .profileBranches .profileBranchesHeader {
+    margin-top: 10px;
+    color: #07b2e6;
+    font-size: 23px;
+    margin-bottom: 0;
+}
+
+.profileData .profileBranches .totalProfileBranches .locationIcon img {
+    width: 20px;
+    height: 20px;
+}
+
+.profileData .profileBranches .totalProfileBranches .branchLocation3 {
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.profileData .profileBranches .totalProfileBranches .branchLocation .branchLocationDetails {
+    margin: 10px;
+    width: 100%;
+}
+
+.profileData .profileBranches .totalProfileBranches .branchLocation .branchGovernment,
+.profileData .profileBranches .totalProfileBranches .branchLocation .branchWorkArea,
+.profileData .profileBranches .totalProfileBranches .branchLocation .branchWorkTime {
+    padding:  5px;
+}
+
+.profileData .profileBranches .totalProfileBranches .branchLocation h2 {
+    font-size: 20px;
+    margin: 0;
+    line-height: 27px;
+    color: #5d5a5a;
+}
+
+.profileData .profileBranches .totalProfileBranches .branchLocation h2 span {
+    color: #707070;
+}
+
+.profileData .profileBranches .totalProfileBranches .branchLocation .locationMap {
+    margin-top: 5px;
+}   
+
+.profileData .profileBranches .totalProfileBranches .branchLocation .locationMap a {
+    font-size: 20px;
+    color: #07b2e6;
+    text-decoration: underline;
+}
+
+.profileData .profileBranches .showMore a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.profileData .profileBranches .showMore a span {
+    color: #707070;
+}
+
+.profileData .profileBranches .showMore a i {
+    color: #07b2e6;
+    transition: 0.3s ease-in-out;
+}
+
+.profileData .profileBranches .showMore a:hover i {
+    transform: translateY(5px);
+}
+
+/* $$$$$$$ Start modal of map $$$$$$$ */
+.profileData .modal .mapModal .modal-header button {
+    outline: none;
+}
+
+.profileData .modal .mapModal .modal-content .modal-body {
+    position: relative;
+    width: 100% !important;
+    height: 400px !important;
+    padding: 0;
+}
+
+.profileData .modal .mapModal .modal-body .mapLocationGPS {
+    height: 100%;
+}
+/* $$$$$$$ End modal of map $$$$$$$ */
+
+/* $$$$$$$ Start doctorDetails $$$$$$$ */
+.profileData .doctorDetails {
+    padding: 20px 0 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.profileData .doctorDetails .doctorDetailsHeader {
+    color: #07b2e6;
+    font-size: 23px;
+}
+
+.profileData .doctorDetails p {
+    font-size: 20px;
+    /* margin: 0; */
+    color: #707070;
+}
+
+.profileData .doctorDetailsExperience {
+    font-size: 20px;
+    /* margin: 0; */
+    color: #707070;
+}
+/* $$$$$$$ End doctorDetails $$$$$$$ */
+
+/* $$$$$$$ Start doctorCommunications $$$$$$$ */
+.profileData .doctorCommunications {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.profileData .doctorCommunications .doctorCommunicationsHeader {
+    color: #07b2e6;
+    font-size: 23px;
+}
+
+.profileData .doctorCommunications ul {
+    margin: -5px;
+    padding: 10px 0;
+}
+
+.profileData .doctorCommunications ul li {
+    list-style: none;
+    padding: 10px 20px;
+    background: #07b2e6;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+/* $$$$$$$ End doctorCommunications $$$$$$$ */
