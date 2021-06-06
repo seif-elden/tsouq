@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسوق دوت كوم</title>
+    <link rel="stylesheet" href="css/bootrap_rtl_4.5.3.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/all.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/cart_pay_info.css" />
+</head>
+<body dir="rtl">
+        <!-- ============== Start go_up icon =============== -->
+        <i class="fas fa-angle-double-up go_up"><a href="#"></a></i>
+        <!-- ============== End go_up icon =============== -->
+        <!-- ============== Start titleHeader =============== -->
+        <div class="titleHeader">
+            <div class="container text-center">
+            <div class=" navbar-dark  flex-md-nowrap p-0 shadow" style=" position:absolute;top:10px; right:10px" >
+                <div class="navbar-toggler d-md-none collapsed  " type="button"  data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span>
+                    <i class="fas fa-bars " style="color: black; font-size:25px;"></i>
+                    <i class="fas fa-times" style="color: black; font-size:25px;display:none"></i>
+                </span>
+                </div>
+            </div>
+
+                <h2 > عربه التسوق </h2>
+            </div>
+        </div>
+        <!-- ============== End titleHeader =============== -->
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 order-md-1 order-2">
+                        <div class="info">
+
+                            <div class="info-title row text-center ">
+                                <div class="column"> 
+                                    <div class="info-title-name " >
+                                    معلومات الشاري 
+                                    
+                                    </div>
+                                </div>
+                                <div class="column"> 
+                                    <div class="info-title-name">
+                                    معلومات الشراء
+                                    </div>
+                                </div>
+                                <div class="column"> 
+                                    <div class="info-title-name" style="color: #07b2e6;">
+                                    خيارات الدفع
+                                    <hr>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="container">
+                                <h4 style="color: #615d5d;" > نقبل دفع</h4>
+                            </div>
+
+
+                            <div class="container">
+                                <h4 style="color: #615d5d;" > قريبا </h4>
+                            </div>
+                            
+
+                            <div style="margin: 20px;height:50px">
+                                <div style="float: right;padding:10px;color:#788995"><i class="fas fa-long-arrow-alt-right"></i> الرجوع للسله</div>
+                                <div class="text-center" style="float: left;background-color:#07b2e6;padding:10px;width:150px"> الذهاب للشراء </div>
+                            </div> 
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 order-md-2 order-1">
+                        <div class="cart">
+                            <h3 class="text-center cart-title">سله المشتربات </h3>
+                            <div class="cart-product">
+                                <div class="container row">
+                                    <div class="col-4">
+                                        <img src="images/mobileProdct.png" alt="product-img" width="70px" height="50px">
+                                    </div>
+                                    <div class="col-8">
+                                        <h5> ايفون 6 بلس</h5>
+                                        <p>350 جنيه</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product">
+                                <div class="container row">
+                                    <div class="col-4">
+                                        <img src="images/mobileProdct.png" alt="product-img" width="70px" height="50px">
+                                    </div>
+                                    <div class="col-8">
+                                        <h5> ايفون 6 بلس</h5>
+                                        <p>350 جنيه</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="discound">
+                                <div style="float: right;">
+                                    لديك قسيمه خصم ؟
+                                </div>
+                                <div style="float: left;">
+                                    <i class="fas fa-chevron-down " ></i>
+                                </div>
+                            </div>
+                            <hr>
+
+
+                            <div class = "price-container">
+                                <div class="price">
+                                    <div style="float: right;"> الاجمالي</div>
+                                    <div style="float: left;">  700 جنيه </div>
+                                </div>
+                                <div class="total">
+                                    <div style="float: right;"> الشحن</div>
+                                    <div style="float: left;"> مجانا </div>
+                                </div>
+                                <hr  >
+                                <div class="shipping">
+                                    <div style="float: right;"> الكلي</div>
+                                    <div style="float: left;">  700 جنيه </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+
+
+
+
+
+
+        <script src="js/jquery_3.6.0.min.js"></script>
+        <script src="js/main.js"></script>   
+
+        <script>
+            $('.add-address').click(function(){
+                $('.address-form').slideToggle('fast' , function(){
+                    window.scrollBy({  top: 1250 ,behavior : "smooth" });
+                })
+
+            })
+        </script>
+</body>
+</html>
