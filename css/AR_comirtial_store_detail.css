@@ -8,7 +8,9 @@
 * {
     font-family: 'coconFont';
 }
-
+body{
+    direction: rtl;
+}
 .jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group.jq-ry-rated-group {
     right: 0 !important;
 }
