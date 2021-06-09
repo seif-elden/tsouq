@@ -8,6 +8,10 @@
 * {
     font-family: 'coconFont';
 }
+
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group.jq-ry-rated-group {
+    right: 0 !important;
+}
 /* ################### End Global ################### */
 /* ============== Start go_up icon =============== */
 .go_up {
