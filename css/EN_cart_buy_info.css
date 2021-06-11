@@ -8,6 +8,24 @@
 * {
     font-family: "coconFont";
 }
+.go_back{
+    float: left;
+    padding:10px;
+    color:#788995 ;
+}
+.go_pay{
+    float: right;
+    background-color:#07b2e6;
+    padding:10px;
+    width:150px ;
+
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
 
 
 /* ################### End Global ################### */

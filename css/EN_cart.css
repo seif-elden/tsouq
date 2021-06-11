@@ -178,3 +178,12 @@
     cursor: pointer;
 }
 
+.pay .select_all{
+    float: left;
+} 
+
+.pay .pay_btn{
+    float: right;
+} 
+
+

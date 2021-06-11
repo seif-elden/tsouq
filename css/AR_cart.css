@@ -11,6 +11,7 @@
 
   body{
       background: #f1eeee;
+      direction: rtl;
   }
   /* ################### End Global ################### */
   
@@ -178,3 +179,10 @@
     cursor: pointer;
 }
 
+.pay .select_all{
+    float: right;
+} 
+
+.pay .pay_btn{
+    float: left;
+} 
