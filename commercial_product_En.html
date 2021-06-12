@@ -284,6 +284,44 @@
         <div class="product-ratring">
             <h2>rating</h2>
 
+            <form  method="GET" action="/moh">
+                <div >
+                    <div class="new_comment" id="new_comment">
+                        <div class="rating jq-ry-container" data-rateyo-star-width="40px" data-rateyo-rating="3.5" style="width: 200px;">
+                            <div class="jq-ry-group-wrapper">
+                                <div class="jq-ry-normal-group jq-ry-group"><!--?xml version="1.0" encoding="utf-8"?-->
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="40px" height="40px" fill="gray">
+                                        <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                                    </svg><!--?xml version="1.0" encoding="utf-8"?-->
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="40px" height="40px" fill="gray" style="margin-left: 0px;">
+                                        <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                                    </svg><!--?xml version="1.0" encoding="utf-8"?-->
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="40px" height="40px" fill="gray" style="margin-left: 0px;">
+                                        <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                                    </svg><!--?xml version="1.0" encoding="utf-8"?-->
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="40px" height="40px" fill="gray" style="margin-left: 0px;">
+                                        <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                                    </svg><!--?xml version="1.0" encoding="utf-8"?-->
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" width="40px" height="40px" fill="gray" style="margin-left: 0px;">
+                                        <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "></polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="rating_value" id="rating_value" value='0'>
+                </div>
+                <div >
+                    <label for="formGroupExampleInput"> write your comment </label>
+                    <input type="text" name="comment" class="form-control" id="formGroupExampleInput" placeholder="your rating">
+                </div>
+                <button class="btn btn-primary" style="margin:5px">post</button>
+            </form>
+
+              <hr>
+
+
+
 
             <div class="be-comment">
                 <div class="be-img-comment">	
@@ -474,6 +512,20 @@
 
         <!-- Initialize Swiper -->
         <script>
+            $(function () {
+                $("#new_comment").rateYo().on("rateyo.change", function (e, data) {
+                  var rating = data.rating;
+                  console.log(rating)
+                  document.getElementById("rating_value").value = rating
+                 });
+            });
+
+            // new comment rating
+            $("#new_comment").rateYo({ 
+                starWidth: "30px",
+                rating: 0
+                
+            });
             // product rating
             $("#reviewsRateStarsProd_3").rateYo({ 
                 starWidth: "30px",
