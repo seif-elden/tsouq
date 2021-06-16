@@ -8,6 +8,9 @@
   * {
     font-family: "coconFont";
   }
+  body{
+    direction: rtl;
+  }
   /* ################### End Global ################### */
   
   /* ============== Start go_up icon =============== */
@@ -202,6 +205,7 @@
 }
 
 .column{
+    min-width: 95px;
     padding: 10px;
     color :#989393;
     font-size: 14px;

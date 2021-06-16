@@ -12,7 +12,7 @@
 
 </head>
 
-<body dir="rtl">
+<body >
 
         <!-- ============== Start go_up icon =============== -->
         <i class="fas fa-angle-double-up go_up"><a href="#"></a></i>
@@ -127,31 +127,38 @@
                 </div>
 
                 <div class="row filter">
-                    <div class="col-6 col-md-3">
+                    <div class="column">
                         <div class="filter-item form-check">
                             <input type="checkbox"  name="completed" id="completed" class="green">
                             <label for="completed"> المكتمله</label>
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-3">
+                    <div class="column">
                         <div class="filter-item">
                             <input type="checkbox" name="refused" id="refused" class="red">
                             <label for="refused"> المرفوضه </label>
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-3">
+                    <div class="column">
                         <div class="filter-item">
                             <input type="checkbox" name="doing" id="doing" class="yellow">
                             <label for="doing">  تعمل عليها  </label>
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-3">
+                    <div class="column">
                         <div class="filter-item">
                             <input type="checkbox" name="not-done" id="not-done" class="blue">
                             <label for="not-done"> لم تتم </label>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="filter-item">
+                            <input type="checkbox" name="not-done" id="not-done" class="red">
+                            <label for="not-done">  نزاعات </label>
                         </div>
                     </div>
 
@@ -185,8 +192,53 @@
                                                 <i class="far fa-clock"></i>
                                                  منذ شهر
                                             </p>
+                                            <p class="column">
+                                                <i class="fas fa-map-pin"></i>
+                                                العنوان
+                                            </p>
                                         </div>
                                         
+                                    </div>
+                                    <div class="col-md-6"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="spacing"> </div>
+
+                    </div>
+
+                    <div class="product">
+                        <div class="row">
+                            <div class="col-md-2 product-img">
+                                <img src="images/mobileProdct.png" width="120px" height="80px">
+                            </div>
+                            <div class="col-md-9 product-details" >
+                                <h3>ابل ايفون 6 بلس</h3>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <p class="column">
+                                                <i class="fas fa-user-alt"></i>
+                                                 احمد محمد 
+                                            </p>
+                                            <p class="column">
+                                                <i class="fas fa-dollar-sign"></i>
+                                                 50 جنيه
+                                            </p>
+                                            <p class="column red">
+                                                <i class="far fa-clock"></i>
+                                                 نزاعات
+                                            </p>
+                                            <p class="column">
+                                                <i class="far fa-clock"></i>
+                                                 منذ شهر
+                                            </p>
+                                            <p class="column">
+                                                <i class="fas fa-map-pin" ></i>
+                                                العنوان
+                                            </p>
+                                        </div>                                        
                                     </div>
                                     <div class="col-md-6"></div>
                                 </div>
@@ -223,6 +275,10 @@
                                             <p class="column">
                                                 <i class="far fa-clock"></i>
                                                  منذ شهر
+                                            </p>
+                                            <p class="column">
+                                                <i class="fas fa-map-pin"></i>
+                                                العنوان
                                             </p>
                                         </div>
                                         
@@ -262,6 +318,10 @@
                                             <p class="column">
                                                 <i class="far fa-clock"></i>
                                                  منذ شهر
+                                            </p>
+                                            <p class="column">
+                                                <i class="fas fa-map-pin"></i>
+                                                العنوان
                                             </p>
                                         </div>
                                         
@@ -303,6 +363,10 @@
                                                 <i class="far fa-clock"></i>
                                                  منذ شهر
                                             </p>
+                                            <p class="column">
+                                                <i class="fas fa-map-pin"></i>
+                                                العنوان
+                                            </p>
                                         </div>
                                         
                                     </div>
@@ -340,6 +404,10 @@
                                             <p class="column">
                                                 <i class="far fa-clock"></i>
                                                  منذ شهر
+                                            </p>
+                                            <p class="column">
+                                                <i class="fas fa-map-pin"></i>
+                                                العنوان
                                             </p>
                                         </div>
                                         
@@ -383,6 +451,8 @@
     <script src="js/jquery_3.6.0.min.js"></script>
     <script src="js/bbbb.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
     <script>
         $(".fa-bars").click(function(){
