@@ -30,6 +30,15 @@
     <!-- ============== End titleHeader =============== -->
 
     <div class="container main">
+        <div class="alert">
+            <span class="closebtn">&times;</span>  
+            <strong>!</strong> المنتج موجود بالفعل في سلتك
+          </div>
+          
+          <div class="alert success">
+            <span class="closebtn">&times;</span>  
+            <strong>ناجح !</strong> تم اضافه المنتج الي سلتك بنجاح
+          </div>
 
         <div class="sec-title">
            الرئيسيه / اسم التاجر /<span> عن المنتج </span>
@@ -544,7 +553,16 @@
                   document.getElementById("rating_value").value = rating
                  });
             });
+            var close = document.getElementsByClassName("closebtn");
+            var i;
 
+            for (i = 0; i < close.length; i++) {
+            close[i].onclick = function(){
+                var div = this.parentElement;
+                div.style.opacity = "0";
+                setTimeout(function(){ div.style.display = "none"; }, 600);
+            }
+            }
             // new comment rating
             $("#new_comment").rateYo({ 
                 starWidth: "30px",
