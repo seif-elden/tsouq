@@ -63,6 +63,9 @@
                                             <span class="mins hand"> - </span>
                                     </h5>
                                 </div>
+                                <div class="col-4">
+                                    <button type="button" style="border: none;" class=" btn-danger product-quntity">حذف</button>
+                                </div>
                             </div>
                         </div>
 
@@ -113,6 +116,9 @@
                                             <span class="quntity"> 1 </span> &nbsp;
                                             <span class="mins hand"> - </span>
                                     </h5>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" style="border: none;" class=" btn-danger product-quntity">حذف</button>
                                 </div>
                             </div>
                         </div>
@@ -179,6 +185,9 @@
                                             <span class="mins hand"> - </span>
                                     </h5>
                                 </div>
+                                <div class="col-4">
+                                    <button type="button" style="border: none;" class=" btn-danger product-quntity">حذف</button>
+                                </div>
                             </div>
                         </div>
 
@@ -231,6 +240,9 @@
                                             <span class="mins hand"> - </span>
                                     </h5>
                                 </div>
+                                <div class="col-4">
+                                    <button type="button" style="border: none;" class=" btn-danger product-quntity">حذف</button>
+                                </div>
                             </div>
                         </div>
 
@@ -272,7 +284,32 @@
     </div>
     <script src="js/jquery_3.6.0.min.js"></script>
     <script src="js/main.js"></script>    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
+
+        $(".btn-danger").click(function(){
+            $(this).parents( ".product").next('hr').remove()
+
+            if ( $(this).parents(".products").find('.product').length == 1 ){
+                Swal.fire(
+                    'تم حذف المنتج بنجاح',
+                    '',
+                    'info'
+                )
+
+                $(this).parents( ".store").remove()
+            }else{
+                Swal.fire(
+                    'تم حذف المنتج بنجاح',
+                    '',
+                    'info'
+                )
+
+                $(this).parents( ".product").remove()
+
+            }
+
+        })
 
         $(".showMore").click(function(){
             $(this).next().slideToggle()
@@ -305,13 +342,19 @@
                 $(this).parents( ".product").next('hr').remove()
 
                 if ( $(this).parents(".products").find('.product').length == 1 ){
-                    alert('product removed')
-                    alert('store removed becaue of no products in it')
+                    Swal.fire(
+                    'تم حذف المنتج بنجاح',
+                    '',
+                    'info'
+                )
 
                     $(this).parents( ".store").remove()
                 }else{
-                    alert('product  removed')
-
+                    Swal.fire(
+                    'تم حذف المنتج بنجاح',
+                    '',
+                    'info'
+                    )
                     $(this).parents( ".product").remove()
 
                 }
