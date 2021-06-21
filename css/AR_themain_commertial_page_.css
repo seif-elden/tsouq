@@ -1,0 +1,173 @@
+/* ################### Start Global ################### */
+
+@font-face {
+    font-family: 'coconFont';
+    src: url('../fonts/cocon-next-arabic.ttf');
+}
+
+* {
+    font-family: 'coconFont';
+}
+body{
+    direction: rtl;
+}
+/* ################### End Global ################### */
+/* ============== Start go_up icon =============== */
+.go_up {
+    position: fixed;
+    right: 40px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #fff;
+    border: 2px solid #07b2e6;
+    box-shadow: 0 0 10px #07b2e6;
+    color: #07b2e6;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 55 !important;
+}
+/* ============== End go_up icon =============== */ 
+
+/* ============== start header =============== */ 
+header{
+    position: relative;
+    background-image: url('../images/mall.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 22rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: height 0.5s ;
+}
+
+.advanced-active{
+    height: 28rem;
+    transition: height 0.5s ;
+}
+
+header .title{
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+header .filter-store{
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    right: 0;
+    width: 100%;
+}
+
+header .filter-store .filter-item{
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 15px 0 10px ;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+header .filter-store p{
+    line-height: 5px ;
+}
+
+header .search{
+    position: absolute;
+    top: 15rem;
+    left: 50%;
+    right: 0;
+    width: 100%;
+}
+
+
+header .search .simple-serch {
+    position: relative;
+    padding: 0;
+    border-radius: 10px;
+    width: 450px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    header .search .simple-serch {
+        width: 250px;
+    }
+}
+
+header .search .simple-serch input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    border: 1px solid #b4b4b4;
+    outline: none;
+}
+
+header .search .simple-serch input::placeholder {
+    color: #b4b4b4;
+}
+
+header .search .simple-serch::after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f002";
+    color: #07b2e6 !important;
+    top: 20%;
+    left: 10px;
+}
+
+header .search .advances-search .advances-search-toogler{
+    margin: 10px;
+    color: #fff;
+}
+
+header .search .advances-search .advances-search-filters{
+    display: none;
+    width: 70%;
+    margin: auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    header .search .advances-search .advances-search-filters{
+        width: 85%;
+    }
+}
+
+
+header .search .advances-search .advances-search-filters label{
+    text-align: right !important; 
+    margin: 10px;
+}
+
+header .search .advances-search .advances-search-filters form input{
+    margin: 10px;
+}
+
+header .search .advances-search .advances-search-filters .the-button{
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* ============== end header =============== */ 
+
+
+
+
