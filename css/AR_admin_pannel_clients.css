@@ -8,6 +8,9 @@
   * {
     font-family: "coconFont";
   }
+  body{
+    direction: rtl;
+  }
   /* ################### End Global ################### */
   
   /* ============== Start go_up icon =============== */
