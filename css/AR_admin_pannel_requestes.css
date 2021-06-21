@@ -180,7 +180,9 @@
     top: -0.25em;
     
 }
-
+.user-info {
+  display: none;
+}
 .green:checked:after{
   color: #1fd71f;
 }
