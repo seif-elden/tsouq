@@ -170,6 +170,11 @@
   .main-info .info-box .img-box {
     text-align: right;
   }
+
+  .main-info .info-box .img-box select{
+    width: 100%;
+  }
+  
   
   .main-info .info-box select {
     margin-top: 50px;

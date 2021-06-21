@@ -177,6 +177,10 @@ main form input[type="submit"] {
   text-align: left;
 }
 
+.main-info .info-box .img-box select{
+  width: 100%;
+}
+
 .main-info .info-box select {
   margin-top: 50px;
   border: none;
