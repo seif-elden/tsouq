@@ -245,6 +245,7 @@ main .product .product-love{
     border-radius: 50%;
     text-align: center;
     border: #b7b7b7 1px solid;
+    background-color: #fff;
 
 }
 main .product .product-love i{
@@ -270,6 +271,12 @@ main .product-footer .product-price{
     position: absolute;
     top: 10px;
     right: 10px;
+    color: #07b2e6;
+
+}
+main .product-footer .product-price del{
+    color: #000;
+
 }
 
 main .product-footer .product-review{
@@ -287,8 +294,16 @@ main .product-footer .product-seller .owner p{
 
 }
 
+main .product-footer .product-seller .owner .owner-name{
+    color: #07b2e6;
+}
+
 main .add-tocart{
     transform: translate(0%, 50%);
+}
+
+main .fa-map-marker-alt{
+    color: #f00;
 }
 /* ============== end main =============== */ 
 
