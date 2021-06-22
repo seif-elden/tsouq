@@ -11,6 +11,9 @@
 body{
     direction: rtl;
 }
+.active{
+    color: #07b2e6;
+}
 /* ################### End Global ################### */
 /* ============== Start go_up icon =============== */
 .go_up {
@@ -37,7 +40,7 @@ header{
     width: 100%;
     height: 22rem;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: height 0.5s ;
+    transition: height 1s ;
 }
 
 .advanced-active{
@@ -143,6 +146,8 @@ header .search .advances-search .advances-search-filters{
     background-color: #fff;
     padding: 15px;
     border-radius: 25px;
+    border: #b7b7b7 1px solid;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -168,6 +173,122 @@ header .search .advances-search .advances-search-filters .the-button{
 
 /* ============== end header =============== */ 
 
+.placeholder-adsearch{
+    display: none;
+    height: 10em;
+}
+@media only screen and (max-width: 600px) {
+    .placeholder-adsearch{
+        height: 13em;
+    }
+}
 
 
+/* ============== start main =============== */ 
+main{
+    margin : 20px 0;
+
+}
+
+main .sort-view i{
+    background-color: #fff;
+    border: #b7b7b7 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+main .products{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    main .products{
+        width: 100%;
+    }
+}
+main .product{
+    margin : 18px 5px ;
+    box-shadow: 5px 5px 5px 5px #d4d1d191;
+    border-radius: 15px;
+
+}
+
+
+
+main .product .product-header{
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+
+main .product .product-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main .product .product-img img{
+    width: 100%;
+    height: 100%;
+}
+
+main .product .product-love{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    border: #b7b7b7 1px solid;
+
+}
+main .product .product-love i{
+    line-height: 30px;
+}
+
+main .product .product-love .fas{
+    color: red;
+}
+
+
+main .product .product-discount{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    background-color: #f00;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main .product-footer .product-price{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+main .product-footer .product-review{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+main .product-footer .product-seller .owner{
+    margin-top: 10px;
+}
+
+main .product-footer .product-seller .owner p{
+    line-height: 10px;
+
+}
+
+main .add-tocart{
+    transform: translate(0%, 50%);
+}
+/* ============== end main =============== */ 
 
