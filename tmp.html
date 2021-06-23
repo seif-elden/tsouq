@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootrap_rtl_4.5.3.min.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+
+
+    <style>
+
+        body{
+            direction: rtl;
+            background-color: black;
+        }
+        .fa-map-marker-alt{
+            color: #f00;
+        }
+
+        .mainpopupinfo{
+            z-index: 10000;
+            display: none;
+            width: 100%;
+
+
+        }
+        .mainpopupinfo .popupinfo{
+            border-radius: 10px;
+            margin: auto;
+            width: 80%; 
+            background-color: #fff;
+            z-index: 10000;
+        }
+
+        @media screen and (max-width:660px) {
+            .mainpopupinfo .popupinfo{
+            width: 100%;
+
+            }
+        }
+
+        .mainpopupinfo .popupinfo .popupinfoclosebtn{
+            float: left;
+            text-align: center;
+            font-size: 50px;
+            margin:  0 20px;
+            background-color: #f00;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            line-height: 35px;
+            color: #fff;
+            transform: translate(-80%, -40%);
+
+        }
+        @media screen and (max-width:660px) {
+
+            .mainpopupinfo .popupinfo .popupinfoowner{
+                width: 80%;
+                margin: auto;
+            }
+            .mainpopupinfo .popupinfo .popupinfoowner br{
+                display: none;
+            }
+        }
+        .mainpopupinfo .popupinfo .popupinfoimg img{
+            text-align: center;
+            font-size: 50px;
+            margin:  5px ;
+            background-color: #f00;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            line-height: 35px;
+            color: #fff;
+
+        }
+        @media screen and (max-width:660px) {
+            .mainpopupinfo .popupinfo .popupinfoimg img{
+            width: 100px;
+            height: 100px;
+            margin: 0;
+
+            }
+        }
+
+        .mainpopupinfo .popupinfo .popupinfoimg p{
+            color: #07b2e6;
+            width: 100%;
+        }
+        /* 
+        .mainpopupinfo .popupinfo .popupinfoimg .numbers{
+        } */
+
+        .mainpopupinfo .popupinfo .popupinfoimg .number{
+            text-align: center;
+            padding: 0 5px;
+            background-color: #07b2e6;
+            border-radius: 5px;
+            width: 60%;
+            margin: 5px;
+            margin: 10px auto ;
+        }
+
+        .mainpopupinfo .popupinfo .column{
+            margin: 0 5px;
+        }
+
+
+        .branches{
+            background-color: #f3f3f3;
+            padding: 20px ;
+            margin: 10px 0;
+            border-radius: 10px;
+            width: 110%;
+        }
+        .branches .branch{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="theshow text-center" style="margin: 15px; color: #fff;">اسم الطبيب</h1>
+    
+    <div class="mainpopupinfo">
+        <div class="popupinfo">
+            
+            <div class="popupinfoclosebtn">
+                x
+            </div>
+
+            
+
+            <div class="row popupinfoowner">
+                <div class="col-md-3 text-center ">
+                    <div class="popupinfoimg">
+                        <img src="images/doctor.png" alt="" srcset="">
+                        <p> معلومات التواصل   </p>
+                        <div class="numbers">
+                            <div class="number"> 012-56-56-22</div>
+                            <div class="number"> 012-56-56-22</div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="col-md-5 ">
+                    <br>
+                    <div class="row">
+                        <div class="col-md-8 text-center">
+                            <h4>
+                                <span style="color:#07b2e6;">    الدكتور :</span> احمد مصطفي
+                            </h4>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div id="sratsrate" style="margin: auto;"></div>
+                            <p style="line-height: 2;">( reviews 50 )</p>
+                        </div>
+                    </div>
+                    <h4 style="color: #07b2e6;">معلومات عن الدكتور:</h4>
+                    <p style="color: #918c8c;">
+                       لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور   
+                    </p>
+                    <h4 style="color: #07b2e6;"> خدماتنا :</h4>
+                    
+                    <div class="servise">
+                        <img src="images/doctor.png" style="width: 50px;border-radius: 50%;" alt="" srcset="">
+                        <div class="row">
+                            
+                            <div class="column">
+                                زراعه الاسنان
+                            </div>
+
+                            <div class="column" >
+                                <span style="color: #07b2e6;" >التكلفه </span>
+                                : 600 جنيه 
+                                
+                            </div>
+                            <div class="column" >للسن الواحد</div>
+
+                            
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="servise">
+                        <img src="images/doctor.png" style="width: 50px;border-radius: 50%;" alt="" srcset="">
+                        <div class="row">
+                            
+                            <div class="column">
+                                زراعه الاسنان
+                            </div>
+
+                            <div class="column" >
+                                <span style="color: #07b2e6;" >التكلفه </span>
+                                : 600 جنيه 
+                                
+                            </div>
+                            <div class="column" >للسن الواحد</div>
+
+                            
+                        </div>
+                        <hr>
+                    </div>
+
+                    
+                </div>   
+                <div class="col-md-4 text-center">
+                    <br>
+                    <h4><span style="color: #07b2e6;">سعر الكشف</span> 60 جنيه</h4>
+                    <h4><span style="color: #07b2e6;">سعر الاستشاره</span> 80 جنيه</h4>
+
+                    <div class="branches">
+                            <h3>الفروع</h3>
+                            <hr>
+
+                            <div class="branch">
+                                <h6>
+                                <i class="fas fa-map-marker-alt"></i>
+                                    القاهره الكبيره
+                                </h6>
+
+                                <h6>نطاقع العمل : القاهره والجيزه</h6>
+                                <h6>اوقات العمل المتاحه :</h6>
+                                <span style="color: #918c8c;">من السبت الي الخميس من 10 الي 3</span>
+                                <p style="color: #07b2e6;"> 
+                                    <i style="color: #07b2e6;" class="fas fa-map-marked-alt"></i>
+                                    الموقع علي الخريطه
+                                </p>
+                            </div>
+
+                            <div class="branch">
+                                <h6>
+                                <i class="fas fa-map-marker-alt"></i>
+                                    القاهره الكبيره
+                                </h6>
+
+                                <h6>نطاقع العمل : القاهره والجيزه</h6>
+                                <h6>اوقات العمل المتاحه :</h6>
+                                <span style="color: #918c8c;">من السبت الي الخميس من 10 الي 3</span>
+                                <p style="color: #07b2e6;"> 
+                                    <i style="color: #07b2e6;" class="fas fa-map-marked-alt"></i>
+                                    الموقع علي الخريطه
+                                </p>
+                            </div>
+
+
+                            
+                    </div>
+                </div>                                 
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/jquery_3.6.0.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+
+    <script>
+        $('.theshow').click(function () {
+            $(".mainpopupinfo").show()
+            $('body').css('height', '10px');
+
+        })
+        $('.popupinfoclosebtn').click(function () {
+            $(".mainpopupinfo").hide()
+            $('body').css('height', 'auto');
+            
+        })
+
+        $("#sratsrate").rateYo({ 
+                starWidth: "20px",
+                rating: 2.2,
+                readOnly: true,
+                rtl : true
+            });
+    </script>
+</body>
+</html>
