@@ -267,6 +267,11 @@ main .product .product-discount{
     border-radius: 5px;
 }
 
+main .product-footer .product-name{
+    margin: 5px 15px ;
+
+}
+
 main .product-footer .product-price{
     position: absolute;
     top: 10px;

@@ -141,10 +141,16 @@
 
 .filter-item{
     margin: 5px;
-    padding: 10px;
+    padding: 0px;
     font-size: 20px;
     color: #fff;
     height: 80%;
+}
+
+@media screen and (max-width:660px) {
+  .filter-item{
+    font-size: 16px;
+  }
 }
 
 .filter-item input[type='checkbox']{
@@ -204,8 +210,13 @@
     border-radius: 5px;
 }
 
+.product-details .column{
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0;
+}
+
 .column{
-    min-width: 95px;
     padding: 10px;
     color :#989393;
     font-size: 14px;
