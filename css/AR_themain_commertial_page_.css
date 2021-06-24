@@ -303,6 +303,13 @@ main .product-footer .product-seller .owner .owner-name{
     color: #07b2e6;
 }
 
+@media screen and (max-width:660px) {
+    main  .product-footer .product-seller .previewstartforstore{
+        margin-top: 2rem !important;
+    } 
+}
+
+
 main .add-tocart{
     transform: translate(0%, 50%);
 }
