@@ -285,7 +285,7 @@ main .fa-map-marker-alt{
 .mainpopupinfo{
     z-index: 10000;
     display: none;
-    width: 95%;
+    width: 100%;
     position: absolute;   
     top: 22rem;
     right: 0;
@@ -305,7 +305,7 @@ main .fa-map-marker-alt{
 
 @media screen and (max-width:660px) {
     .mainpopupinfo .popupinfo{
-    width: 100%;
+    width: 92%;
 
     }
 }
