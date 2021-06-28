@@ -100,11 +100,45 @@
 
     <div class="advances-search-filters placeholder-adsearch " ></div>
     <main >
+        <div class="position-relative"  style="height:60px">
+
             <div class="text-center sort-view">
                 <i class="fas fa-list-ul" ></i>
                 <i class="fas fa-th-large active"></i>
                 <i class="fas fa-th"></i>
             </div>
+
+            <div class="mer-type" >
+                    <div class="multiselect">
+                        <div class="selectBox" onclick="showCheckboxes()">
+                        <div style="background-color: #07b2e6;padding: 5px 10px;width: 100px;border-radius: 15px;color: #fff;">
+                            نوع التاجر
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                        <div class="overSelect"></div>
+                        </div>
+                        <div id="checkboxes">
+                            <form id="mer-type-form" >
+                                <label for="one">
+                                    <input type="checkbox" value="الكل" id="one" /> الكل</label>
+                                <hr style="margin:0px">
+                                <label for="two">
+                                    <input type="checkbox" value="تاجر جمله" id="two" /> تاجر جمله</label>
+                                <hr style="margin:0px">
+                                <label for="three">
+                                    <input type="checkbox" value="تاجر قطاعي" id="three" /> تاجر قطاعي</label>
+                                <hr style="margin:0px">
+                                <label for="four">
+                                    <input type="checkbox" value="شركات " id="four" /> شركات </label>
+                                <hr style="margin:0px">
+                                <label for="five">
+                                    <input type="checkbox" value="اونلاين" id="five" /> اونلاين </label>
+                            </form>
+                            
+                        </div>
+                    </div>
+            </div>
+        </div>
 
             <div class="products row">
                 <div class="col-md-4">
@@ -386,6 +420,33 @@
     <script src="js/main.js"></script>  
 
     <script>
+        var expanded = false;
+        var checkboxes = document.getElementById("checkboxes");
+
+        function showCheckboxes() {
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
+
+        $('#mer-type-form').change(function () {
+            var selected = [];
+            $(this).find('input[type=checkbox]').each(function() {
+                if ($(this).is(":checked")) {
+                    selected.push($(this).val());
+                }
+            });
+
+            // to be sent to backend
+            console.log(selected)
+            
+        })
+
+
         $('.advances-search-toogler').click(function() {
             $('.advances-search-filters').slideToggle('slow')
             $('header').toggleClass('advanced-active')

@@ -14,6 +14,12 @@ body{
 .active{
     color: #07b2e6;
 }
+.del-available{
+    color: #00d000;
+}
+.del-niot-available{
+    color: #ff6161;
+}
 /* ################### End Global ################### */
 /* ============== Start go_up icon =============== */
 .go_up {
@@ -188,6 +194,71 @@ header .search .advances-search .advances-search-filters .the-button{
 main{
     margin : 20px 0;
 
+}
+
+main  .mer-type{
+    position: absolute;
+    top: -10px;
+    right: 5%;
+
+}
+
+/* ####################### */
+
+.multiselect {
+    width: 200px;
+    margin: 10PX auto;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+    position: absolute;
+    background-color: #fff;
+    z-index: 50000;
+    width: 200px;
+    border-radius: 15px;
+              
+}
+
+#checkboxes label {
+    display: block;
+    padding: 5px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently*/
+}
+
+#checkboxes label:hover {
+    background-color: #1e90ff;
+}
+
+/* ####################### */
+main .sort-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 main .sort-view i{
