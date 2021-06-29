@@ -8,9 +8,7 @@
 * {
     font-family: 'coconFont';
 }
-body{
-    direction: rtl;
-}
+
 .active{
     color: #07b2e6;
 }
@@ -48,26 +46,33 @@ header{
     background-color: rgba(0, 0, 0, 0.2);
     transition: height 1s ;
 }
-
+@media only screen and (max-width: 600px) {
+    header{
+        height: 24rem;
+    }
+}
 .advanced-active{
     height: 28rem;
     transition: height 0.5s ;
 }
 
+
 header .title{
     position: absolute;
     top: 3rem;
-    left: 50%;
-    right: 0;
+    right: 50%;
+    left: 0;
     width: 100%;
     height: 100%;
     color: #fff;
 }
 
+
+
 header .overlay {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); 
@@ -76,17 +81,22 @@ header .overlay {
 header .filter-store{
     position: absolute;
     top: 10rem;
-    left: 50%;
-    right: 0;
+    right: 50%;
+    left: 0;
     width: 100%;
 }
-
+@media only screen and (max-width: 600px) {
+    header .filter-store{
+        top: 12rem;
+    }
+}
 header .filter-store .filter-item{
     display: inline-block;
     background-color: #fff;
     padding: 10px 15px 0 10px ;
     border-radius: 10px;
     margin: 5px;
+    min-width: 85px;
 }
 
 
@@ -97,9 +107,14 @@ header .filter-store p{
 header .search{
     position: absolute;
     top: 15rem;
-    left: 50%;
-    right: 0;
+    right: 50%;
+    left: 0;
     width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    header .search{
+        top: 17rem;
+    }
 }
 
 
@@ -137,7 +152,7 @@ header .search .simple-serch::after {
     content: "\f002";
     color: #07b2e6 !important;
     top: 20%;
-    left: 10px;
+    right: 10px;
 }
 
 header .search .advances-search .advances-search-toogler{
@@ -164,7 +179,7 @@ header .search .advances-search .advances-search-filters{
 
 
 header .search .advances-search .advances-search-filters label{
-    text-align: right !important; 
+    text-align: left !important; 
     margin: 10px;
 }
 
@@ -199,7 +214,7 @@ main{
 main  .mer-type{
     position: absolute;
     top: -10px;
-    right: 5%;
+    left: 5%;
 
 }
 
@@ -221,8 +236,8 @@ main  .mer-type{
 
 .overSelect {
     position: absolute;
-    left: 0;
     right: 0;
+    left: 0;
     top: 0;
     bottom: 0;
 }
@@ -257,8 +272,8 @@ main  .mer-type{
 main .sort-view {
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
+    left: 0;
 }
 
 main .sort-view i{
@@ -298,8 +313,8 @@ main .product .product-img{
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
     right: 0;
+    left: 0;
 }
 
 main .product .product-img img{
@@ -310,7 +325,7 @@ main .product .product-img img{
 main .product .product-love{
     position: absolute;
     top: 10px;
-    left: 10px;
+    right: 10px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -331,7 +346,7 @@ main .product .product-love .fas{
 main .product .product-discount{
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 10px;
     color: #fff;
     background-color: #f00;
     padding: 10px;
@@ -346,7 +361,7 @@ main .product-footer .product-name{
 main .product-footer .product-price{
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 10px;
     color: #07b2e6;
 
 }
@@ -358,7 +373,7 @@ main .product-footer .product-price del{
 main .product-footer .product-review{
     position: absolute;
     top: 10px;
-    left: 10px;
+    right: 10px;
 }
 
 main .product-footer .product-seller .owner{
@@ -374,6 +389,7 @@ main .product-footer .product-seller .location-d-staus{
     margin-top: 8px;
 }
 
+
 main .product-footer .product-seller .owner .owner-name{
     color: #07b2e6;
 }
@@ -382,10 +398,10 @@ main .product-footer .product-seller .owner .owner-name{
     main  .product-footer .product-seller .previewstartforstore{
         margin-top: 2rem !important;
     } 
+
     main .product-footer .product-seller .location-d-staus{
-        margin-top: 30px !important;
+        margin-top: 40px !important;
     }
-    
 }
 
 
