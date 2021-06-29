@@ -55,6 +55,11 @@ header{
     height: 28rem;
     transition: height 0.5s ;
 }
+@media only screen and (max-width: 600px) {
+    .advanced-active{
+        height: 30rem;
+    }
+}
 
 
 header .title{
