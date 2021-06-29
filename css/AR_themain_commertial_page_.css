@@ -113,7 +113,7 @@ header .search .simple-serch {
     margin: auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
     header .search .simple-serch {
         width: 250px;
     }
@@ -158,7 +158,7 @@ header .search .advances-search .advances-search-filters{
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
     header .search .advances-search .advances-search-filters{
         width: 85%;
     }
@@ -185,7 +185,7 @@ header .search .advances-search .advances-search-filters .the-button{
     display: none;
     height: 10em;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
     .placeholder-adsearch{
         height: 13em;
     }
@@ -201,10 +201,28 @@ main{
 main  .mer-type{
     position: absolute;
     top: -10px;
-    right: 5%;
+    right: 15%;
 
 }
 
+main .date-filter{
+    position: absolute;
+    top: -10px;
+    left: 15%; 
+}
+@media only screen and (max-width: 660px) {
+    main  .mer-type{
+        right: 5%;
+    }
+
+    main .date-filter{
+        left: 5%; 
+
+    }
+    main .date-filter select{
+        max-width: 80px;
+    }
+}
 /* ####################### */
 
 .multiselect {
@@ -276,7 +294,7 @@ main .products{
     margin-top: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
     main .products{
         width: 100%;
     }
