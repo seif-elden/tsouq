@@ -1216,6 +1216,7 @@
 
         $('.doctor-name').click(function () {
             $('.mainpopupinfo').hide()
+            $('body').css('background','#f5f5f5')
             $('.advances-search-filters').hide()
             $('.position-relative').hide()
             $('header').removeClass('advanced-active')
@@ -1231,6 +1232,7 @@
         })
         $('.popupinfoclosebtn').click(function () {
             $('.position-relative').show()
+            $('body').css('background','#fff')
             $(this).parents(".mainpopupinfo").fadeOut('slow')
             $('.the-product-parent').fadeIn()
 
