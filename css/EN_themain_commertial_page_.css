@@ -435,5 +435,21 @@ main .add-tocart{
 main .fa-map-marker-alt{
     color: #f00;
 }
+/* $$$$$$$ Start modal of map $$$$$$$ */
+main .modal .mapModal .modal-header button {
+    outline: none;
+}
+
+main .modal .mapModal .modal-content .modal-body {
+    position: relative;
+    width: 100% !important;
+    height: 400px !important;
+    padding: 0;
+}
+
+main .modal .mapModal .modal-body .mapLocationGPS {
+    height: 100%;
+}
+/* $$$$$$$ End modal of map $$$$$$$ */
 /* ============== end main =============== */ 
 
